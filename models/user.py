@@ -3,6 +3,7 @@ from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
 from ..database import Base
 
+
 class User(Base):
     __tablename__ = "users"
 
@@ -14,6 +15,17 @@ class User(Base):
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     updated_at = Column(DateTime(timezone=True), onupdate=func.now())
 
+    # Добавляем поля для аватара
+    has_avatar = Column(Boolean, default=False)
+    avatar_path = Column(String, nullable=True)
+
+    # Добавляем поле для отслеживания последней активности
+    last_seen = Column(DateTime(timezone=True), nullable=True)
+
+    # Отношение к устройствам
+    devices = relationship("UserDevice", back_populates="user", cascade="all, delete-orphan")
+
+
 class UserDevice(Base):
     __tablename__ = "user_devices"
 
@@ -24,7 +36,8 @@ class UserDevice(Base):
     last_login = Column(DateTime(timezone=True))
     created_at = Column(DateTime(timezone=True), server_default=func.now())
 
-    user = relationship("User", backref="devices")
+    # Отношение к пользователю
+    user = relationship("User", back_populates="devices")
 
     class Config:
         orm_mode = True

@@ -1,0 +1,824 @@
+2025-02-27 16:54:32,557 - INFO - Incoming request: {"timestamp": "2025-02-27T13:54:32.557661", "method": "GET", "path": "/", "query_params": "", "client": "192.168.23.31"}
+2025-02-27 16:54:32,558 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-02-27 16:54:49,722 - INFO - Incoming request: {"timestamp": "2025-02-27T13:54:49.722657", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.23.31"}
+2025-02-27 16:54:49,724 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.009}
+2025-02-27 16:54:49,914 - INFO - Incoming request: {"timestamp": "2025-02-27T13:54:49.913509", "method": "POST", "path": "/auth/register", "query_params": "", "client": "192.168.23.31"}
+2025-02-27 16:54:50,244 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 331.062}
+2025-03-01 14:55:52,190 - INFO - Incoming request: {"timestamp": "2025-03-01T11:55:52.190438", "method": "GET", "path": "/", "query_params": "", "client": "192.168.195.233"}
+2025-03-01 14:55:52,191 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-03-01 14:56:16,749 - INFO - Incoming request: {"timestamp": "2025-03-01T11:56:16.748270", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.195.233"}
+2025-03-01 14:56:16,762 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 14.003}
+2025-03-01 14:56:16,964 - INFO - Incoming request: {"timestamp": "2025-03-01T11:56:16.964326", "method": "POST", "path": "/auth/register", "query_params": "", "client": "192.168.195.233"}
+2025-03-01 14:56:17,226 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 261.944}
+2025-03-01 14:56:17,456 - INFO - Incoming request: {"timestamp": "2025-03-01T11:56:17.456025", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzQwODMxOTc3fQ.DlHjdQgv2qn_uT2-Kc7F9YtRQJfBi1TrY2XEu5FLPu0", "client": "192.168.195.233"}
+2025-03-01 14:56:17,457 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-01 14:56:17,904 - INFO - Incoming request: {"timestamp": "2025-03-01T11:56:17.904093", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.195.233"}
+2025-03-01 14:56:17,905 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-03-01 15:06:25,227 - INFO - Incoming request: {"timestamp": "2025-03-01T12:06:25.227186", "method": "GET", "path": "/", "query_params": "", "client": "192.168.195.233"}
+2025-03-01 15:06:25,227 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 0.0}
+2025-03-01 15:06:25,646 - INFO - Incoming request: {"timestamp": "2025-03-01T12:06:25.646488", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.195.233"}
+2025-03-01 15:06:25,652 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 6.001}
+2025-03-01 15:06:25,715 - INFO - Incoming request: {"timestamp": "2025-03-01T12:06:25.715449", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzQwODMyNTg1fQ.XXKsIsVYpRyndcLGgwUrvbsA6czUURrFRCz75jq5BmM", "client": "192.168.195.233"}
+2025-03-01 15:06:25,716 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.9990000000000001}
+2025-03-01 15:22:29,694 - INFO - Incoming request: {"timestamp": "2025-03-01T12:22:29.693576", "method": "GET", "path": "/", "query_params": "", "client": "192.168.195.233"}
+2025-03-01 15:22:29,694 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-03-01 15:22:54,039 - INFO - Incoming request: {"timestamp": "2025-03-01T12:22:54.039973", "method": "GET", "path": "/", "query_params": "", "client": "192.168.195.233"}
+2025-03-01 15:22:54,039 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 0.0}
+2025-03-01 15:23:04,638 - INFO - Incoming request: {"timestamp": "2025-03-01T12:23:04.637603", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.195.233"}
+2025-03-01 15:23:04,640 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.99}
+2025-03-01 15:23:04,871 - INFO - Incoming request: {"timestamp": "2025-03-01T12:23:04.871145", "method": "POST", "path": "/auth/login", "query_params": "", "client": "192.168.195.233"}
+2025-03-01 15:23:05,115 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 244.055}
+2025-03-01 15:23:05,231 - INFO - Incoming request: {"timestamp": "2025-03-01T12:23:05.231290", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzQwODMzNTg1fQ.eIE2ob43p1kBaMh8bvCswC1SZ_UjIG2PETwVXDAl4KM", "client": "192.168.195.233"}
+2025-03-01 15:23:05,231 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-01 15:23:05,978 - INFO - Incoming request: {"timestamp": "2025-03-01T12:23:05.977187", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.195.233"}
+2025-03-01 15:23:05,979 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.9220000000000002}
+2025-03-01 15:23:06,719 - INFO - Incoming request: {"timestamp": "2025-03-01T12:23:06.719336", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzQwODMzNTg1fQ.eIE2ob43p1kBaMh8bvCswC1SZ_UjIG2PETwVXDAl4KM", "client": "192.168.195.233"}
+2025-03-01 15:23:06,719 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-01 15:23:10,254 - INFO - Incoming request: {"timestamp": "2025-03-01T12:23:10.254581", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzQwODMzNTg1fQ.eIE2ob43p1kBaMh8bvCswC1SZ_UjIG2PETwVXDAl4KM", "client": "192.168.195.233"}
+2025-03-01 15:23:10,254 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-01 15:23:11,785 - INFO - Incoming request: {"timestamp": "2025-03-01T12:23:11.785470", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzQwODMzNTg1fQ.eIE2ob43p1kBaMh8bvCswC1SZ_UjIG2PETwVXDAl4KM", "client": "192.168.195.233"}
+2025-03-01 15:23:11,785 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-01 15:23:12,221 - INFO - Incoming request: {"timestamp": "2025-03-01T12:23:12.221518", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.195.233"}
+2025-03-01 15:23:12,221 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-01 15:23:14,386 - INFO - Incoming request: {"timestamp": "2025-03-01T12:23:14.386912", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.195.233"}
+2025-03-01 15:23:14,387 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-03-01 15:23:14,482 - INFO - Incoming request: {"timestamp": "2025-03-01T12:23:14.482082", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.195.233"}
+2025-03-01 15:23:14,482 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-01 15:23:15,284 - INFO - Incoming request: {"timestamp": "2025-03-01T12:23:15.284252", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzQwODMzNTg1fQ.eIE2ob43p1kBaMh8bvCswC1SZ_UjIG2PETwVXDAl4KM", "client": "192.168.195.233"}
+2025-03-01 15:23:15,284 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-01 15:23:16,799 - INFO - Incoming request: {"timestamp": "2025-03-01T12:23:16.799652", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzQwODMzNTg1fQ.eIE2ob43p1kBaMh8bvCswC1SZ_UjIG2PETwVXDAl4KM", "client": "192.168.195.233"}
+2025-03-01 15:23:16,799 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-01 15:23:20,311 - INFO - Incoming request: {"timestamp": "2025-03-01T12:23:20.311674", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzQwODMzNTg1fQ.eIE2ob43p1kBaMh8bvCswC1SZ_UjIG2PETwVXDAl4KM", "client": "192.168.195.233"}
+2025-03-01 15:23:20,311 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-01 15:23:21,666 - INFO - Incoming request: {"timestamp": "2025-03-01T12:23:21.666373", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.195.233"}
+2025-03-01 15:23:21,677 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 10.991000000000001}
+2025-03-01 15:23:21,709 - INFO - Incoming request: {"timestamp": "2025-03-01T12:23:21.709443", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzQwODMzNjAxfQ.JsWDXQNWg2qPfNlKIt0PtU7zjtCcAvDlc5rxt06fSNs", "client": "192.168.195.233"}
+2025-03-01 15:23:21,709 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-01 15:23:21,810 - INFO - Incoming request: {"timestamp": "2025-03-01T12:23:21.810703", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzQwODMzNTg1fQ.eIE2ob43p1kBaMh8bvCswC1SZ_UjIG2PETwVXDAl4KM", "client": "192.168.195.233"}
+2025-03-01 15:23:21,811 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-01 15:23:26,721 - INFO - Incoming request: {"timestamp": "2025-03-01T12:23:26.721863", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzQwODMzNjAxfQ.JsWDXQNWg2qPfNlKIt0PtU7zjtCcAvDlc5rxt06fSNs", "client": "192.168.195.233"}
+2025-03-01 15:23:26,722 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-01 15:23:26,843 - INFO - Incoming request: {"timestamp": "2025-03-01T12:23:26.842998", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2IiwiZXhwIjoxNzQwODMzNTg1fQ.eIE2ob43p1kBaMh8bvCswC1SZ_UjIG2PETwVXDAl4KM", "client": "192.168.195.233"}
+2025-03-01 15:23:26,843 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.001}
+2025-03-09 15:14:48,741 - main - INFO - Starting YuMSG Server...
+2025-03-09 15:15:05,312 - main - INFO - Starting YuMSG Server...
+2025-03-09 15:16:27,890 - main - INFO - Starting YuMSG Server...
+2025-03-09 15:22:23,129 - app.core.crypto - INFO - CryptoService initialized
+2025-03-09 15:22:24,008 - app.core.crypto - INFO - CryptoService initialized
+2025-03-09 15:22:24,040 - app.core.crypto - INFO - CryptoService initialized
+2025-03-09 15:22:24,070 - app.main - INFO - Starting YuMSG Server...
+2025-03-09 15:22:24,070 - app.database - INFO - Initializing database at: postgresql://postgres:postpass@localhost:5432/chatdb
+2025-03-09 15:22:24,125 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2025-03-09 15:22:24,125 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-03-09 15:22:24,126 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2025-03-09 15:22:24,126 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-03-09 15:22:24,127 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2025-03-09 15:22:24,127 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-03-09 15:22:24,130 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-03-09 15:22:24,130 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s]) AND pg_catalog.pg_class.relpersistence != %(relpersistence_1)s AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-03-09 15:22:24,130 - sqlalchemy.engine.Engine - INFO - [generated in 0.00026s] {'param_1': 'r', 'param_2': 'p', 'relpersistence_1': 't', 'nspname_1': 'pg_catalog'}
+2025-03-09 15:22:24,134 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-03-09 15:22:24,134 - app.database - INFO - Existing tables before creation: []
+2025-03-09 15:22:24,135 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-03-09 15:22:24,136 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-03-09 15:22:24,136 - sqlalchemy.engine.Engine - INFO - [generated in 0.00019s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-03-09 15:22:24,136 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-03-09 15:22:24,136 - sqlalchemy.engine.Engine - INFO - [cached since 0.0007753s ago] {'table_name': 'user_devices', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-03-09 15:22:24,137 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE users (
+	id SERIAL NOT NULL, 
+	email VARCHAR NOT NULL, 
+	username VARCHAR NOT NULL, 
+	hashed_password VARCHAR NOT NULL, 
+	is_active BOOLEAN, 
+	created_at TIMESTAMP WITH TIME ZONE DEFAULT now(), 
+	updated_at TIMESTAMP WITH TIME ZONE, 
+	has_avatar BOOLEAN, 
+	avatar_path VARCHAR, 
+	last_seen TIMESTAMP WITH TIME ZONE, 
+	PRIMARY KEY (id)
+)
+
+
+2025-03-09 15:22:24,137 - sqlalchemy.engine.Engine - INFO - [no key 0.00011s] {}
+2025-03-09 15:22:24,168 - sqlalchemy.engine.Engine - INFO - CREATE UNIQUE INDEX ix_users_email ON users (email)
+2025-03-09 15:22:24,168 - sqlalchemy.engine.Engine - INFO - [no key 0.00020s] {}
+2025-03-09 15:22:24,171 - sqlalchemy.engine.Engine - INFO - CREATE INDEX ix_users_id ON users (id)
+2025-03-09 15:22:24,172 - sqlalchemy.engine.Engine - INFO - [no key 0.00013s] {}
+2025-03-09 15:22:24,174 - sqlalchemy.engine.Engine - INFO - CREATE UNIQUE INDEX ix_users_username ON users (username)
+2025-03-09 15:22:24,175 - sqlalchemy.engine.Engine - INFO - [no key 0.00013s] {}
+2025-03-09 15:22:24,178 - sqlalchemy.engine.Engine - INFO - 
+CREATE TABLE user_devices (
+	id SERIAL NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	device_id VARCHAR NOT NULL, 
+	refresh_token VARCHAR, 
+	last_login TIMESTAMP WITH TIME ZONE, 
+	created_at TIMESTAMP WITH TIME ZONE DEFAULT now(), 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2025-03-09 15:22:24,178 - sqlalchemy.engine.Engine - INFO - [no key 0.00019s] {}
+2025-03-09 15:22:24,193 - sqlalchemy.engine.Engine - INFO - CREATE INDEX ix_user_devices_id ON user_devices (id)
+2025-03-09 15:22:24,193 - sqlalchemy.engine.Engine - INFO - [no key 0.00019s] {}
+2025-03-09 15:22:24,196 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-03-09 15:22:24,198 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-03-09 15:22:24,198 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s]) AND pg_catalog.pg_class.relpersistence != %(relpersistence_1)s AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-03-09 15:22:24,198 - sqlalchemy.engine.Engine - INFO - [cached since 0.06841s ago] {'param_1': 'r', 'param_2': 'p', 'relpersistence_1': 't', 'nspname_1': 'pg_catalog'}
+2025-03-09 15:22:24,199 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-03-09 15:22:24,199 - app.database - INFO - Tables after creation: ['users', 'user_devices']
+2025-03-09 15:22:24,199 - app.database - INFO - Database tables created successfully
+2025-03-09 15:22:24,200 - app.main - INFO - Database initialized
+2025-03-09 15:22:24,233 - app.core.crypto - INFO - Server keypair generated successfully
+2025-03-09 15:22:24,233 - app.main - INFO - Server keypair generated
+2025-03-09 15:22:24,234 - app.services.online_status_service - INFO - Online status cleanup task started
+2025-03-09 15:22:24,234 - app.services.message_buffer - INFO - Message buffer cleanup task started
+2025-03-09 15:22:24,234 - app.main - INFO - Services started
+2025-03-09 15:24:53,399 - INFO - Incoming request: {"timestamp": "2025-03-09T12:24:53.398937", "method": "GET", "path": "/", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:24:53,399 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:24:53.398937", "method": "GET", "path": "/", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:24:53,399 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.001}
+2025-03-09 15:24:53,399 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.001}
+2025-03-09 15:25:10,367 - INFO - Incoming request: {"timestamp": "2025-03-09T12:25:10.367237", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:25:10,367 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:25:10.367237", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:25:10,367 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-09 15:25:10,367 - chat_server - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-09 15:29:31,313 - app.main - INFO - Shutting down YuMSG Server...
+2025-03-09 15:29:31,313 - app.services.online_status_service - INFO - Online status cleanup task stopped
+2025-03-09 15:29:31,313 - app.services.message_buffer - INFO - Message buffer cleanup task stopped
+2025-03-09 15:29:31,313 - app.main - INFO - Services stopped
+2025-03-09 15:29:32,335 - app.core.crypto - INFO - CryptoService initialized
+2025-03-09 15:29:43,464 - app.core.crypto - INFO - CryptoService initialized
+2025-03-09 15:29:48,631 - app.core.crypto - INFO - CryptoService initialized
+2025-03-09 15:30:35,709 - app.core.crypto - INFO - CryptoService initialized
+2025-03-09 15:30:36,595 - app.core.crypto - INFO - CryptoService initialized
+2025-03-09 15:30:36,628 - app.core.crypto - INFO - CryptoService initialized
+2025-03-09 15:30:36,660 - app.main - INFO - Starting YuMSG Server...
+2025-03-09 15:30:36,660 - app.database - INFO - Initializing database at: postgresql://postgres:postpass@localhost:5432/chatdb
+2025-03-09 15:30:36,698 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2025-03-09 15:30:36,698 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-03-09 15:30:36,699 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2025-03-09 15:30:36,699 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-03-09 15:30:36,699 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2025-03-09 15:30:36,699 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-03-09 15:30:36,702 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-03-09 15:30:36,702 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s]) AND pg_catalog.pg_class.relpersistence != %(relpersistence_1)s AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-03-09 15:30:36,703 - sqlalchemy.engine.Engine - INFO - [generated in 0.00028s] {'param_1': 'r', 'param_2': 'p', 'relpersistence_1': 't', 'nspname_1': 'pg_catalog'}
+2025-03-09 15:30:36,704 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-03-09 15:30:36,705 - app.database - INFO - Existing tables before creation: ['users', 'user_devices']
+2025-03-09 15:30:36,705 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-03-09 15:30:36,706 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-03-09 15:30:36,706 - sqlalchemy.engine.Engine - INFO - [generated in 0.00016s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-03-09 15:30:36,706 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-03-09 15:30:36,707 - sqlalchemy.engine.Engine - INFO - [cached since 0.000775s ago] {'table_name': 'user_devices', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-03-09 15:30:36,707 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-03-09 15:30:36,708 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-03-09 15:30:36,708 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s]) AND pg_catalog.pg_class.relpersistence != %(relpersistence_1)s AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-03-09 15:30:36,708 - sqlalchemy.engine.Engine - INFO - [cached since 0.005565s ago] {'param_1': 'r', 'param_2': 'p', 'relpersistence_1': 't', 'nspname_1': 'pg_catalog'}
+2025-03-09 15:30:36,709 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-03-09 15:30:36,709 - app.database - INFO - Tables after creation: ['users', 'user_devices']
+2025-03-09 15:30:36,709 - app.database - INFO - Database tables created successfully
+2025-03-09 15:30:36,709 - app.main - INFO - Database initialized
+2025-03-09 15:30:36,762 - app.core.crypto - INFO - Server keypair generated successfully
+2025-03-09 15:30:36,762 - app.main - INFO - Server keypair generated
+2025-03-09 15:30:36,763 - app.services.online_status_service - INFO - Online status cleanup task started
+2025-03-09 15:30:36,763 - app.services.message_buffer - INFO - Message buffer cleanup task started
+2025-03-09 15:30:36,763 - app.main - INFO - Services started
+2025-03-09 15:30:43,272 - INFO - Incoming request: {"timestamp": "2025-03-09T12:30:43.272277", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:30:43,272 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:30:43.272277", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:30:43,273 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-09 15:30:43,273 - chat_server - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-09 15:30:48,904 - INFO - Incoming request: {"timestamp": "2025-03-09T12:30:48.904896", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:30:48,904 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:30:48.904896", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:30:48,905 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-09 15:30:48,905 - chat_server - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-09 15:32:34,671 - app.main - INFO - Shutting down YuMSG Server...
+2025-03-09 15:32:34,671 - app.services.online_status_service - INFO - Online status cleanup task stopped
+2025-03-09 15:32:34,671 - app.services.message_buffer - INFO - Message buffer cleanup task stopped
+2025-03-09 15:32:34,671 - app.main - INFO - Services stopped
+2025-03-09 15:32:35,676 - app.core.crypto - INFO - CryptoService initialized
+2025-03-09 15:32:35,706 - app.core.crypto - INFO - CryptoService initialized
+2025-03-09 15:32:35,735 - app.main - INFO - Starting YuMSG Server...
+2025-03-09 15:32:35,735 - app.database - INFO - Initializing database at: postgresql://postgres:postpass@localhost:5432/chatdb
+2025-03-09 15:32:35,773 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2025-03-09 15:32:35,773 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-03-09 15:32:35,774 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2025-03-09 15:32:35,774 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-03-09 15:32:35,774 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2025-03-09 15:32:35,774 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-03-09 15:32:35,777 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-03-09 15:32:35,777 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s]) AND pg_catalog.pg_class.relpersistence != %(relpersistence_1)s AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-03-09 15:32:35,777 - sqlalchemy.engine.Engine - INFO - [generated in 0.00025s] {'param_1': 'r', 'param_2': 'p', 'relpersistence_1': 't', 'nspname_1': 'pg_catalog'}
+2025-03-09 15:32:35,779 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-03-09 15:32:35,779 - app.database - INFO - Existing tables before creation: ['users', 'user_devices']
+2025-03-09 15:32:35,779 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-03-09 15:32:35,780 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-03-09 15:32:35,780 - sqlalchemy.engine.Engine - INFO - [generated in 0.00015s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-03-09 15:32:35,781 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-03-09 15:32:35,781 - sqlalchemy.engine.Engine - INFO - [cached since 0.0007033s ago] {'table_name': 'user_devices', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-03-09 15:32:35,781 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-03-09 15:32:35,782 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-03-09 15:32:35,782 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s]) AND pg_catalog.pg_class.relpersistence != %(relpersistence_1)s AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-03-09 15:32:35,782 - sqlalchemy.engine.Engine - INFO - [cached since 0.005056s ago] {'param_1': 'r', 'param_2': 'p', 'relpersistence_1': 't', 'nspname_1': 'pg_catalog'}
+2025-03-09 15:32:35,783 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-03-09 15:32:35,783 - app.database - INFO - Tables after creation: ['users', 'user_devices']
+2025-03-09 15:32:35,783 - app.database - INFO - Database tables created successfully
+2025-03-09 15:32:35,783 - app.main - INFO - Database initialized
+2025-03-09 15:32:35,794 - app.core.crypto - INFO - Server keypair generated successfully
+2025-03-09 15:32:35,794 - app.main - INFO - Server keypair generated
+2025-03-09 15:32:35,795 - app.services.online_status_service - INFO - Online status cleanup task started
+2025-03-09 15:32:35,795 - app.services.message_buffer - INFO - Message buffer cleanup task started
+2025-03-09 15:32:35,795 - app.main - INFO - Services started
+2025-03-09 15:32:41,728 - app.core.crypto - INFO - CryptoService initialized
+2025-03-09 15:32:42,606 - app.core.crypto - INFO - CryptoService initialized
+2025-03-09 15:32:42,635 - app.core.crypto - INFO - CryptoService initialized
+2025-03-09 15:32:42,664 - app.main - INFO - Starting YuMSG Server...
+2025-03-09 15:32:42,665 - app.database - INFO - Initializing database at: postgresql://postgres:postpass@localhost:5432/chatdb
+2025-03-09 15:32:42,702 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2025-03-09 15:32:42,702 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-03-09 15:32:42,703 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2025-03-09 15:32:42,703 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-03-09 15:32:42,703 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2025-03-09 15:32:42,703 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-03-09 15:32:42,707 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-03-09 15:32:42,707 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s]) AND pg_catalog.pg_class.relpersistence != %(relpersistence_1)s AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-03-09 15:32:42,707 - sqlalchemy.engine.Engine - INFO - [generated in 0.00025s] {'param_1': 'r', 'param_2': 'p', 'relpersistence_1': 't', 'nspname_1': 'pg_catalog'}
+2025-03-09 15:32:42,709 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-03-09 15:32:42,709 - app.database - INFO - Existing tables before creation: ['users', 'user_devices']
+2025-03-09 15:32:42,709 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-03-09 15:32:42,710 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-03-09 15:32:42,710 - sqlalchemy.engine.Engine - INFO - [generated in 0.00015s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-03-09 15:32:42,710 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-03-09 15:32:42,711 - sqlalchemy.engine.Engine - INFO - [cached since 0.0007627s ago] {'table_name': 'user_devices', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-03-09 15:32:42,711 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-03-09 15:32:42,712 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-03-09 15:32:42,712 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s]) AND pg_catalog.pg_class.relpersistence != %(relpersistence_1)s AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-03-09 15:32:42,712 - sqlalchemy.engine.Engine - INFO - [cached since 0.005282s ago] {'param_1': 'r', 'param_2': 'p', 'relpersistence_1': 't', 'nspname_1': 'pg_catalog'}
+2025-03-09 15:32:42,712 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-03-09 15:32:42,713 - app.database - INFO - Tables after creation: ['users', 'user_devices']
+2025-03-09 15:32:42,713 - app.database - INFO - Database tables created successfully
+2025-03-09 15:32:42,713 - app.main - INFO - Database initialized
+2025-03-09 15:32:42,741 - app.core.crypto - INFO - Server keypair generated successfully
+2025-03-09 15:32:42,741 - app.main - INFO - Server keypair generated
+2025-03-09 15:32:42,742 - app.services.online_status_service - INFO - Online status cleanup task started
+2025-03-09 15:32:42,742 - app.services.message_buffer - INFO - Message buffer cleanup task started
+2025-03-09 15:32:42,742 - app.main - INFO - Services started
+2025-03-09 15:32:45,369 - INFO - Incoming request: {"timestamp": "2025-03-09T12:32:45.369903", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:32:45,369 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:32:45.369903", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:32:45,378 - app.services.secure_channel_service - INFO - Creating secure channel with ID: 68e15186-88aa-46ee-ad9f-20cacaa51263
+2025-03-09 15:32:45,378 - app.services.secure_channel_service - INFO - Channel created and stored. Total channels: 1
+2025-03-09 15:32:45,387 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 18.006999999999998}
+2025-03-09 15:32:45,387 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 18.006999999999998}
+2025-03-09 15:32:45,543 - INFO - Incoming request: {"timestamp": "2025-03-09T12:32:45.543945", "method": "POST", "path": "/auth/register", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:32:45,543 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:32:45.543945", "method": "POST", "path": "/auth/register", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:32:45,552 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-03-09 15:32:45,554 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.username AS users_username, users.hashed_password AS users_hashed_password, users.is_active AS users_is_active, users.created_at AS users_created_at, users.updated_at AS users_updated_at, users.has_avatar AS users_has_avatar, users.avatar_path AS users_avatar_path, users.last_seen AS users_last_seen 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s
+2025-03-09 15:32:45,554 - sqlalchemy.engine.Engine - INFO - [generated in 0.00019s] {'email_1': 'eodumme@gmail.com', 'param_1': 1}
+2025-03-09 15:32:45,556 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\yusen\PycharmProjects\YuMSGServer\.venv\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-03-09 15:32:45,788 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (email, username, hashed_password, is_active, updated_at, has_avatar, avatar_path, last_seen) VALUES (%(email)s, %(username)s, %(hashed_password)s, %(is_active)s, %(updated_at)s, %(has_avatar)s, %(avatar_path)s, %(last_seen)s) RETURNING users.id, users.created_at
+2025-03-09 15:32:45,789 - sqlalchemy.engine.Engine - INFO - [generated in 0.00030s] {'email': 'eodumme@gmail.com', 'username': 'Eodumme', 'hashed_password': '$2b$12$GG2ztuCvTEfR81WWveb73.NVxyyGppBoejj5gttPHgWwAnA3u03Li', 'is_active': True, 'updated_at': None, 'has_avatar': False, 'avatar_path': None, 'last_seen': None}
+2025-03-09 15:32:45,799 - sqlalchemy.engine.Engine - INFO - INSERT INTO user_devices (user_id, device_id, refresh_token, last_login) VALUES (%(user_id)s, %(device_id)s, %(refresh_token)s, now()) RETURNING user_devices.id, user_devices.created_at
+2025-03-09 15:32:45,799 - sqlalchemy.engine.Engine - INFO - [generated in 0.00024s] {'user_id': 1, 'device_id': '066a3308-d182-4c59-ad00-424b6eeab41b', 'refresh_token': None}
+2025-03-09 15:32:45,801 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-03-09 15:32:45,803 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-03-09 15:32:45,804 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.username AS users_username, users.hashed_password AS users_hashed_password, users.is_active AS users_is_active, users.created_at AS users_created_at, users.updated_at AS users_updated_at, users.has_avatar AS users_has_avatar, users.avatar_path AS users_avatar_path, users.last_seen AS users_last_seen 
+FROM users 
+WHERE users.id = %(pk_1)s
+2025-03-09 15:32:45,804 - sqlalchemy.engine.Engine - INFO - [generated in 0.00018s] {'pk_1': 1}
+2025-03-09 15:32:45,804 - app.services.secure_channel_service - INFO - Channel 68e15186-88aa-46ee-ad9f-20cacaa51263 removed
+2025-03-09 15:32:45,805 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-03-09 15:32:45,805 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 261.355}
+2025-03-09 15:32:45,805 - chat_server - INFO - Response sent: {"status_code": 400, "processing_time_ms": 261.355}
+2025-03-09 15:38:27,241 - app.main - INFO - Shutting down YuMSG Server...
+2025-03-09 15:38:27,241 - app.services.online_status_service - INFO - Online status cleanup task stopped
+2025-03-09 15:38:27,241 - app.services.message_buffer - INFO - Message buffer cleanup task stopped
+2025-03-09 15:38:27,241 - app.main - INFO - Services stopped
+2025-03-09 15:38:32,365 - app.core.crypto - INFO - CryptoService initialized
+2025-03-09 15:38:33,251 - app.core.crypto - INFO - CryptoService initialized
+2025-03-09 15:38:33,282 - app.core.crypto - INFO - CryptoService initialized
+2025-03-09 15:38:33,289 - app.main - INFO - Starting YuMSG Server...
+2025-03-09 15:38:33,289 - app.database - INFO - Initializing database at: postgresql://postgres:postpass@localhost:5432/chatdb
+2025-03-09 15:38:33,327 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2025-03-09 15:38:33,328 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-03-09 15:38:33,328 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2025-03-09 15:38:33,328 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-03-09 15:38:33,329 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2025-03-09 15:38:33,329 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-03-09 15:38:33,358 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-03-09 15:38:33,358 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s]) AND pg_catalog.pg_class.relpersistence != %(relpersistence_1)s AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-03-09 15:38:33,359 - sqlalchemy.engine.Engine - INFO - [generated in 0.00042s] {'param_1': 'r', 'param_2': 'p', 'relpersistence_1': 't', 'nspname_1': 'pg_catalog'}
+2025-03-09 15:38:33,360 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-03-09 15:38:33,361 - app.database - INFO - Existing tables before creation: ['users', 'user_devices']
+2025-03-09 15:38:33,361 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-03-09 15:38:33,362 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-03-09 15:38:33,362 - sqlalchemy.engine.Engine - INFO - [generated in 0.00017s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-03-09 15:38:33,362 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-03-09 15:38:33,363 - sqlalchemy.engine.Engine - INFO - [cached since 0.0007776s ago] {'table_name': 'user_devices', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-03-09 15:38:33,363 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-03-09 15:38:33,364 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-03-09 15:38:33,364 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s]) AND pg_catalog.pg_class.relpersistence != %(relpersistence_1)s AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-03-09 15:38:33,364 - sqlalchemy.engine.Engine - INFO - [cached since 0.005862s ago] {'param_1': 'r', 'param_2': 'p', 'relpersistence_1': 't', 'nspname_1': 'pg_catalog'}
+2025-03-09 15:38:33,365 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-03-09 15:38:33,365 - app.database - INFO - Tables after creation: ['users', 'user_devices']
+2025-03-09 15:38:33,365 - app.database - INFO - Database tables created successfully
+2025-03-09 15:38:33,365 - app.main - INFO - Database initialized
+2025-03-09 15:38:33,458 - app.core.crypto - INFO - Server keypair generated successfully
+2025-03-09 15:38:33,458 - app.main - INFO - Server keypair generated
+2025-03-09 15:38:33,459 - app.services.online_status_service - INFO - Online status cleanup task started
+2025-03-09 15:38:33,459 - app.services.message_buffer - INFO - Message buffer cleanup task started
+2025-03-09 15:38:33,459 - app.main - INFO - Services started
+2025-03-09 15:38:38,021 - INFO - Incoming request: {"timestamp": "2025-03-09T12:38:38.021050", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:38:38,021 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:38:38.021050", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:38:38,023 - app.api.v1.endpoints.auth - INFO - Initializing secure channel with ID: a0c07346-b512-4d8b-b5c6-f81b5edeebc3
+2025-03-09 15:38:38,023 - app.services.secure_channel_service - INFO - Creating secure channel with ID: a0c07346-b512-4d8b-b5c6-f81b5edeebc3
+2025-03-09 15:38:38,023 - app.services.secure_channel_service - INFO - Channel created and stored. Total channels: 1
+2025-03-09 15:38:38,023 - app.api.v1.endpoints.auth - INFO - Secure channel initialized successfully
+2025-03-09 15:38:38,024 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.0010000000000003}
+2025-03-09 15:38:38,024 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.0010000000000003}
+2025-03-09 15:38:38,105 - INFO - Incoming request: {"timestamp": "2025-03-09T12:38:38.104069", "method": "POST", "path": "/auth/register", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:38:38,105 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:38:38.104069", "method": "POST", "path": "/auth/register", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:38:38,108 - app.api.v1.endpoints.auth - INFO - Registering user: eodumme@gmail.com
+2025-03-09 15:38:38,111 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-03-09 15:38:38,113 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.username AS users_username, users.hashed_password AS users_hashed_password, users.is_active AS users_is_active, users.created_at AS users_created_at, users.updated_at AS users_updated_at, users.has_avatar AS users_has_avatar, users.avatar_path AS users_avatar_path, users.last_seen AS users_last_seen 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s
+2025-03-09 15:38:38,113 - sqlalchemy.engine.Engine - INFO - [generated in 0.00019s] {'email_1': 'eodumme@gmail.com', 'param_1': 1}
+2025-03-09 15:38:38,115 - app.api.v1.endpoints.auth - WARNING - Email already registered: eodumme@gmail.com
+2025-03-09 15:38:38,115 - app.services.secure_channel_service - INFO - Channel a0c07346-b512-4d8b-b5c6-f81b5edeebc3 removed
+2025-03-09 15:38:38,115 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-03-09 15:38:38,115 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 11.003}
+2025-03-09 15:38:38,115 - chat_server - INFO - Response sent: {"status_code": 400, "processing_time_ms": 11.003}
+2025-03-09 15:38:59,226 - INFO - Incoming request: {"timestamp": "2025-03-09T12:38:59.226392", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:38:59,226 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:38:59.226392", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:38:59,227 - app.api.v1.endpoints.auth - INFO - Initializing secure channel with ID: a4feb367-e913-48c6-b76b-cd38c95dca50
+2025-03-09 15:38:59,227 - app.services.secure_channel_service - INFO - Creating secure channel with ID: a4feb367-e913-48c6-b76b-cd38c95dca50
+2025-03-09 15:38:59,227 - app.services.secure_channel_service - INFO - Channel created and stored. Total channels: 1
+2025-03-09 15:38:59,227 - app.api.v1.endpoints.auth - INFO - Secure channel initialized successfully
+2025-03-09 15:38:59,227 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.001}
+2025-03-09 15:38:59,227 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.001}
+2025-03-09 15:38:59,271 - INFO - Incoming request: {"timestamp": "2025-03-09T12:38:59.271402", "method": "POST", "path": "/auth/register", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:38:59,271 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:38:59.271402", "method": "POST", "path": "/auth/register", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:38:59,273 - app.api.v1.endpoints.auth - INFO - Registering user: mirai@gmail.com
+2025-03-09 15:38:59,273 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-03-09 15:38:59,273 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.username AS users_username, users.hashed_password AS users_hashed_password, users.is_active AS users_is_active, users.created_at AS users_created_at, users.updated_at AS users_updated_at, users.has_avatar AS users_has_avatar, users.avatar_path AS users_avatar_path, users.last_seen AS users_last_seen 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s
+2025-03-09 15:38:59,274 - sqlalchemy.engine.Engine - INFO - [cached since 21.16s ago] {'email_1': 'mirai@gmail.com', 'param_1': 1}
+2025-03-09 15:38:59,274 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\yusen\PycharmProjects\YuMSGServer\.venv\lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-03-09 15:38:59,499 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (email, username, hashed_password, is_active, updated_at, has_avatar, avatar_path, last_seen) VALUES (%(email)s, %(username)s, %(hashed_password)s, %(is_active)s, %(updated_at)s, %(has_avatar)s, %(avatar_path)s, %(last_seen)s) RETURNING users.id, users.created_at
+2025-03-09 15:38:59,500 - sqlalchemy.engine.Engine - INFO - [generated in 0.00028s] {'email': 'mirai@gmail.com', 'username': 'Mirai', 'hashed_password': '$2b$12$kJ7UCmxZu18NvqDmWDoXQu49bnkTCiFlaIssW98iD0PaoXqcfRyXe', 'is_active': True, 'updated_at': None, 'has_avatar': False, 'avatar_path': None, 'last_seen': None}
+2025-03-09 15:38:59,502 - sqlalchemy.engine.Engine - INFO - INSERT INTO user_devices (user_id, device_id, refresh_token, last_login) VALUES (%(user_id)s, %(device_id)s, %(refresh_token)s, now()) RETURNING user_devices.id, user_devices.created_at
+2025-03-09 15:38:59,502 - sqlalchemy.engine.Engine - INFO - [generated in 0.00023s] {'user_id': 2, 'device_id': '1b084815-6214-4752-b4b0-a77ca2454e2f', 'refresh_token': None}
+2025-03-09 15:38:59,503 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-03-09 15:38:59,508 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-03-09 15:38:59,510 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.username AS users_username, users.hashed_password AS users_hashed_password, users.is_active AS users_is_active, users.created_at AS users_created_at, users.updated_at AS users_updated_at, users.has_avatar AS users_has_avatar, users.avatar_path AS users_avatar_path, users.last_seen AS users_last_seen 
+FROM users 
+WHERE users.id = %(pk_1)s
+2025-03-09 15:38:59,510 - sqlalchemy.engine.Engine - INFO - [generated in 0.00027s] {'pk_1': 2}
+2025-03-09 15:38:59,510 - app.api.v1.endpoints.auth - INFO - User registered successfully: 2
+2025-03-09 15:38:59,521 - sqlalchemy.engine.Engine - INFO - SELECT user_devices.id AS user_devices_id, user_devices.user_id AS user_devices_user_id, user_devices.device_id AS user_devices_device_id, user_devices.last_login AS user_devices_last_login, user_devices.created_at AS user_devices_created_at 
+FROM user_devices 
+WHERE user_devices.id = %(pk_1)s
+2025-03-09 15:38:59,521 - sqlalchemy.engine.Engine - INFO - [generated in 0.00028s] {'pk_1': 2}
+2025-03-09 15:38:59,523 - sqlalchemy.engine.Engine - INFO - UPDATE user_devices SET refresh_token=%(refresh_token)s WHERE user_devices.id = %(user_devices_id)s
+2025-03-09 15:38:59,523 - sqlalchemy.engine.Engine - INFO - [generated in 0.00018s] {'refresh_token': 'duLEnBfXB5pAZuNl79CpfEExGdRJEYYBxEBCscfV9do', 'user_devices_id': 2}
+2025-03-09 15:38:59,524 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-03-09 15:38:59,524 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-03-09 15:38:59,524 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.username AS users_username, users.hashed_password AS users_hashed_password, users.is_active AS users_is_active, users.created_at AS users_created_at, users.updated_at AS users_updated_at, users.has_avatar AS users_has_avatar, users.avatar_path AS users_avatar_path, users.last_seen AS users_last_seen 
+FROM users 
+WHERE users.id = %(pk_1)s
+2025-03-09 15:38:59,525 - sqlalchemy.engine.Engine - INFO - [cached since 0.01513s ago] {'pk_1': 2}
+2025-03-09 15:38:59,525 - app.api.v1.endpoints.auth - INFO - Tokens generated for user: 2
+2025-03-09 15:38:59,526 - app.services.secure_channel_service - INFO - Channel a4feb367-e913-48c6-b76b-cd38c95dca50 removed
+2025-03-09 15:38:59,527 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-03-09 15:38:59,527 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 256.46200000000005}
+2025-03-09 15:38:59,527 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 256.46200000000005}
+2025-03-09 15:38:59,670 - INFO - Incoming request: {"timestamp": "2025-03-09T12:38:59.670333", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:38:59,670 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:38:59.670333", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:38:59,671 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-09 15:38:59,671 - chat_server - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-09 15:39:00,516 - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:00.516492", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:39:00,516 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:00.516492", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:39:00,549 - app.api.v1.endpoints.auth - INFO - Initializing secure channel with ID: d8cd21b5-3dbc-4af7-b5d6-07e860cc54c6
+2025-03-09 15:39:00,549 - app.services.secure_channel_service - INFO - Creating secure channel with ID: d8cd21b5-3dbc-4af7-b5d6-07e860cc54c6
+2025-03-09 15:39:00,549 - app.services.secure_channel_service - INFO - Channel created and stored. Total channels: 1
+2025-03-09 15:39:00,549 - app.api.v1.endpoints.auth - INFO - Secure channel initialized successfully
+2025-03-09 15:39:00,550 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 34.007999999999996}
+2025-03-09 15:39:00,550 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 34.007999999999996}
+2025-03-09 15:39:02,093 - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:02.093847", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:02,093 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:02.093847", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:02,094 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-09 15:39:02,094 - chat_server - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-09 15:39:04,691 - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:04.690448", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:04,691 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:04.690448", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:04,691 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-09 15:39:04,691 - chat_server - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-09 15:39:07,150 - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:07.150422", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:07,150 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:07.150422", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:07,150 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-09 15:39:07,150 - chat_server - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-09 15:39:09,704 - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:09.704217", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:09,704 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:09.704217", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:09,704 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-09 15:39:09,704 - chat_server - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-09 15:39:12,163 - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:12.163675", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:12,163 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:12.163675", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:12,164 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-09 15:39:12,164 - chat_server - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-09 15:39:14,716 - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:14.716192", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:14,716 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:14.716192", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:14,717 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-09 15:39:14,717 - chat_server - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-09 15:39:17,182 - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:17.182655", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:17,182 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:17.182655", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:17,182 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-09 15:39:17,182 - chat_server - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-09 15:39:19,729 - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:19.729212", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:19,729 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:19.729212", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:19,729 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-09 15:39:19,729 - chat_server - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-09 15:39:22,195 - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:22.195589", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:22,195 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:22.195589", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:22,196 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-09 15:39:22,196 - chat_server - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-09 15:39:24,750 - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:24.750105", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:24,750 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:24.750105", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:24,751 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.001}
+2025-03-09 15:39:24,751 - chat_server - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.001}
+2025-03-09 15:39:27,207 - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:27.207889", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:27,207 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:27.207889", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:27,208 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-09 15:39:27,208 - chat_server - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-09 15:39:29,798 - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:29.798612", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:29,798 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:29.798612", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:29,799 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0050000000000001}
+2025-03-09 15:39:29,799 - chat_server - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0050000000000001}
+2025-03-09 15:39:32,222 - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:32.222929", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:32,222 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:32.222929", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:32,222 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-09 15:39:32,222 - chat_server - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-09 15:39:34,816 - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:34.816913", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:34,816 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:34.816913", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:34,816 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-09 15:39:34,816 - chat_server - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-09 15:39:37,237 - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:37.236232", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:37,237 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:37.236232", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:37,237 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-09 15:39:37,237 - chat_server - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-09 15:39:39,829 - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:39.829483", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:39,829 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:39.829483", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:39,830 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-09 15:39:39,830 - chat_server - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-09 15:39:42,249 - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:42.249261", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:42,249 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:42.249261", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:42,250 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-09 15:39:42,250 - chat_server - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-09 15:39:44,850 - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:44.850546", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:44,850 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:39:44.850546", "method": "GET", "path": "/ws", "query_params": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwidXNlcm5hbWUiOiJNaXJhaSIsImV4cCI6MTc0MTUyNTczOX0.8Tk5YGWRZhaFjLvknEZ3IUyJJUsK8eRSin150lBDkA4", "client": "192.168.147.92"}
+2025-03-09 15:39:44,851 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-09 15:39:44,851 - chat_server - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.0}
+2025-03-09 15:39:46,630 - app.main - INFO - Shutting down YuMSG Server...
+2025-03-09 15:39:46,630 - app.services.online_status_service - INFO - Online status cleanup task stopped
+2025-03-09 15:39:46,630 - app.services.message_buffer - INFO - Message buffer cleanup task stopped
+2025-03-09 15:39:46,630 - app.main - INFO - Services stopped
+2025-03-09 15:39:51,977 - app.core.crypto - INFO - CryptoService initialized
+2025-03-09 15:39:52,866 - app.core.crypto - INFO - CryptoService initialized
+2025-03-09 15:39:52,956 - app.core.crypto - INFO - CryptoService initialized
+2025-03-09 15:39:52,962 - app.main - INFO - Starting YuMSG Server...
+2025-03-09 15:39:52,962 - app.database - INFO - Initializing database at: postgresql://postgres:postpass@localhost:5432/chatdb
+2025-03-09 15:39:52,999 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2025-03-09 15:39:53,000 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-03-09 15:39:53,000 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2025-03-09 15:39:53,001 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-03-09 15:39:53,001 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2025-03-09 15:39:53,001 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-03-09 15:39:53,004 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-03-09 15:39:53,004 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s]) AND pg_catalog.pg_class.relpersistence != %(relpersistence_1)s AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-03-09 15:39:53,004 - sqlalchemy.engine.Engine - INFO - [generated in 0.00032s] {'param_1': 'r', 'param_2': 'p', 'relpersistence_1': 't', 'nspname_1': 'pg_catalog'}
+2025-03-09 15:39:53,006 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-03-09 15:39:53,006 - app.database - INFO - Existing tables before creation: ['users', 'user_devices']
+2025-03-09 15:39:53,006 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-03-09 15:39:53,007 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-03-09 15:39:53,007 - sqlalchemy.engine.Engine - INFO - [generated in 0.00015s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-03-09 15:39:53,008 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-03-09 15:39:53,008 - sqlalchemy.engine.Engine - INFO - [cached since 0.0007124s ago] {'table_name': 'user_devices', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-03-09 15:39:53,008 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-03-09 15:39:53,009 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-03-09 15:39:53,009 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s]) AND pg_catalog.pg_class.relpersistence != %(relpersistence_1)s AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-03-09 15:39:53,009 - sqlalchemy.engine.Engine - INFO - [cached since 0.005118s ago] {'param_1': 'r', 'param_2': 'p', 'relpersistence_1': 't', 'nspname_1': 'pg_catalog'}
+2025-03-09 15:39:53,010 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-03-09 15:39:53,010 - app.database - INFO - Tables after creation: ['users', 'user_devices']
+2025-03-09 15:39:53,010 - app.database - INFO - Database tables created successfully
+2025-03-09 15:39:53,010 - app.main - INFO - Database initialized
+2025-03-09 15:39:53,137 - app.core.crypto - INFO - Server keypair generated successfully
+2025-03-09 15:39:53,138 - app.main - INFO - Server keypair generated
+2025-03-09 15:39:53,138 - app.services.online_status_service - INFO - Online status cleanup task started
+2025-03-09 15:39:53,138 - app.services.message_buffer - INFO - Message buffer cleanup task started
+2025-03-09 15:39:53,138 - app.main - INFO - Services started
+2025-03-09 15:39:54,321 - app.services.connection_manager - INFO - User 2 connected. Total connections: 1
+2025-03-09 15:39:54,322 - app.services.online_status_service - ERROR - Error updating last_seen for user 2: __aenter__
+2025-03-09 15:39:56,881 - app.services.connection_manager - INFO - User 2 connected. Total connections: 1
+2025-03-09 15:39:56,881 - app.services.online_status_service - ERROR - Error updating last_seen for user 2: __aenter__
+2025-03-09 15:40:17,124 - INFO - Incoming request: {"timestamp": "2025-03-09T12:40:17.123903", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:40:17,124 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:40:17.123903", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:40:17,127 - app.services.secure_channel_service - WARNING - Channel d8cd21b5-3dbc-4af7-b5d6-07e860cc54c6 not found
+2025-03-09 15:40:17,128 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 5.001}
+2025-03-09 15:40:17,128 - chat_server - INFO - Response sent: {"status_code": 400, "processing_time_ms": 5.001}
+2025-03-09 15:40:17,278 - app.services.online_status_service - ERROR - Error updating last_seen for user 2: __aenter__
+2025-03-09 15:40:19,484 - INFO - Incoming request: {"timestamp": "2025-03-09T12:40:19.484950", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:40:19,484 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:40:19.484950", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:40:19,485 - app.api.v1.endpoints.auth - INFO - Initializing secure channel with ID: 1b7f0bbc-e667-424c-9d0e-d9f300a5bfde
+2025-03-09 15:40:19,485 - app.services.secure_channel_service - INFO - Creating secure channel with ID: 1b7f0bbc-e667-424c-9d0e-d9f300a5bfde
+2025-03-09 15:40:19,486 - app.services.secure_channel_service - INFO - Channel created and stored. Total channels: 1
+2025-03-09 15:40:19,486 - app.api.v1.endpoints.auth - INFO - Secure channel initialized successfully
+2025-03-09 15:40:19,486 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.0010000000000003}
+2025-03-09 15:40:19,486 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.0010000000000003}
+2025-03-09 15:40:19,523 - INFO - Incoming request: {"timestamp": "2025-03-09T12:40:19.523960", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:40:19,523 - chat_server - INFO - Incoming request: {"timestamp": "2025-03-09T12:40:19.523960", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.147.92"}
+2025-03-09 15:40:19,524 - app.services.secure_channel_service - WARNING - Channel 1b7f0bbc-e667-424c-9d0e-d9f300a5bfde not found
+2025-03-09 15:40:19,524 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 1.0}
+2025-03-09 15:40:19,524 - chat_server - INFO - Response sent: {"status_code": 400, "processing_time_ms": 1.0}
+2025-03-09 15:40:19,870 - app.services.online_status_service - ERROR - Error updating last_seen for user 2: __aenter__
+2025-03-09 15:40:36,529 - app.api.v1.endpoints.websocket - INFO - User 2 disconnected from WebSocket
+2025-03-09 15:40:36,529 - app.services.connection_manager - INFO - User 2 disconnected. Remaining connections: 0
+2025-03-09 15:40:36,530 - app.api.v1.endpoints.websocket - INFO - User 2 disconnected from WebSocket
+2025-03-09 15:40:36,641 - app.main - INFO - Shutting down YuMSG Server...
+2025-03-09 15:40:36,641 - app.services.online_status_service - INFO - Online status cleanup task stopped
+2025-03-09 15:40:36,641 - app.services.message_buffer - INFO - Message buffer cleanup task stopped
+2025-03-09 15:40:36,641 - app.main - INFO - Services stopped
+2025-03-24 13:00:25,455 - INFO - Incoming request: {"timestamp": "2025-03-24T10:00:25.455400", "method": "GET", "path": "/", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:00:25,456 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-03-24 13:00:47,821 - INFO - Incoming request: {"timestamp": "2025-03-24T10:00:47.821681", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:00:47,822 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 1.001}
+2025-03-24 13:01:11,583 - INFO - Incoming request: {"timestamp": "2025-03-24T10:01:11.583818", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:01:11,583 - INFO - Response sent: {"status_code": 404, "processing_time_ms": 0.0}
+2025-03-24 13:02:33,006 - INFO - Incoming request: {"timestamp": "2025-03-24T10:02:33.006640", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:02:33,009 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.0010000000000003}
+2025-03-24 13:02:33,136 - INFO - Incoming request: {"timestamp": "2025-03-24T10:02:33.135669", "method": "POST", "path": "/auth/register", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:02:33,415 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 280.063}
+2025-03-24 13:05:34,319 - INFO - Incoming request: {"timestamp": "2025-03-24T10:05:34.319755", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:05:34,322 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.0010000000000003}
+2025-03-24 13:05:34,433 - INFO - Incoming request: {"timestamp": "2025-03-24T10:05:34.432781", "method": "POST", "path": "/auth/register", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:05:34,469 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 37.008}
+2025-03-24 13:06:52,708 - INFO - Incoming request: {"timestamp": "2025-03-24T10:06:52.708033", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:06:52,710 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.0}
+2025-03-24 13:06:52,813 - INFO - Incoming request: {"timestamp": "2025-03-24T10:06:52.813057", "method": "POST", "path": "/auth/register", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:06:53,078 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 265.34000000000003}
+2025-03-24 13:09:41,120 - INFO - Incoming request: {"timestamp": "2025-03-24T10:09:41.120191", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:09:41,122 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.0010000000000003}
+2025-03-24 13:09:41,153 - INFO - Incoming request: {"timestamp": "2025-03-24T10:09:41.153199", "method": "POST", "path": "/auth/register", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:09:41,481 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 328.073}
+2025-03-24 13:11:22,659 - INFO - Incoming request: {"timestamp": "2025-03-24T10:11:22.659453", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:11:22,661 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.0}
+2025-03-24 13:11:22,687 - INFO - Incoming request: {"timestamp": "2025-03-24T10:11:22.687459", "method": "POST", "path": "/auth/register", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:11:22,943 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 256.06}
+2025-03-24 13:14:01,668 - INFO - Incoming request: {"timestamp": "2025-03-24T10:14:01.668072", "method": "GET", "path": "/", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:14:01,669 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-03-24 13:14:18,251 - INFO - Incoming request: {"timestamp": "2025-03-24T10:14:18.251142", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:14:18,253 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.0}
+2025-03-24 13:14:18,497 - INFO - Incoming request: {"timestamp": "2025-03-24T10:14:18.497204", "method": "POST", "path": "/auth/register", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:14:18,754 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 257.058}
+2025-03-24 13:16:33,784 - INFO - Incoming request: {"timestamp": "2025-03-24T10:16:33.784318", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:16:33,787 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.0010000000000003}
+2025-03-24 13:16:33,897 - INFO - Incoming request: {"timestamp": "2025-03-24T10:16:33.897344", "method": "POST", "path": "/auth/register", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:16:34,167 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 270.325}
+2025-03-24 13:16:35,565 - INFO - Incoming request: {"timestamp": "2025-03-24T10:16:35.565844", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:16:35,566 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-03-24 13:17:18,381 - INFO - Incoming request: {"timestamp": "2025-03-24T10:17:18.381542", "method": "GET", "path": "/", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:17:18,382 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.001}
+2025-03-24 13:17:18,483 - INFO - Incoming request: {"timestamp": "2025-03-24T10:17:18.483565", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:17:18,494 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 11.003}
+2025-03-24 13:17:20,048 - INFO - Incoming request: {"timestamp": "2025-03-24T10:17:20.048958", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:17:20,049 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-03-24 13:18:55,896 - INFO - Incoming request: {"timestamp": "2025-03-24T10:18:55.895956", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:18:55,899 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 4.001}
+2025-03-24 13:18:57,665 - INFO - Incoming request: {"timestamp": "2025-03-24T10:18:57.665561", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:18:57,666 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-03-24 13:18:57,775 - INFO - Incoming request: {"timestamp": "2025-03-24T10:18:57.775518", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:18:57,778 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 3.0010000000000003}
+2025-03-24 13:19:18,071 - INFO - Incoming request: {"timestamp": "2025-03-24T10:19:18.071261", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:19:18,073 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-03-24 13:19:18,181 - INFO - Incoming request: {"timestamp": "2025-03-24T10:19:18.181286", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:19:18,185 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 4.0}
+2025-03-24 13:19:36,923 - INFO - Incoming request: {"timestamp": "2025-03-24T10:19:36.923354", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:19:36,931 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 8.002}
+2025-03-24 13:19:37,103 - INFO - Incoming request: {"timestamp": "2025-03-24T10:19:37.103395", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.87.253"}
+2025-03-24 13:19:37,106 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 3.0010000000000003}
+2025-03-25 13:04:32,802 - INFO - Incoming request: {"timestamp": "2025-03-25T10:04:32.802732", "method": "GET", "path": "/", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:04:32,804 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.0010000000000003}
+2025-03-25 13:04:43,006 - INFO - Incoming request: {"timestamp": "2025-03-25T10:04:43.006639", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:04:43,030 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 24.074}
+2025-03-25 13:04:43,263 - INFO - Incoming request: {"timestamp": "2025-03-25T10:04:43.262413", "method": "POST", "path": "/auth/login", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:04:43,574 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 311.927}
+2025-03-25 13:04:44,752 - INFO - Incoming request: {"timestamp": "2025-03-25T10:04:44.752683", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:04:44,759 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 7.003}
+2025-03-25 13:10:46,068 - INFO - Incoming request: {"timestamp": "2025-03-25T10:10:46.068929", "method": "GET", "path": "/", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:10:46,069 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-03-25 13:11:07,728 - INFO - Incoming request: {"timestamp": "2025-03-25T10:11:07.728128", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:11:07,729 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.001}
+2025-03-25 13:11:07,755 - INFO - Incoming request: {"timestamp": "2025-03-25T10:11:07.755135", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:11:07,756 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-03-25 13:11:29,595 - INFO - Incoming request: {"timestamp": "2025-03-25T10:11:29.595455", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:11:29,602 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 7.001}
+2025-03-25 13:11:29,774 - INFO - Incoming request: {"timestamp": "2025-03-25T10:11:29.774502", "method": "POST", "path": "/auth/register", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:11:29,989 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 215.303}
+2025-03-25 13:11:30,665 - INFO - Incoming request: {"timestamp": "2025-03-25T10:11:30.665926", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:11:30,666 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.001}
+2025-03-25 13:12:22,220 - INFO - Incoming request: {"timestamp": "2025-03-25T10:12:22.220027", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:12:22,223 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 3.0}
+2025-03-25 13:12:24,511 - INFO - Incoming request: {"timestamp": "2025-03-25T10:12:24.511989", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:12:24,513 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.0}
+2025-03-25 13:12:24,593 - INFO - Incoming request: {"timestamp": "2025-03-25T10:12:24.593010", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:12:24,597 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 4.001}
+2025-03-25 13:12:50,375 - INFO - Incoming request: {"timestamp": "2025-03-25T10:12:50.375227", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:12:50,377 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.002}
+2025-03-25 13:12:50,416 - INFO - Incoming request: {"timestamp": "2025-03-25T10:12:50.416238", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:12:50,419 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 3.0010000000000003}
+2025-03-25 13:12:52,363 - INFO - Incoming request: {"timestamp": "2025-03-25T10:12:52.363797", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:12:52,364 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-03-25 13:12:52,467 - INFO - Incoming request: {"timestamp": "2025-03-25T10:12:52.467820", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:12:52,471 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 4.001}
+2025-03-25 13:14:34,288 - INFO - Incoming request: {"timestamp": "2025-03-25T10:14:34.288671", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:14:34,293 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 5.001}
+2025-03-25 13:15:48,229 - INFO - Incoming request: {"timestamp": "2025-03-25T10:15:48.229334", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:15:48,239 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 9.99}
+2025-03-25 13:15:58,630 - INFO - Incoming request: {"timestamp": "2025-03-25T10:15:58.630000", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:15:58,632 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.001}
+2025-03-25 13:15:58,687 - INFO - Incoming request: {"timestamp": "2025-03-25T10:15:58.687014", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:15:58,690 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 3.0}
+2025-03-25 13:19:28,936 - INFO - Incoming request: {"timestamp": "2025-03-25T10:19:28.935982", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:19:28,940 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 5.002000000000001}
+2025-03-25 13:19:36,185 - INFO - Incoming request: {"timestamp": "2025-03-25T10:19:36.185788", "method": "GET", "path": "/", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:19:36,185 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 0.0}
+2025-03-25 13:19:36,627 - INFO - Incoming request: {"timestamp": "2025-03-25T10:19:36.627602", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:19:36,637 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 9.405}
+2025-03-25 13:19:38,609 - INFO - Incoming request: {"timestamp": "2025-03-25T10:19:38.609625", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:19:38,610 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-03-25 13:20:51,490 - INFO - Incoming request: {"timestamp": "2025-03-25T10:20:51.490518", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:20:51,495 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 5.001}
+2025-03-25 13:21:09,589 - INFO - Incoming request: {"timestamp": "2025-03-25T10:21:09.589502", "method": "GET", "path": "/", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:21:09,590 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.016}
+2025-03-25 13:21:10,035 - INFO - Incoming request: {"timestamp": "2025-03-25T10:21:10.035349", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:21:10,046 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 11.001999999999999}
+2025-03-25 13:21:11,312 - INFO - Incoming request: {"timestamp": "2025-03-25T10:21:11.312817", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:21:11,315 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.0}
+2025-03-25 13:21:15,308 - INFO - Incoming request: {"timestamp": "2025-03-25T10:21:15.308501", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:21:15,311 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 3.0010000000000003}
+2025-03-25 13:22:06,550 - INFO - Incoming request: {"timestamp": "2025-03-25T10:22:06.550532", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:22:06,553 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.0010000000000003}
+2025-03-25 13:22:06,642 - INFO - Incoming request: {"timestamp": "2025-03-25T10:22:06.642777", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:22:06,647 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 5.001}
+2025-03-25 13:22:07,250 - INFO - Incoming request: {"timestamp": "2025-03-25T10:22:07.250926", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:22:07,251 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.001}
+2025-03-25 13:22:07,299 - INFO - Incoming request: {"timestamp": "2025-03-25T10:22:07.299938", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:22:07,303 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 4.001}
+2025-03-25 13:23:55,133 - INFO - Incoming request: {"timestamp": "2025-03-25T10:23:55.133070", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:23:55,140 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 7.001}
+2025-03-25 13:25:12,919 - INFO - Incoming request: {"timestamp": "2025-03-25T10:25:12.919133", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:25:12,923 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 4.0}
+2025-03-25 13:26:15,767 - INFO - Incoming request: {"timestamp": "2025-03-25T10:26:15.767567", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:26:15,771 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 4.001}
+2025-03-25 13:26:30,200 - INFO - Incoming request: {"timestamp": "2025-03-25T10:26:30.200901", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:26:30,205 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 5.001}
+2025-03-25 13:28:29,865 - INFO - Incoming request: {"timestamp": "2025-03-25T10:28:29.865948", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:28:29,902 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 37.002}
+2025-03-25 13:28:30,763 - INFO - Incoming request: {"timestamp": "2025-03-25T10:28:30.763793", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:28:30,771 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 7.99}
+2025-03-25 13:28:41,094 - INFO - Incoming request: {"timestamp": "2025-03-25T10:28:41.094062", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:28:41,095 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.008}
+2025-03-25 13:28:41,135 - INFO - Incoming request: {"timestamp": "2025-03-25T10:28:41.135074", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:28:41,138 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 3.0}
+2025-03-25 13:28:58,452 - INFO - Incoming request: {"timestamp": "2025-03-25T10:28:58.452600", "method": "GET", "path": "/", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:28:58,453 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-03-25 13:28:58,880 - INFO - Incoming request: {"timestamp": "2025-03-25T10:28:58.880768", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:28:58,889 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 9.027999999999999}
+2025-03-25 13:29:00,670 - INFO - Incoming request: {"timestamp": "2025-03-25T10:29:00.669263", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:29:00,671 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.9980000000000002}
+2025-03-25 13:29:29,964 - INFO - Incoming request: {"timestamp": "2025-03-25T10:29:29.964287", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:29:29,967 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 3.0010000000000003}
+2025-03-25 13:30:19,289 - INFO - Incoming request: {"timestamp": "2025-03-25T10:30:19.289820", "method": "GET", "path": "/", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:30:19,290 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-03-25 13:30:19,439 - INFO - Incoming request: {"timestamp": "2025-03-25T10:30:19.439908", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:30:19,443 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 4.002000000000001}
+2025-03-25 13:30:20,416 - INFO - Incoming request: {"timestamp": "2025-03-25T10:30:20.416582", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:30:20,417 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-03-25 13:30:26,564 - INFO - Incoming request: {"timestamp": "2025-03-25T10:30:26.564153", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:30:26,568 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 4.001}
+2025-03-25 13:32:15,616 - INFO - Incoming request: {"timestamp": "2025-03-25T10:32:15.616892", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:32:15,659 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 43.001}
+2025-03-25 13:32:16,875 - INFO - Incoming request: {"timestamp": "2025-03-25T10:32:16.875900", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:32:16,880 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 5.001}
+2025-03-25 13:32:23,692 - INFO - Incoming request: {"timestamp": "2025-03-25T10:32:23.692065", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:32:23,695 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.0010000000000003}
+2025-03-25 13:32:23,792 - INFO - Incoming request: {"timestamp": "2025-03-25T10:32:23.792099", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:32:23,796 - INFO - Response sent: {"status_code": 400, "processing_time_ms": 4.001}
+2025-03-25 13:47:07,906 - INFO - Incoming request: {"timestamp": "2025-03-25T10:47:07.906110", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:47:07,947 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 41.085}
+2025-03-25 13:47:10,990 - INFO - Incoming request: {"timestamp": "2025-03-25T10:47:10.990813", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:47:10,998 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 7.989}
+2025-03-25 13:47:19,377 - INFO - Incoming request: {"timestamp": "2025-03-25T10:47:19.375999", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:47:19,380 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 4.001}
+2025-03-25 13:47:19,438 - INFO - Incoming request: {"timestamp": "2025-03-25T10:47:19.438039", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:47:19,469 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 31.022000000000002}
+2025-03-25 13:47:59,260 - INFO - Incoming request: {"timestamp": "2025-03-25T10:47:59.260373", "method": "GET", "path": "/", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:47:59,261 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.012}
+2025-03-25 13:47:59,685 - INFO - Incoming request: {"timestamp": "2025-03-25T10:47:59.685035", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:47:59,689 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.9880000000000004}
+2025-03-25 13:48:01,097 - INFO - Incoming request: {"timestamp": "2025-03-25T10:48:01.097848", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:48:01,104 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 7.001}
+2025-03-25 13:48:06,515 - INFO - Incoming request: {"timestamp": "2025-03-25T10:48:06.514182", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:48:06,517 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.0}
+2025-03-25 13:48:06,560 - INFO - Incoming request: {"timestamp": "2025-03-25T10:48:06.560192", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:48:06,566 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 6.001}
+2025-03-25 13:48:36,113 - INFO - Incoming request: {"timestamp": "2025-03-25T10:48:36.113779", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:48:36,118 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 5.0}
+2025-03-25 13:48:37,461 - INFO - Incoming request: {"timestamp": "2025-03-25T10:48:37.461543", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:48:37,463 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.0}
+2025-03-25 13:48:37,521 - INFO - Incoming request: {"timestamp": "2025-03-25T10:48:37.521556", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:48:37,526 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 5.001}
+2025-03-25 13:53:24,353 - INFO - Incoming request: {"timestamp": "2025-03-25T10:53:24.353485", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:53:24,398 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 45.009}
+2025-03-25 13:53:25,393 - INFO - Incoming request: {"timestamp": "2025-03-25T10:53:25.393520", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:53:25,411 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 18.012}
+2025-03-25 13:53:30,375 - INFO - Incoming request: {"timestamp": "2025-03-25T10:53:30.375918", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:53:30,378 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.0}
+2025-03-25 13:53:30,421 - INFO - Incoming request: {"timestamp": "2025-03-25T10:53:30.421927", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:53:30,427 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 6.001}
+2025-03-25 13:53:30,769 - INFO - Incoming request: {"timestamp": "2025-03-25T10:53:30.769048", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:53:30,774 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 5.001}
+2025-03-25 13:53:36,609 - INFO - Incoming request: {"timestamp": "2025-03-25T10:53:36.609668", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:53:36,614 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 5.001}
+2025-03-25 13:53:53,978 - INFO - Incoming request: {"timestamp": "2025-03-25T10:53:53.978002", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:53:53,980 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.9989999999999999}
+2025-03-25 13:53:54,064 - INFO - Incoming request: {"timestamp": "2025-03-25T10:53:54.064020", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:53:54,069 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 5.002000000000001}
+2025-03-25 13:58:38,767 - INFO - Incoming request: {"timestamp": "2025-03-25T10:58:38.767618", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.16.186"}
+2025-03-25 13:58:38,771 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 4.002000000000001}
+2025-03-25 13:58:41,244 - INFO - Incoming request: {"timestamp": "2025-03-25T10:58:41.244485", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:58:41,248 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 4.001}
+2025-03-25 13:59:19,204 - INFO - Incoming request: {"timestamp": "2025-03-25T10:59:19.204938", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:59:19,206 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.0}
+2025-03-25 13:59:19,250 - INFO - Incoming request: {"timestamp": "2025-03-25T10:59:19.250955", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.16.50"}
+2025-03-25 13:59:19,255 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 5.0}
