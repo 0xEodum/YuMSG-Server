@@ -1,27 +1,43 @@
+"""
+Сервис защищенных каналов с использованием Redis.
+Управляет созданием, хранением и удалением защищенных каналов для обмена зашифрованными данными.
+"""
+import asyncio
 from datetime import datetime, timedelta
-from typing import Dict, Optional, Any
-import json
-import os
-import pickle
-from pathlib import Path
+from typing import Optional, Dict, Any
+import traceback
+import logging
+from ..core.redis_config import (
+    RedisManager, KEY_PREFIX_CHANNEL,
+    serialize_pickle, deserialize_pickle
+)
 from ..core.crypto import CryptoService
+
+# Настройка логирования
+logger = logging.getLogger(__name__)
 
 
 class SecureChannel:
+    """
+    Модель защищенного канала связи.
+    Хранит идентификатор канала, публичный ключ клиента и сессионный ключ.
+    """
+
     def __init__(self, channel_id: str, public_key: str, session_key: bytes):
         self.channel_id = channel_id
         self.public_key = public_key
         self.session_key = session_key
         self.created_at = datetime.utcnow()
-        # Увеличим время жизни канала до 30 минут
+        # Время жизни канала - 30 минут
         self.expires_at = self.created_at + timedelta(minutes=30)
 
     @property
     def is_expired(self) -> bool:
+        """Проверяет, истек ли срок действия канала"""
         now = datetime.utcnow()
         is_expired = now > self.expires_at
         time_left = self.expires_at - now if not is_expired else timedelta(0)
-        print(f"Channel {self.channel_id} expired: {is_expired}, time left: {time_left}")
+        logger.debug(f"Channel {self.channel_id} expired: {is_expired}, time left: {time_left}")
         return is_expired
 
     def to_dict(self) -> dict:
@@ -49,60 +65,32 @@ class SecureChannel:
 
 class SecureChannelService:
     """
-    Сервис для управления защищенными каналами связи.
+    Сервис для управления защищенными каналами связи с использованием Redis.
     Обеспечивает создание, хранение и использование каналов для шифрования данных.
     """
 
     def __init__(self, crypto_service: CryptoService):
         self._crypto_service = crypto_service
-        self._channels: Dict[str, SecureChannel] = {}
-        # Путь для хранения состояния каналов
-        self._channels_dir = Path("secure_channels")
-        self._channels_dir.mkdir(exist_ok=True)
-        # Загружаем существующие каналы
-        self._load_channels()
+        # Время жизни канала в Redis (в секундах) - 30 минут
+        self._channel_ttl = 1800
 
-    def _save_channel(self, channel: SecureChannel):
-        """Сохраняет канал в файл"""
+    async def create_channel(self, channel_id: str, client_public_key: str) -> str:
+        """
+        Создает новый защищенный канал и возвращает зашифрованный сессионный ключ.
+
+        Args:
+            channel_id: Уникальный идентификатор канала
+            client_public_key: Публичный ключ клиента в формате JSON
+
+        Returns:
+            Зашифрованный сессионный ключ в формате base64
+        """
         try:
-            channel_path = self._channels_dir / f"{channel.channel_id}.json"
-            with open(channel_path, 'wb') as f:
-                pickle.dump(channel, f)
-            print(f"Channel {channel.channel_id} saved to file")
-        except Exception as e:
-            print(f"Error saving channel {channel.channel_id}: {str(e)}")
-
-    def _load_channels(self):
-        """Загружает все каналы из файлов"""
-        try:
-            count = 0
-            for channel_file in self._channels_dir.glob("*.json"):
-                try:
-                    with open(channel_file, 'rb') as f:
-                        channel = pickle.load(f)
-
-                    # Проверяем, не истек ли канал
-                    if not channel.is_expired:
-                        self._channels[channel.channel_id] = channel
-                        count += 1
-                    else:
-                        # Удаляем файл истекшего канала
-                        channel_file.unlink()
-                except Exception as e:
-                    print(f"Error loading channel from {channel_file}: {str(e)}")
-
-            print(f"Loaded {count} channels from files")
-        except Exception as e:
-            print(f"Error loading channels: {str(e)}")
-
-    def create_channel(self, channel_id: str, client_public_key: str) -> str:
-        """Создает новый защищенный канал и возвращает зашифрованный сессионный ключ"""
-        try:
-            print(f"Creating channel with ID: {channel_id}")
+            logger.info(f"Creating channel with ID: {channel_id}")
 
             # Генерируем сессионный ключ
             session_key = self._crypto_service.generate_session_key()
-            print(f"Generated session key length: {len(session_key)} bytes")
+            logger.debug(f"Generated session key length: {len(session_key)} bytes")
 
             # Создаем канал
             channel = SecureChannel(
@@ -110,95 +98,128 @@ class SecureChannelService:
                 public_key=client_public_key,
                 session_key=session_key
             )
-            self._channels[channel_id] = channel
-            print(f"Channel created and stored. Total channels: {len(self._channels)}")
 
-            # Сохраняем канал
-            self._save_channel(channel)
+            # Сериализуем канал и сохраняем в Redis с TTL
+            redis_client = await RedisManager.get_channels_redis()
+            try:
+                serialized_channel = serialize_pickle(channel)
+                key = f"{KEY_PREFIX_CHANNEL}{channel_id}"
+
+                # Сохраняем канал с временем жизни
+                await redis_client.setex(key, self._channel_ttl, serialized_channel)
+                logger.info(f"Channel {channel_id} saved to Redis with TTL {self._channel_ttl} seconds")
+            finally:
+                await redis_client.close()
 
             # Шифруем сессионный ключ публичным ключом клиента
-            print("Attempting to encrypt session key...")
+            logger.debug("Attempting to encrypt session key...")
             encrypted_key = self._crypto_service.encrypt_session_key(
                 session_key,
                 client_public_key
             )
-            print(f"Session key encrypted. Encrypted length: {len(encrypted_key)}")
+            logger.debug(f"Session key encrypted. Encrypted length: {len(encrypted_key)}")
 
             return encrypted_key
 
         except Exception as e:
-            print(f"Error in create_channel: {str(e)}")
-            print(f"Error type: {type(e)}")
-            import traceback
-            print(f"Traceback: {traceback.format_exc()}")
+            logger.error(f"Error in create_channel: {str(e)}")
+            logger.error(f"Error type: {type(e)}")
+            logger.error(f"Traceback: {traceback.format_exc()}")
             raise
 
-    def get_channel(self, channel_id: str) -> Optional[SecureChannel]:
-        """Получает канал по ID и проверяет его валидность"""
-        print(f"Looking for channel: {channel_id}, available channels: {list(self._channels.keys())}")
+    async def get_channel(self, channel_id: str) -> Optional[SecureChannel]:
+        """
+        Получает канал по ID и проверяет его валидность.
 
-        # Сначала пытаемся найти канал в памяти
-        channel = self._channels.get(channel_id)
+        Args:
+            channel_id: Идентификатор канала
 
-        # Если канала нет в памяти, пытаемся загрузить его из файла
-        if channel is None:
+        Returns:
+            Объект канала или None, если канал не найден или истек срок его действия
+        """
+        logger.debug(f"Looking for channel: {channel_id}")
+
+        try:
+            # Получаем канал из Redis
+            redis_client = await RedisManager.get_channels_redis()
             try:
-                channel_path = self._channels_dir / f"{channel_id}.json"
-                if channel_path.exists():
-                    with open(channel_path, 'rb') as f:
-                        channel = pickle.load(f)
+                key = f"{KEY_PREFIX_CHANNEL}{channel_id}"
+                serialized_channel = await redis_client.get(key)
 
-                    # Добавляем канал в память
-                    self._channels[channel_id] = channel
-                    print(f"Channel {channel_id} loaded from file")
-                else:
-                    print(f"No file for channel {channel_id}")
-            except Exception as e:
-                print(f"Error loading channel {channel_id} from file: {str(e)}")
+                if not serialized_channel:
+                    logger.debug(f"Channel {channel_id} not found in Redis")
+                    return None
 
-        if channel is None:
-            print(f"Channel {channel_id} not found")
+                # Десериализуем канал
+                channel = deserialize_pickle(serialized_channel)
+                logger.debug(f"Channel {channel_id} found in Redis")
+
+                # Проверяем, не истек ли срок действия канала
+                if channel.is_expired:
+                    logger.info(f"Channel {channel_id} is expired")
+                    await self.remove_channel(channel_id)
+                    return None
+
+                return channel
+
+            finally:
+                await redis_client.close()
+
+        except Exception as e:
+            logger.error(f"Error getting channel {channel_id}: {str(e)}")
+            logger.error(traceback.format_exc())
             return None
 
-        if channel.is_expired:
-            print(f"Channel {channel_id} is expired")
-            self.remove_channel(channel_id)
-            return None
+    async def decrypt_data(self, channel_id: str, encrypted_data: str) -> str:
+        """
+        Расшифровывает данные с помощью сессионного ключа канала.
 
-        print(f"Channel {channel_id} found and valid")
-        return channel
+        Args:
+            channel_id: Идентификатор канала
+            encrypted_data: Зашифрованные данные в формате base64
 
-    def decrypt_data(self, channel_id: str, encrypted_data: str) -> str:
-        """Расшифровывает данные с помощью сессионного ключа канала"""
-        print(f"Attempting to decrypt data for channel {channel_id}")
+        Returns:
+            Расшифрованные данные
 
-        channel = self.get_channel(channel_id)
+        Raises:
+            ValueError: Если канал не найден или истек срок его действия
+        """
+        logger.debug(f"Attempting to decrypt data for channel {channel_id}")
+
+        channel = await self.get_channel(channel_id)
         if not channel:
-            print(f"Channel {channel_id} not found or expired")
+            logger.error(f"Channel {channel_id} not found or expired")
             raise ValueError("Invalid or expired channel")
 
-        print(f"Channel found, session key length: {len(channel.session_key)}")
-        try:
-            print(f"First 32 bytes of encrypted data: {encrypted_data[:min(32, len(encrypted_data))]}")
-        except Exception as e:
-            print(f"Error printing encrypted data: {str(e)}")
+        logger.debug(f"Channel found, session key length: {len(channel.session_key)}")
 
         try:
             decrypted = self._crypto_service.decrypt_with_session_key(
                 encrypted_data,
                 channel.session_key
             )
-            print(f"Decryption successful. Result length: {len(decrypted)}")
+            logger.debug(f"Decryption successful. Result length: {len(decrypted)}")
             return decrypted
         except Exception as e:
-            print(f"Decryption failed: {str(e)}")
-            import traceback
-            print(f"Traceback: {traceback.format_exc()}")
+            logger.error(f"Decryption failed: {str(e)}")
+            logger.error(traceback.format_exc())
             raise
 
-    def encrypt_data(self, channel_id: str, data: str) -> str:
-        """Шифрует данные с помощью сессионного ключа канала"""
-        channel = self.get_channel(channel_id)
+    async def encrypt_data(self, channel_id: str, data: str) -> str:
+        """
+        Шифрует данные с помощью сессионного ключа канала.
+
+        Args:
+            channel_id: Идентификатор канала
+            data: Данные для шифрования
+
+        Returns:
+            Зашифрованные данные в формате base64
+
+        Raises:
+            ValueError: Если канал не найден или истек срок его действия
+        """
+        channel = await self.get_channel(channel_id)
         if not channel:
             raise ValueError("Invalid or expired channel")
 
@@ -207,46 +228,69 @@ class SecureChannelService:
             channel.session_key
         )
 
-    def remove_channel(self, channel_id: str):
-        """Удаляет канал из памяти и из файла"""
-        if channel_id in self._channels:
-            del self._channels[channel_id]
-            print(f"Channel {channel_id} removed from memory")
+    async def remove_channel(self, channel_id: str) -> bool:
+        """
+        Удаляет канал из Redis.
 
-        # Удаляем файл канала, если он существует
+        Args:
+            channel_id: Идентификатор канала
+
+        Returns:
+            True, если канал был удален, иначе False
+        """
         try:
-            channel_path = self._channels_dir / f"{channel_id}.json"
-            if channel_path.exists():
-                channel_path.unlink()
-                print(f"Channel {channel_id} file removed")
+            redis_client = await RedisManager.get_channels_redis()
+            try:
+                key = f"{KEY_PREFIX_CHANNEL}{channel_id}"
+                result = await redis_client.delete(key)
+                success = result > 0
+
+                if success:
+                    logger.info(f"Channel {channel_id} removed from Redis")
+                else:
+                    logger.debug(f"Channel {channel_id} not found in Redis for removal")
+
+                return success
+            finally:
+                await redis_client.close()
+
         except Exception as e:
-            print(f"Error removing channel {channel_id} file: {str(e)}")
+            logger.error(f"Error removing channel {channel_id}: {str(e)}")
+            return False
 
-    def cleanup_expired(self):
-        """Очищает истекшие каналы"""
-        # Проверяем каналы в памяти
-        expired = [
-            channel_id
-            for channel_id, channel in self._channels.items()
-            if channel.is_expired
-        ]
-        for channel_id in expired:
-            self.remove_channel(channel_id)
+    async def clear_all_channels(self) -> int:
+        """
+        Удаляет все каналы из Redis.
+        Используется для тестирования и в крайних случаях.
 
-        # Проверяем каналы в файлах
+        Returns:
+            Количество удаленных каналов
+        """
         try:
-            for channel_file in self._channels_dir.glob("*.json"):
-                try:
-                    with open(channel_file, 'rb') as f:
-                        channel = pickle.load(f)
+            redis_client = await RedisManager.get_channels_redis()
+            try:
+                # Ищем все ключи с префиксом для каналов
+                pattern = f"{KEY_PREFIX_CHANNEL}*"
+                cursor = 0
+                deleted_count = 0
 
-                    if channel.is_expired:
-                        channel_file.unlink()
-                        print(f"Expired channel file {channel_file.name} removed")
-                except Exception as e:
-                    print(f"Error checking channel file {channel_file}: {str(e)}")
+                while True:
+                    cursor, keys = await redis_client.scan(cursor=cursor, match=pattern, count=100)
+                    if keys:
+                        result = await redis_client.delete(*keys)
+                        deleted_count += result
+
+                    if cursor == 0:
+                        break
+
+                logger.info(f"Cleared {deleted_count} channels from Redis")
+                return deleted_count
+            finally:
+                await redis_client.close()
+
         except Exception as e:
-            print(f"Error cleaning up channel files: {str(e)}")
+            logger.error(f"Error clearing channels: {str(e)}")
+            return 0
 
 
 # Создаем глобальный экземпляр сервиса

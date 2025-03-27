@@ -5,6 +5,7 @@ from typing import Optional
 import uvicorn
 from fastapi.staticfiles import StaticFiles
 from pathlib import Path
+import logging
 
 from app.api.v1 import router as api_router
 from app.api.v1.endpoints import auth, users
@@ -13,7 +14,20 @@ from app.core.logging import logging_middleware
 from app.database import init_db
 from app.core.crypto import CryptoService
 from app.models.user import User, UserDevice  # Явно импортируем модели
+from app.core.redis_config import startup_redis, shutdown_redis
 
+# Настройка логирования
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.StreamHandler(),
+        logging.FileHandler('server.log')
+    ]
+)
+logger = logging.getLogger(__name__)
+
+# Создаем приложение FastAPI
 app = FastAPI(title="Chat Server API")
 
 # CORS middleware configuration
@@ -32,7 +46,7 @@ app.middleware("http")(logging_middleware)
 crypto_service = CryptoService()
 
 # Include routers
-app.include_router(api_router.router)  # Используем router из api_router
+app.include_router(api_router.router)
 
 
 # WebSocket endpoint
@@ -40,7 +54,12 @@ app.include_router(api_router.router)  # Используем router из api_ro
 async def websocket_endpoint(websocket: WebSocket, token: str = Query(None)):
     from app.database import get_db
     db = next(get_db())
-    await ws_endpoints.websocket_endpoint(websocket, token, db)
+    try:
+        await ws_endpoints.websocket_endpoint(websocket, token, db)
+    except Exception as e:
+        logger.error(f"Error in websocket_endpoint: {str(e)}")
+        if websocket.client_state.CONNECTED:
+            await websocket.close(code=1011, reason="Internal server error")
 
 
 # Basic health check endpoint
@@ -54,15 +73,22 @@ avatar_directory = Path("avatars")
 avatar_directory.mkdir(exist_ok=True)
 
 
-# Startup event
+# События FastAPI
 @app.on_event("startup")
 async def startup_event():
-    # Initialize database
-    init_db()
+    logger.info("Starting up server...")
 
-    # Generate server keypair
+    # Инициализируем Redis
+    await startup_redis()
+    logger.info("Redis initialized")
+
+    # Инициализируем базу данных
+    init_db()
+    logger.info("Database initialized")
+
+    # Генерируем серверный ключ шифрования
     server_keys = crypto_service.generate_server_keypair()
-    # В реальном приложении сохранить ключи в защищенном месте
+    logger.info("Server key pair generated")
 
     # Создаем аватар по умолчанию, если его нет
     default_avatar = avatar_directory / "default.png"
@@ -71,13 +97,29 @@ async def startup_event():
             from PIL import Image
             img = Image.new('RGB', (200, 200), color=(73, 109, 137))
             img.save(default_avatar)
+            logger.info("Default avatar created")
         except Exception as e:
-            print(f"Error creating default avatar: {str(e)}")
+            logger.error(f"Error creating default avatar: {str(e)}")
 
-    # Запускаем фоновые задачи
-    from app.services.scheduled_tasks import start_background_tasks
-    start_background_tasks()
+    logger.info("Server startup completed successfully")
+
+
+@app.on_event("shutdown")
+async def shutdown_event():
+    logger.info("Shutting down server...")
+
+    # Закрываем соединения с Redis
+    await shutdown_redis()
+    logger.info("Redis connections closed")
+
+    logger.info("Server shutdown completed")
 
 
 if __name__ == "__main__":
-    uvicorn.run("app.main:app", host="0.0.0.0", port=3939, reload=True)
+    uvicorn.run(
+        "app.main:app",
+        host="0.0.0.0",
+        port=3939,
+        reload=True,
+        log_level="info"
+    )

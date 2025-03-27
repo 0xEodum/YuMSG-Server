@@ -8,13 +8,17 @@ from ....models.user import User
 from ....schemas.auth import EncryptedRequest
 from ....core.security import get_current_user
 from ....services.secure_channel_service import secure_channel_service
-from ....services.connection_manager import online_status_service
+from ....services.online_status_service import online_status_service
 from ....api.deps import get_secure_channel_service
 from pathlib import Path
 import json
 import uuid
 import os
 import shutil
+import logging
+
+# Настройка логирования
+logger = logging.getLogger(__name__)
 
 router = APIRouter()
 
@@ -27,44 +31,43 @@ async def search_users(
         svc=Depends(get_secure_channel_service)
 ):
     try:
-        print(f"Search request received, channel: {request.channelId}")
-        print(f"Current user from token: {current_user}")
-        print(f"Available channels: {list(svc._channels.keys())}")
+        logger.info(f"Search request received, channel: {request.channelId}")
+        logger.info(f"Current user from token: {current_user}")
 
         # Получаем и проверяем канал
-        channel = svc.get_channel(request.channelId)
+        channel = await svc.get_channel(request.channelId)
         if not channel:
-            print(f"Channel {request.channelId} not found or expired")
+            logger.error(f"Channel {request.channelId} not found or expired")
             raise HTTPException(status_code=400, detail="Invalid or expired channel")
 
         # Расшифровываем данные
         try:
-            decrypted_data = svc.decrypt_data(
+            decrypted_data = await svc.decrypt_data(
                 request.channelId,
                 request.data
             )
-            print(f"Decrypted search data: {decrypted_data}")
+            logger.info(f"Decrypted search data: {decrypted_data}")
         except Exception as e:
-            print(f"Search decryption error: {str(e)}")
+            logger.error(f"Search decryption error: {str(e)}")
             raise HTTPException(status_code=400, detail=f"Decryption failed: {str(e)}")
 
         # Парсим JSON
         try:
             search_data = json.loads(decrypted_data)
-            print(f"Parsed search data: {search_data}")
+            logger.info(f"Parsed search data: {search_data}")
             query = search_data.get('query', '')
             limit = search_data.get('limit', 10)
         except Exception as e:
-            print(f"JSON parsing error: {str(e)}")
+            logger.error(f"JSON parsing error: {str(e)}")
             raise HTTPException(status_code=400, detail="Invalid request format")
 
         # Получаем ID текущего пользователя
         current_user_id = current_user.get('sub')
         if not current_user_id:
-            print(f"Missing sub in current_user: {current_user}")
+            logger.error(f"Missing sub in current_user: {current_user}")
             raise HTTPException(status_code=401, detail="Invalid authentication")
 
-        print(f"Searching users with query '{query}', excluding user {current_user_id}")
+        logger.info(f"Searching users with query '{query}', excluding user {current_user_id}")
 
         # Ищем пользователей по имени или email (исключая текущего пользователя)
         users = db.query(User).filter(
@@ -76,7 +79,7 @@ async def search_users(
             )
         ).limit(limit).all()
 
-        print(f"Found {len(users)} users")
+        logger.info(f"Found {len(users)} users")
 
         # Формируем результаты - вместо объекта вернем просто массив
         results = []
@@ -95,8 +98,8 @@ async def search_users(
             })
 
         # Клиент ожидает просто массив, а не объект с полем "users"
-        print(f"Encrypting search results: {results}")
-        encrypted_response = svc.encrypt_data(
+        logger.info(f"Encrypting search results: {results}")
+        encrypted_response = await svc.encrypt_data(
             request.channelId,
             json.dumps(results)
         )
@@ -106,9 +109,9 @@ async def search_users(
     except HTTPException:
         raise
     except Exception as e:
-        print(f"Error in search_users: {str(e)}")
+        logger.error(f"Error in search_users: {str(e)}")
         import traceback
-        print(traceback.format_exc())
+        logger.error(traceback.format_exc())
         raise HTTPException(status_code=500, detail=f"Search failed: {str(e)}")
 
 
@@ -149,7 +152,7 @@ async def upload_avatar(
                 if old_avatar_path.exists():
                     os.remove(old_avatar_path)
             except Exception as e:
-                print(f"Error removing old avatar: {str(e)}")
+                logger.error(f"Error removing old avatar: {str(e)}")
 
         # Обновляем информацию о пользователе
         user.has_avatar = True
