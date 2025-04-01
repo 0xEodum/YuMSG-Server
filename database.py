@@ -4,16 +4,14 @@ from sqlalchemy.orm import sessionmaker
 from contextlib import contextmanager
 import os
 
-# Обновленный URL с корректными учетными данными
 DATABASE_URL = os.getenv(
     "DATABASE_URL",
     "postgresql://postgres:postpass@localhost:5432/chatdb"
 )
 
-# Создаем движок с выводом отладочной информации
 engine = create_engine(
     DATABASE_URL,
-    echo=True  # Включаем вывод SQL-запросов для отладки
+    echo=False
 )
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)

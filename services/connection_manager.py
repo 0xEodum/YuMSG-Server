@@ -324,14 +324,11 @@ class ConnectionManager:
             Словарь с информацией о пользователях онлайн
         """
         try:
-            # Получаем локальные подключения
             local_connections = set(self.active_connections.keys())
 
-            # Получаем всех пользователей онлайн из Redis
             all_online = await online_status_service.get_online_users()
             all_online_set = set(all_online)
 
-            # Пользователи, подключенные к другим серверам
             remote_connections = all_online_set - local_connections
 
             report = {
