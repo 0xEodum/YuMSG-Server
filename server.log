@@ -19357,3 +19357,1316 @@ WHERE users.id = %(pk_1)s
 2025-04-01 10:57:50,674 - app.main - INFO - Shutting down server...
 2025-04-01 10:57:50,675 - app.main - INFO - Redis connections closed
 2025-04-01 10:57:50,675 - app.main - INFO - Server shutdown completed
+2025-04-01 11:08:51,628 - app.main - INFO - Starting up server...
+2025-04-01 11:08:51,629 - app.main - INFO - Redis initialized
+2025-04-01 11:08:51,673 - app.main - INFO - Database initialized
+2025-04-01 11:08:51,709 - app.main - INFO - Server key pair generated
+2025-04-01 11:08:51,709 - app.main - INFO - Server startup completed successfully
+2025-04-01 11:08:52,528 - INFO - Incoming request: {"timestamp": "2025-04-01T08:08:52.528199", "method": "GET", "path": "/", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 11:08:52,528 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T08:08:52.528199", "method": "GET", "path": "/", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 11:08:52,529 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.001}
+2025-04-01 11:08:52,529 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.001}
+2025-04-01 11:09:01,853 - INFO - Incoming request: {"timestamp": "2025-04-01T08:09:01.852446", "method": "GET", "path": "/", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 11:09:01,853 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T08:09:01.852446", "method": "GET", "path": "/", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 11:09:01,853 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-04-01 11:09:01,853 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-04-01 11:09:07,957 - INFO - Incoming request: {"timestamp": "2025-04-01T08:09:07.957333", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 11:09:07,957 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T08:09:07.957333", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 11:09:07,961 - app.api.v1.endpoints.auth - INFO - Initializing secure channel with ID: 133bebeb-c4df-4e94-bf66-3cbc2069b0fa
+2025-04-01 11:09:07,961 - app.services.secure_channel_service - INFO - Creating channel with ID: 133bebeb-c4df-4e94-bf66-3cbc2069b0fa
+2025-04-01 11:09:07,965 - app.services.secure_channel_service - INFO - Channel 133bebeb-c4df-4e94-bf66-3cbc2069b0fa saved to Redis with TTL 1800 seconds
+2025-04-01 11:09:07,966 - app.api.v1.endpoints.auth - INFO - Channel 133bebeb-c4df-4e94-bf66-3cbc2069b0fa initialized successfully
+2025-04-01 11:09:07,966 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 9.001}
+2025-04-01 11:09:07,966 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 9.001}
+2025-04-01 11:09:08,210 - INFO - Incoming request: {"timestamp": "2025-04-01T08:09:08.210834", "method": "POST", "path": "/auth/login", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 11:09:08,210 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T08:09:08.210834", "method": "POST", "path": "/auth/login", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 11:09:08,212 - app.api.v1.endpoints.auth - INFO - Login request using channel: 133bebeb-c4df-4e94-bf66-3cbc2069b0fa
+2025-04-01 11:09:08,214 - app.api.v1.endpoints.auth - INFO - Decrypted login data: {"email":"yu@gmail.com","password":"123456","deviceId":"edbd1f5c-4058-4ffe-b3ea-0b2ed4c88b64"}
+2025-04-01 11:09:08,214 - app.api.v1.endpoints.auth - INFO - Parsed login data: {'email': 'yu@gmail.com', 'password': '123456', 'deviceId': 'edbd1f5c-4058-4ffe-b3ea-0b2ed4c88b64'}
+2025-04-01 11:09:08,451 - app.api.v1.endpoints.auth - INFO - Generating tokens for user ID: 2
+2025-04-01 11:09:08,455 - app.api.v1.endpoints.auth - INFO - Login database commit successful
+2025-04-01 11:09:08,455 - app.api.v1.endpoints.auth - INFO - Encrypting login response
+2025-04-01 11:09:08,456 - app.api.v1.endpoints.auth - INFO - Login response encrypted successfully
+2025-04-01 11:09:08,457 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 247.07899999999998}
+2025-04-01 11:09:08,457 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 247.07899999999998}
+2025-04-01 11:09:09,285 - INFO - Incoming request: {"timestamp": "2025-04-01T08:09:09.285173", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 11:09:09,285 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T08:09:09.285173", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 11:09:09,287 - app.api.v1.endpoints.auth - INFO - Initializing secure channel with ID: 6b102667-98ee-4c34-a76c-9b444b5043b3
+2025-04-01 11:09:09,287 - app.services.secure_channel_service - INFO - Creating channel with ID: 6b102667-98ee-4c34-a76c-9b444b5043b3
+2025-04-01 11:09:09,287 - app.services.secure_channel_service - INFO - Channel 6b102667-98ee-4c34-a76c-9b444b5043b3 saved to Redis with TTL 1800 seconds
+2025-04-01 11:09:09,287 - app.api.v1.endpoints.auth - INFO - Channel 6b102667-98ee-4c34-a76c-9b444b5043b3 initialized successfully
+2025-04-01 11:09:09,288 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.0010000000000003}
+2025-04-01 11:09:09,288 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.0010000000000003}
+2025-04-01 11:09:10,022 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 11:09:10,025 - app.services.connection_manager - INFO - User 2 connected to server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:09:10,025 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 11:09:10,032 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 11:09:10,034 - app.services.message_buffer - INFO - Retrieved and cleared 1 messages for user 2
+2025-04-01 11:09:10,034 - app.api.v1.endpoints.websocket - INFO - Delivering 1 buffered messages to user 2
+2025-04-01 11:09:12,457 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 11:09:12,458 - app.services.connection_manager - INFO - User 2 connected to server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:09:12,458 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 11:09:12,464 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 11:09:13,486 - app.api.v1.endpoints.websocket - INFO - Received chat.delete message from user 2 to 3
+2025-04-01 11:09:13,491 - app.api.v1.endpoints.websocket - INFO - Message of type chat.delete routed from 2 to 3
+2025-04-01 11:09:15,164 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 11:09:15,165 - app.services.connection_manager - INFO - User 2 disconnected from server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:10:02,125 - INFO - Incoming request: {"timestamp": "2025-04-01T08:10:02.125224", "method": "GET", "path": "/", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 11:10:02,125 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T08:10:02.125224", "method": "GET", "path": "/", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 11:10:02,125 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 0.0}
+2025-04-01 11:10:02,125 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 0.0}
+2025-04-01 11:10:02,299 - INFO - Incoming request: {"timestamp": "2025-04-01T08:10:02.299279", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 11:10:02,299 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T08:10:02.299279", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 11:10:02,304 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 5.001}
+2025-04-01 11:10:02,304 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 5.001}
+2025-04-01 11:10:02,397 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 11:10:02,398 - app.services.connection_manager - INFO - User 3 connected to server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:10:02,398 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 11:10:02,401 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 11:10:02,402 - app.services.message_buffer - INFO - Retrieved and cleared 1 messages for user 3
+2025-04-01 11:10:02,402 - app.api.v1.endpoints.websocket - INFO - Delivering 1 buffered messages to user 3
+2025-04-01 11:10:03,232 - INFO - Incoming request: {"timestamp": "2025-04-01T08:10:03.231148", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 11:10:03,232 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T08:10:03.231148", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 11:10:03,233 - app.api.v1.endpoints.auth - INFO - Initializing secure channel with ID: c58abf39-6da5-4570-b2e9-159763b63c40
+2025-04-01 11:10:03,233 - app.services.secure_channel_service - INFO - Creating channel with ID: c58abf39-6da5-4570-b2e9-159763b63c40
+2025-04-01 11:10:03,233 - app.services.secure_channel_service - INFO - Channel c58abf39-6da5-4570-b2e9-159763b63c40 saved to Redis with TTL 1800 seconds
+2025-04-01 11:10:03,234 - app.api.v1.endpoints.auth - INFO - Channel c58abf39-6da5-4570-b2e9-159763b63c40 initialized successfully
+2025-04-01 11:10:03,234 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.0010000000000003}
+2025-04-01 11:10:03,234 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.0010000000000003}
+2025-04-01 11:10:03,517 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 11:10:03,518 - app.services.connection_manager - INFO - User 3 connected to server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:10:03,518 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 11:10:03,521 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 11:10:08,422 - INFO - Incoming request: {"timestamp": "2025-04-01T08:10:08.422658", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 11:10:08,422 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T08:10:08.422658", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 11:10:08,426 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 4.001}
+2025-04-01 11:10:08,426 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 4.001}
+2025-04-01 11:10:08,464 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 11:10:08,465 - app.services.connection_manager - INFO - User 3 connected to server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:10:08,465 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 11:10:08,467 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 11:10:08,708 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 11:10:08,709 - app.services.connection_manager - INFO - User 3 disconnected from server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:10:30,368 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 11:10:30,369 - app.services.connection_manager - INFO - User 3 connected to server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:10:30,369 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 11:10:30,371 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 11:10:30,390 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 11:10:30,391 - app.services.connection_manager - INFO - User 2 connected to server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:10:30,391 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 11:10:30,393 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 11:10:34,092 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 11:10:34,093 - app.services.connection_manager - INFO - User 2 connected to server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:10:34,094 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 11:10:34,100 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 11:10:34,203 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 11:10:34,204 - app.services.connection_manager - INFO - User 3 connected to server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:10:34,205 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 11:10:34,207 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 11:10:53,066 - INFO - Incoming request: {"timestamp": "2025-04-01T08:10:53.066952", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 11:10:53,066 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T08:10:53.066952", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 11:10:53,074 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 8.002}
+2025-04-01 11:10:53,074 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 8.002}
+2025-04-01 11:10:53,123 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 11:10:53,124 - app.services.connection_manager - INFO - User 2 connected to server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:10:53,124 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 11:10:53,126 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 11:10:53,146 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 11:10:53,147 - app.services.connection_manager - INFO - User 2 connected to server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:10:53,147 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 11:10:53,149 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 11:10:53,161 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 11:10:53,162 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 11:10:53,163 - app.services.connection_manager - INFO - User 2 disconnected from server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:10:53,164 - app.services.connection_manager - INFO - User 2 disconnected from server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:12:22,335 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 11:12:22,336 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 11:12:22,336 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 11:12:22,337 - app.services.connection_manager - INFO - User 2 disconnected from server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:12:22,338 - app.services.connection_manager - INFO - User 2 disconnected from server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:12:22,339 - app.services.connection_manager - INFO - User 2 disconnected from server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:12:23,299 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 11:12:23,300 - app.services.connection_manager - INFO - User 2 connected to server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:12:23,300 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 11:12:23,307 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 11:12:25,132 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 11:12:25,133 - app.services.connection_manager - INFO - User 2 disconnected from server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:12:29,451 - INFO - Incoming request: {"timestamp": "2025-04-01T08:12:29.451911", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 11:12:29,451 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T08:12:29.451911", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 11:12:29,459 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 7.787999999999999}
+2025-04-01 11:12:29,459 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 7.787999999999999}
+2025-04-01 11:12:29,492 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 11:12:29,493 - app.services.connection_manager - INFO - User 3 connected to server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:12:29,493 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 11:12:29,495 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 11:12:29,508 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 11:12:29,509 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 11:12:29,509 - app.services.connection_manager - INFO - User 3 connected to server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:12:29,509 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 11:12:29,511 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 11:12:29,512 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 11:12:29,512 - app.services.connection_manager - INFO - User 3 disconnected from server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:12:29,513 - app.services.connection_manager - INFO - User 3 disconnected from server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:12:41,546 - INFO - Incoming request: {"timestamp": "2025-04-01T08:12:41.546826", "method": "GET", "path": "/", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 11:12:41,546 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T08:12:41.546826", "method": "GET", "path": "/", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 11:12:41,547 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-04-01 11:12:41,547 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-04-01 11:12:41,986 - INFO - Incoming request: {"timestamp": "2025-04-01T08:12:41.986015", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 11:12:41,986 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T08:12:41.986015", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 11:12:41,996 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 10.004000000000001}
+2025-04-01 11:12:41,996 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 10.004000000000001}
+2025-04-01 11:12:42,080 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 11:12:42,081 - app.services.connection_manager - INFO - User 2 connected to server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:12:42,081 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 11:12:42,083 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 11:12:42,904 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 11:12:42,905 - app.services.connection_manager - INFO - User 2 connected to server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:12:42,905 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 11:12:42,912 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 11:12:43,667 - INFO - Incoming request: {"timestamp": "2025-04-01T08:12:43.667097", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 11:12:43,667 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T08:12:43.667097", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 11:12:43,669 - app.api.v1.endpoints.auth - INFO - Initializing secure channel with ID: 3112472f-e8d5-4362-b96b-2271641b1aa7
+2025-04-01 11:12:43,669 - app.services.secure_channel_service - INFO - Creating channel with ID: 3112472f-e8d5-4362-b96b-2271641b1aa7
+2025-04-01 11:12:43,670 - app.services.secure_channel_service - INFO - Channel 3112472f-e8d5-4362-b96b-2271641b1aa7 saved to Redis with TTL 1800 seconds
+2025-04-01 11:12:43,670 - app.api.v1.endpoints.auth - INFO - Channel 3112472f-e8d5-4362-b96b-2271641b1aa7 initialized successfully
+2025-04-01 11:12:43,670 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.002}
+2025-04-01 11:12:43,670 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.002}
+2025-04-01 11:12:46,487 - INFO - Incoming request: {"timestamp": "2025-04-01T08:12:46.487996", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 11:12:46,487 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T08:12:46.487996", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 11:12:46,491 - app.api.v1.endpoints.users - INFO - Search request received, channel: 3112472f-e8d5-4362-b96b-2271641b1aa7
+2025-04-01 11:12:46,491 - app.api.v1.endpoints.users - INFO - Current user from token: {'sub': '2', 'exp': 1743496961}
+2025-04-01 11:12:46,492 - app.api.v1.endpoints.users - INFO - Decrypted search data: {"query":"mir","limit":10}
+2025-04-01 11:12:46,492 - app.api.v1.endpoints.users - INFO - Parsed search data: {'query': 'mir', 'limit': 10}
+2025-04-01 11:12:46,492 - app.api.v1.endpoints.users - INFO - Searching users with query 'mir', excluding user 2
+2025-04-01 11:12:46,494 - app.api.v1.endpoints.users - INFO - Found 1 users
+2025-04-01 11:12:46,494 - app.api.v1.endpoints.users - INFO - Encrypting search results: [{'id': '3', 'username': 'MiraiX', 'avatarUrl': None, 'isOnline': False}]
+2025-04-01 11:12:46,495 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 8.002}
+2025-04-01 11:12:46,495 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 8.002}
+2025-04-01 11:12:49,423 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 11:12:49,425 - app.services.connection_manager - INFO - User 2 disconnected from server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:12:49,431 - app.api.v1.endpoints.websocket - INFO - Received chat.init message from user 2 to 3
+2025-04-01 11:12:49,439 - app.api.v1.endpoints.websocket - INFO - Message of type chat.init routed from 2 to 3
+2025-04-01 11:13:06,025 - app.api.v1.endpoints.websocket - INFO - Received chat.delete message from user 2 to 3
+2025-04-01 11:13:06,034 - app.api.v1.endpoints.websocket - INFO - Message of type chat.delete routed from 2 to 3
+2025-04-01 11:13:08,851 - INFO - Incoming request: {"timestamp": "2025-04-01T08:13:08.851605", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 11:13:08,851 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T08:13:08.851605", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 11:13:08,854 - app.api.v1.endpoints.users - INFO - Search request received, channel: 3112472f-e8d5-4362-b96b-2271641b1aa7
+2025-04-01 11:13:08,854 - app.api.v1.endpoints.users - INFO - Current user from token: {'sub': '2', 'exp': 1743496961}
+2025-04-01 11:13:08,855 - app.api.v1.endpoints.users - INFO - Decrypted search data: {"query":"mi","limit":10}
+2025-04-01 11:13:08,855 - app.api.v1.endpoints.users - INFO - Parsed search data: {'query': 'mi', 'limit': 10}
+2025-04-01 11:13:08,855 - app.api.v1.endpoints.users - INFO - Searching users with query 'mi', excluding user 2
+2025-04-01 11:13:08,856 - app.api.v1.endpoints.users - INFO - Found 1 users
+2025-04-01 11:13:08,857 - app.api.v1.endpoints.users - INFO - Encrypting search results: [{'id': '3', 'username': 'MiraiX', 'avatarUrl': None, 'isOnline': True}]
+2025-04-01 11:13:08,858 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 6.988}
+2025-04-01 11:13:08,858 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 6.988}
+2025-04-01 11:13:10,329 - app.api.v1.endpoints.websocket - INFO - Received chat.init message from user 2 to 3
+2025-04-01 11:13:10,339 - app.api.v1.endpoints.websocket - INFO - Message of type chat.init routed from 2 to 3
+2025-04-01 11:13:20,856 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 11:13:20,857 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 11:13:20,857 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 11:13:20,858 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 11:13:20,859 - app.services.connection_manager - INFO - User 3 disconnected from server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:13:20,860 - app.services.connection_manager - INFO - User 3 disconnected from server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:13:20,860 - app.services.connection_manager - INFO - User 3 disconnected from server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:13:20,861 - app.services.connection_manager - INFO - User 3 disconnected from server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:13:25,687 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 11:13:25,689 - app.services.connection_manager - INFO - User 2 disconnected from server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:13:26,156 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 11:13:26,157 - app.services.connection_manager - INFO - User 2 connected to server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:13:26,157 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 11:13:26,160 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 11:13:32,108 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 11:13:32,109 - app.services.connection_manager - INFO - User 2 disconnected from server 1788e7d1-2b2e-4380-b100-87c9ba630c43
+2025-04-01 11:41:41,544 - app.main - INFO - Shutting down server...
+2025-04-01 11:41:41,545 - app.main - INFO - Redis connections closed
+2025-04-01 11:41:41,545 - app.main - INFO - Server shutdown completed
+2025-04-01 12:47:47,121 - app.main - INFO - Starting up server...
+2025-04-01 12:47:47,122 - app.main - INFO - Redis initialized
+2025-04-01 12:47:47,169 - app.main - INFO - Database initialized
+2025-04-01 12:47:47,194 - app.main - INFO - Server key pair generated
+2025-04-01 12:47:47,195 - app.main - INFO - Server startup completed successfully
+2025-04-01 12:48:17,371 - INFO - Incoming request: {"timestamp": "2025-04-01T09:48:17.370224", "method": "GET", "path": "/", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 12:48:17,371 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T09:48:17.370224", "method": "GET", "path": "/", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 12:48:17,371 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-04-01 12:48:17,371 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-04-01 12:48:25,938 - INFO - Incoming request: {"timestamp": "2025-04-01T09:48:25.938192", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 12:48:25,938 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T09:48:25.938192", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 12:48:25,943 - app.api.v1.endpoints.auth - INFO - Initializing secure channel with ID: 5589fa43-7c48-4e5b-904b-e4c4f4d9d497
+2025-04-01 12:48:25,943 - app.services.secure_channel_service - INFO - Creating channel with ID: 5589fa43-7c48-4e5b-904b-e4c4f4d9d497
+2025-04-01 12:48:25,947 - app.services.secure_channel_service - INFO - Channel 5589fa43-7c48-4e5b-904b-e4c4f4d9d497 saved to Redis with TTL 1800 seconds
+2025-04-01 12:48:25,948 - app.api.v1.endpoints.auth - INFO - Channel 5589fa43-7c48-4e5b-904b-e4c4f4d9d497 initialized successfully
+2025-04-01 12:48:25,948 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 10.001}
+2025-04-01 12:48:25,948 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 10.001}
+2025-04-01 12:48:26,450 - INFO - Incoming request: {"timestamp": "2025-04-01T09:48:26.450308", "method": "POST", "path": "/auth/login", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 12:48:26,450 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T09:48:26.450308", "method": "POST", "path": "/auth/login", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 12:48:26,452 - app.api.v1.endpoints.auth - INFO - Login request using channel: 5589fa43-7c48-4e5b-904b-e4c4f4d9d497
+2025-04-01 12:48:26,453 - app.api.v1.endpoints.auth - INFO - Decrypted login data: {"email":"mirai@gmail.com","password":"123456","deviceId":"4fc085e9-1083-49b7-9614-52f9ff976c95"}
+2025-04-01 12:48:26,453 - app.api.v1.endpoints.auth - INFO - Parsed login data: {'email': 'mirai@gmail.com', 'password': '123456', 'deviceId': '4fc085e9-1083-49b7-9614-52f9ff976c95'}
+2025-04-01 12:48:26,692 - app.api.v1.endpoints.auth - INFO - Generating tokens for user ID: 3
+2025-04-01 12:48:26,701 - app.api.v1.endpoints.auth - INFO - Login database commit successful
+2025-04-01 12:48:26,701 - app.api.v1.endpoints.auth - INFO - Encrypting login response
+2025-04-01 12:48:26,702 - app.api.v1.endpoints.auth - INFO - Login response encrypted successfully
+2025-04-01 12:48:26,703 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 253.057}
+2025-04-01 12:48:26,703 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 253.057}
+2025-04-01 12:48:27,202 - INFO - Incoming request: {"timestamp": "2025-04-01T09:48:27.201480", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 12:48:27,202 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T09:48:27.201480", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 12:48:27,203 - app.api.v1.endpoints.auth - INFO - Initializing secure channel with ID: 68548ec0-70e9-4d70-8866-4ee68a00088a
+2025-04-01 12:48:27,203 - app.services.secure_channel_service - INFO - Creating channel with ID: 68548ec0-70e9-4d70-8866-4ee68a00088a
+2025-04-01 12:48:27,203 - app.services.secure_channel_service - INFO - Channel 68548ec0-70e9-4d70-8866-4ee68a00088a saved to Redis with TTL 1800 seconds
+2025-04-01 12:48:27,204 - app.api.v1.endpoints.auth - INFO - Channel 68548ec0-70e9-4d70-8866-4ee68a00088a initialized successfully
+2025-04-01 12:48:27,204 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.0}
+2025-04-01 12:48:27,204 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.0}
+2025-04-01 12:48:27,304 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 12:48:27,306 - app.services.connection_manager - INFO - User 3 connected to server 7305c0b1-c6bb-4fbb-b19d-9700a3b1880a
+2025-04-01 12:48:27,306 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 12:48:27,310 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 12:48:27,312 - app.services.message_buffer - INFO - Retrieved and cleared 5 messages for user 3
+2025-04-01 12:48:27,312 - app.api.v1.endpoints.websocket - INFO - Delivering 5 buffered messages to user 3
+2025-04-01 12:48:29,403 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 12:48:29,404 - app.services.connection_manager - INFO - User 3 connected to server 7305c0b1-c6bb-4fbb-b19d-9700a3b1880a
+2025-04-01 12:48:29,404 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 12:48:29,406 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 12:48:30,489 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange message from user 3 to 2
+2025-04-01 12:48:30,499 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange routed from 3 to 2
+2025-04-01 12:48:30,512 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange message from user 3 to 2
+2025-04-01 12:48:30,515 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange routed from 3 to 2
+2025-04-01 12:48:30,692 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange message from user 3 to 2
+2025-04-01 12:48:30,696 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange routed from 3 to 2
+2025-04-01 12:48:32,361 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 12:48:32,363 - app.services.connection_manager - INFO - User 3 disconnected from server 7305c0b1-c6bb-4fbb-b19d-9700a3b1880a
+2025-04-01 12:48:32,369 - INFO - Incoming request: {"timestamp": "2025-04-01T09:48:32.369899", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 12:48:32,369 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T09:48:32.369899", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 12:48:32,375 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 6.001}
+2025-04-01 12:48:32,375 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 6.001}
+2025-04-01 12:48:32,406 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 12:48:32,408 - app.services.connection_manager - INFO - User 3 connected to server 7305c0b1-c6bb-4fbb-b19d-9700a3b1880a
+2025-04-01 12:48:32,408 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 12:48:32,411 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 12:48:34,911 - app.api.v1.endpoints.websocket - INFO - Received chat.delete message from user 3 to 2
+2025-04-01 12:48:34,919 - app.api.v1.endpoints.websocket - INFO - Message of type chat.delete routed from 3 to 2
+2025-04-01 12:48:44,879 - INFO - Incoming request: {"timestamp": "2025-04-01T09:48:44.879926", "method": "GET", "path": "/", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 12:48:44,879 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T09:48:44.879926", "method": "GET", "path": "/", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 12:48:44,880 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-04-01 12:48:44,880 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-04-01 12:48:44,991 - INFO - Incoming request: {"timestamp": "2025-04-01T09:48:44.990951", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 12:48:44,991 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T09:48:44.990951", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 12:48:44,999 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 9.004}
+2025-04-01 12:48:44,999 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 9.004}
+2025-04-01 12:48:45,183 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 12:48:45,184 - app.services.connection_manager - INFO - User 2 connected to server 7305c0b1-c6bb-4fbb-b19d-9700a3b1880a
+2025-04-01 12:48:45,184 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 12:48:45,186 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 12:48:45,187 - app.services.message_buffer - INFO - Retrieved and cleared 4 messages for user 2
+2025-04-01 12:48:45,187 - app.api.v1.endpoints.websocket - INFO - Delivering 4 buffered messages to user 2
+2025-04-01 12:48:46,056 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange_complete message from user 2 to 3
+2025-04-01 12:48:46,063 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange_complete routed from 2 to 3
+2025-04-01 12:48:46,088 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange_complete message from user 2 to 3
+2025-04-01 12:48:46,091 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange_complete routed from 2 to 3
+2025-04-01 12:48:47,172 - INFO - Incoming request: {"timestamp": "2025-04-01T09:48:47.172788", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 12:48:47,172 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T09:48:47.172788", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 12:48:47,173 - app.api.v1.endpoints.auth - INFO - Initializing secure channel with ID: adda70e7-d4e1-4abb-9027-cb2211a28fc2
+2025-04-01 12:48:47,173 - app.services.secure_channel_service - INFO - Creating channel with ID: adda70e7-d4e1-4abb-9027-cb2211a28fc2
+2025-04-01 12:48:47,174 - app.services.secure_channel_service - INFO - Channel adda70e7-d4e1-4abb-9027-cb2211a28fc2 saved to Redis with TTL 1800 seconds
+2025-04-01 12:48:47,174 - app.api.v1.endpoints.auth - INFO - Channel adda70e7-d4e1-4abb-9027-cb2211a28fc2 initialized successfully
+2025-04-01 12:48:47,174 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.0}
+2025-04-01 12:48:47,174 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.0}
+2025-04-01 12:48:47,323 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 12:48:47,324 - app.services.connection_manager - INFO - User 2 connected to server 7305c0b1-c6bb-4fbb-b19d-9700a3b1880a
+2025-04-01 12:48:47,324 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 12:48:47,326 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 12:48:52,669 - app.api.v1.endpoints.websocket - INFO - Received chat.delete message from user 2 to 3
+2025-04-01 12:48:52,672 - app.api.v1.endpoints.websocket - INFO - Message of type chat.delete routed from 2 to 3
+2025-04-01 12:48:55,375 - INFO - Incoming request: {"timestamp": "2025-04-01T09:48:55.375303", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 12:48:55,375 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T09:48:55.375303", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 12:48:55,378 - app.api.v1.endpoints.users - INFO - Search request received, channel: adda70e7-d4e1-4abb-9027-cb2211a28fc2
+2025-04-01 12:48:55,378 - app.api.v1.endpoints.users - INFO - Current user from token: {'sub': '2', 'exp': 1743502724}
+2025-04-01 12:48:55,379 - app.api.v1.endpoints.users - INFO - Decrypted search data: {"query":"mi","limit":10}
+2025-04-01 12:48:55,379 - app.api.v1.endpoints.users - INFO - Parsed search data: {'query': 'mi', 'limit': 10}
+2025-04-01 12:48:55,379 - app.api.v1.endpoints.users - INFO - Searching users with query 'mi', excluding user 2
+2025-04-01 12:48:55,381 - app.api.v1.endpoints.users - INFO - Found 1 users
+2025-04-01 12:48:55,382 - app.api.v1.endpoints.users - INFO - Encrypting search results: [{'id': '3', 'username': 'MiraiX', 'avatarUrl': None, 'isOnline': True}]
+2025-04-01 12:48:55,382 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 7.002000000000001}
+2025-04-01 12:48:55,382 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 7.002000000000001}
+2025-04-01 12:48:58,463 - app.api.v1.endpoints.websocket - INFO - Received chat.init message from user 2 to 3
+2025-04-01 12:48:58,470 - app.api.v1.endpoints.websocket - INFO - Message of type chat.init routed from 2 to 3
+2025-04-01 12:48:59,720 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange message from user 3 to 2
+2025-04-01 12:48:59,728 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange routed from 3 to 2
+2025-04-01 12:48:59,728 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange message from user 3 to 2
+2025-04-01 12:48:59,731 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange routed from 3 to 2
+2025-04-01 12:48:59,811 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange_complete message from user 2 to 3
+2025-04-01 12:48:59,814 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange_complete routed from 2 to 3
+2025-04-01 12:49:00,069 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange_complete message from user 2 to 3
+2025-04-01 12:49:00,072 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange_complete routed from 2 to 3
+2025-04-01 12:49:00,667 - INFO - Incoming request: {"timestamp": "2025-04-01T09:49:00.667723", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 12:49:00,667 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T09:49:00.667723", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 12:49:00,675 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 8.002}
+2025-04-01 12:49:00,675 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 8.002}
+2025-04-01 12:49:00,688 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 12:49:00,689 - app.services.connection_manager - INFO - User 2 disconnected from server 7305c0b1-c6bb-4fbb-b19d-9700a3b1880a
+2025-04-01 12:49:00,730 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 12:49:00,731 - app.services.connection_manager - INFO - User 2 connected to server 7305c0b1-c6bb-4fbb-b19d-9700a3b1880a
+2025-04-01 12:49:00,731 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 12:49:00,733 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 12:49:14,693 - app.api.v1.endpoints.websocket - INFO - Received chat.message message from user 2 to 3
+2025-04-01 12:49:14,695 - app.api.v1.endpoints.websocket - INFO - Message of type chat.message routed from 2 to 3
+2025-04-01 12:49:14,922 - app.api.v1.endpoints.websocket - INFO - Received chat.status message from user 3 to 2
+2025-04-01 12:49:14,929 - app.api.v1.endpoints.websocket - INFO - Message of type chat.status routed from 3 to 2
+2025-04-01 12:49:14,929 - app.api.v1.endpoints.websocket - INFO - Received chat.status message from user 3 to 2
+2025-04-01 12:49:14,931 - app.api.v1.endpoints.websocket - INFO - Message of type chat.status routed from 3 to 2
+2025-04-01 12:49:14,931 - app.api.v1.endpoints.websocket - INFO - Received chat.status message from user 3 to 2
+2025-04-01 12:49:14,933 - app.api.v1.endpoints.websocket - INFO - Message of type chat.status routed from 3 to 2
+2025-04-01 12:49:47,719 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 12:49:47,720 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 12:49:47,721 - app.services.connection_manager - INFO - User 3 disconnected from server 7305c0b1-c6bb-4fbb-b19d-9700a3b1880a
+2025-04-01 12:49:47,722 - app.services.connection_manager - INFO - User 3 disconnected from server 7305c0b1-c6bb-4fbb-b19d-9700a3b1880a
+2025-04-01 12:49:48,444 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 12:49:48,445 - app.services.connection_manager - INFO - User 2 disconnected from server 7305c0b1-c6bb-4fbb-b19d-9700a3b1880a
+2025-04-01 12:49:48,446 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 12:49:48,447 - app.services.connection_manager - INFO - User 2 disconnected from server 7305c0b1-c6bb-4fbb-b19d-9700a3b1880a
+2025-04-01 12:50:52,227 - app.main - INFO - Shutting down server...
+2025-04-01 12:50:52,228 - app.main - INFO - Redis connections closed
+2025-04-01 12:50:52,228 - app.main - INFO - Server shutdown completed
+2025-04-01 16:34:10,062 - app.main - INFO - Starting up server...
+2025-04-01 16:34:10,063 - app.main - INFO - Redis initialized
+2025-04-01 16:34:10,186 - app.main - INFO - Database initialized
+2025-04-01 16:34:10,244 - app.main - INFO - Server key pair generated
+2025-04-01 16:34:10,245 - app.main - INFO - Server startup completed successfully
+2025-04-01 16:36:41,448 - INFO - Incoming request: {"timestamp": "2025-04-01T13:36:41.448310", "method": "GET", "path": "/", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 16:36:41,448 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T13:36:41.448310", "method": "GET", "path": "/", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 16:36:41,449 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-04-01 16:36:41,449 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-04-01 16:36:49,655 - INFO - Incoming request: {"timestamp": "2025-04-01T13:36:49.655210", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 16:36:49,655 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T13:36:49.655210", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 16:36:49,660 - app.api.v1.endpoints.auth - INFO - Initializing secure channel with ID: 600f3530-9d92-4076-abe0-2c8ea3496e88
+2025-04-01 16:36:49,660 - app.services.secure_channel_service - INFO - Creating channel with ID: 600f3530-9d92-4076-abe0-2c8ea3496e88
+2025-04-01 16:36:49,669 - app.services.secure_channel_service - INFO - Channel 600f3530-9d92-4076-abe0-2c8ea3496e88 saved to Redis with TTL 1800 seconds
+2025-04-01 16:36:49,671 - app.api.v1.endpoints.auth - INFO - Channel 600f3530-9d92-4076-abe0-2c8ea3496e88 initialized successfully
+2025-04-01 16:36:49,671 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 16.003}
+2025-04-01 16:36:49,671 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 16.003}
+2025-04-01 16:36:49,859 - INFO - Incoming request: {"timestamp": "2025-04-01T13:36:49.859257", "method": "POST", "path": "/auth/login", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 16:36:49,859 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T13:36:49.859257", "method": "POST", "path": "/auth/login", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 16:36:49,861 - app.api.v1.endpoints.auth - INFO - Login request using channel: 600f3530-9d92-4076-abe0-2c8ea3496e88
+2025-04-01 16:36:49,863 - app.api.v1.endpoints.auth - INFO - Decrypted login data: {"email":"yu@gmail.com","password":"123456","deviceId":"2825b65d-f494-4540-8ff8-f585a6bbd1ae"}
+2025-04-01 16:36:49,864 - app.api.v1.endpoints.auth - INFO - Parsed login data: {'email': 'yu@gmail.com', 'password': '123456', 'deviceId': '2825b65d-f494-4540-8ff8-f585a6bbd1ae'}
+2025-04-01 16:36:50,123 - app.api.v1.endpoints.auth - INFO - Generating tokens for user ID: 2
+2025-04-01 16:36:50,127 - app.api.v1.endpoints.auth - INFO - Login database commit successful
+2025-04-01 16:36:50,127 - app.api.v1.endpoints.auth - INFO - Encrypting login response
+2025-04-01 16:36:50,128 - app.api.v1.endpoints.auth - INFO - Login response encrypted successfully
+2025-04-01 16:36:50,129 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 270.061}
+2025-04-01 16:36:50,129 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 270.061}
+2025-04-01 16:36:50,621 - INFO - Incoming request: {"timestamp": "2025-04-01T13:36:50.621480", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 16:36:50,621 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T13:36:50.621480", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 16:36:50,622 - app.api.v1.endpoints.auth - INFO - Initializing secure channel with ID: 564b5229-58f9-47cd-b47c-dc4dc056db6c
+2025-04-01 16:36:50,622 - app.services.secure_channel_service - INFO - Creating channel with ID: 564b5229-58f9-47cd-b47c-dc4dc056db6c
+2025-04-01 16:36:50,623 - app.services.secure_channel_service - INFO - Channel 564b5229-58f9-47cd-b47c-dc4dc056db6c saved to Redis with TTL 1800 seconds
+2025-04-01 16:36:50,623 - app.api.v1.endpoints.auth - INFO - Channel 564b5229-58f9-47cd-b47c-dc4dc056db6c initialized successfully
+2025-04-01 16:36:50,623 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.0}
+2025-04-01 16:36:50,623 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.0}
+2025-04-01 16:36:50,670 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 16:36:50,674 - app.services.connection_manager - INFO - User 2 connected to server 814d3a9f-0706-4f7f-ab3a-4d40b48a7a23
+2025-04-01 16:36:50,674 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 16:36:50,678 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 16:36:52,021 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 16:36:52,022 - app.services.connection_manager - INFO - User 2 connected to server 814d3a9f-0706-4f7f-ab3a-4d40b48a7a23
+2025-04-01 16:36:52,022 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 16:36:52,025 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 16:37:00,164 - INFO - Incoming request: {"timestamp": "2025-04-01T13:37:00.164944", "method": "GET", "path": "/", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 16:37:00,164 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T13:37:00.164944", "method": "GET", "path": "/", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 16:37:00,165 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.001}
+2025-04-01 16:37:00,165 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.001}
+2025-04-01 16:37:07,851 - INFO - Incoming request: {"timestamp": "2025-04-01T13:37:07.851280", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 16:37:07,851 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T13:37:07.851280", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 16:37:07,852 - app.api.v1.endpoints.auth - INFO - Initializing secure channel with ID: efb6bb69-9acc-4476-af14-77ee7fc5660f
+2025-04-01 16:37:07,852 - app.services.secure_channel_service - INFO - Creating channel with ID: efb6bb69-9acc-4476-af14-77ee7fc5660f
+2025-04-01 16:37:07,853 - app.services.secure_channel_service - INFO - Channel efb6bb69-9acc-4476-af14-77ee7fc5660f saved to Redis with TTL 1800 seconds
+2025-04-01 16:37:07,853 - app.api.v1.endpoints.auth - INFO - Channel efb6bb69-9acc-4476-af14-77ee7fc5660f initialized successfully
+2025-04-01 16:37:07,853 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.0}
+2025-04-01 16:37:07,853 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.0}
+2025-04-01 16:37:08,094 - INFO - Incoming request: {"timestamp": "2025-04-01T13:37:08.094356", "method": "POST", "path": "/auth/login", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 16:37:08,094 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T13:37:08.094356", "method": "POST", "path": "/auth/login", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 16:37:08,095 - app.api.v1.endpoints.auth - INFO - Login request using channel: efb6bb69-9acc-4476-af14-77ee7fc5660f
+2025-04-01 16:37:08,096 - app.api.v1.endpoints.auth - INFO - Decrypted login data: {"email":"mirai@gmail.com","password":"123456","deviceId":"3e1f356f-fe00-4d99-9321-1f477067bead"}
+2025-04-01 16:37:08,096 - app.api.v1.endpoints.auth - INFO - Parsed login data: {'email': 'mirai@gmail.com', 'password': '123456', 'deviceId': '3e1f356f-fe00-4d99-9321-1f477067bead'}
+2025-04-01 16:37:08,304 - app.api.v1.endpoints.auth - INFO - Generating tokens for user ID: 3
+2025-04-01 16:37:08,306 - app.api.v1.endpoints.auth - INFO - Login database commit successful
+2025-04-01 16:37:08,306 - app.api.v1.endpoints.auth - INFO - Encrypting login response
+2025-04-01 16:37:08,306 - app.api.v1.endpoints.auth - INFO - Login response encrypted successfully
+2025-04-01 16:37:08,307 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 213.047}
+2025-04-01 16:37:08,307 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 213.047}
+2025-04-01 16:37:09,018 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 16:37:09,019 - INFO - Incoming request: {"timestamp": "2025-04-01T13:37:09.019603", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 16:37:09,019 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T13:37:09.019603", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 16:37:09,020 - app.services.connection_manager - INFO - User 3 connected to server 814d3a9f-0706-4f7f-ab3a-4d40b48a7a23
+2025-04-01 16:37:09,020 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 16:37:09,022 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 16:37:09,023 - app.api.v1.endpoints.auth - INFO - Initializing secure channel with ID: 619fb515-6915-4ad6-a864-999aef481341
+2025-04-01 16:37:09,023 - app.services.secure_channel_service - INFO - Creating channel with ID: 619fb515-6915-4ad6-a864-999aef481341
+2025-04-01 16:37:09,023 - app.services.secure_channel_service - INFO - Channel 619fb515-6915-4ad6-a864-999aef481341 saved to Redis with TTL 1800 seconds
+2025-04-01 16:37:09,024 - app.api.v1.endpoints.auth - INFO - Channel 619fb515-6915-4ad6-a864-999aef481341 initialized successfully
+2025-04-01 16:37:09,024 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 5.002000000000001}
+2025-04-01 16:37:09,024 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 5.002000000000001}
+2025-04-01 16:37:09,981 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 16:37:09,982 - app.services.connection_manager - INFO - User 3 connected to server 814d3a9f-0706-4f7f-ab3a-4d40b48a7a23
+2025-04-01 16:37:09,982 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 16:37:09,984 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 16:37:27,521 - INFO - Incoming request: {"timestamp": "2025-04-01T13:37:27.521159", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 16:37:27,521 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T13:37:27.521159", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 16:37:27,524 - app.api.v1.endpoints.users - INFO - Search request received, channel: 564b5229-58f9-47cd-b47c-dc4dc056db6c
+2025-04-01 16:37:27,524 - app.api.v1.endpoints.users - INFO - Current user from token: {'user_id': '2', 'username': 'YuDev', 'sub': '2', 'exp': 1743516410}
+2025-04-01 16:37:27,525 - app.api.v1.endpoints.users - INFO - Decrypted search data: {"query":"mir","limit":10}
+2025-04-01 16:37:27,525 - app.api.v1.endpoints.users - INFO - Parsed search data: {'query': 'mir', 'limit': 10}
+2025-04-01 16:37:27,525 - app.api.v1.endpoints.users - INFO - Searching users with query 'mir', excluding user 2
+2025-04-01 16:37:27,528 - app.api.v1.endpoints.users - INFO - Found 1 users
+2025-04-01 16:37:27,528 - app.api.v1.endpoints.users - INFO - Encrypting search results: [{'id': '3', 'username': 'MiraiX', 'avatarUrl': None, 'isOnline': True}]
+2025-04-01 16:37:27,529 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 8.002}
+2025-04-01 16:37:27,529 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 8.002}
+2025-04-01 16:37:29,515 - app.api.v1.endpoints.websocket - INFO - Received chat.init message from user 2 to 3
+2025-04-01 16:37:29,518 - app.api.v1.endpoints.websocket - INFO - Message of type chat.init routed from 2 to 3
+2025-04-01 16:37:30,179 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange message from user 3 to 2
+2025-04-01 16:37:30,182 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange routed from 3 to 2
+2025-04-01 16:37:30,291 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange_complete message from user 2 to 3
+2025-04-01 16:37:30,294 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange_complete routed from 2 to 3
+2025-04-01 16:37:30,907 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange message from user 3 to 2
+2025-04-01 16:37:30,910 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange routed from 3 to 2
+2025-04-01 16:37:30,970 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange_complete message from user 2 to 3
+2025-04-01 16:37:30,972 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange_complete routed from 2 to 3
+2025-04-01 16:39:10,087 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 16:39:10,088 - app.services.connection_manager - INFO - User 3 disconnected from server 814d3a9f-0706-4f7f-ab3a-4d40b48a7a23
+2025-04-01 16:39:10,091 - INFO - Incoming request: {"timestamp": "2025-04-01T13:39:10.091827", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 16:39:10,091 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T13:39:10.091827", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 16:39:10,098 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 7.002000000000001}
+2025-04-01 16:39:10,098 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 7.002000000000001}
+2025-04-01 16:39:10,132 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 16:39:10,133 - app.services.connection_manager - INFO - User 3 connected to server 814d3a9f-0706-4f7f-ab3a-4d40b48a7a23
+2025-04-01 16:39:10,133 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 16:39:10,134 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 16:41:19,093 - INFO - Incoming request: {"timestamp": "2025-04-01T13:41:19.092518", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 16:41:19,093 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T13:41:19.092518", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 16:41:19,097 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 5.001}
+2025-04-01 16:41:19,097 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 5.001}
+2025-04-01 16:41:19,098 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 16:41:19,100 - app.services.connection_manager - INFO - User 2 disconnected from server 814d3a9f-0706-4f7f-ab3a-4d40b48a7a23
+2025-04-01 16:41:19,154 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 16:41:19,155 - app.services.connection_manager - INFO - User 2 connected to server 814d3a9f-0706-4f7f-ab3a-4d40b48a7a23
+2025-04-01 16:41:19,155 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 16:41:19,157 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 16:46:30,448 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 16:46:30,448 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 16:46:30,449 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 16:46:30,449 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 16:46:30,451 - app.services.connection_manager - INFO - User 2 disconnected from server 814d3a9f-0706-4f7f-ab3a-4d40b48a7a23
+2025-04-01 16:46:30,453 - app.services.connection_manager - INFO - User 3 disconnected from server 814d3a9f-0706-4f7f-ab3a-4d40b48a7a23
+2025-04-01 16:46:30,453 - app.services.connection_manager - INFO - User 3 disconnected from server 814d3a9f-0706-4f7f-ab3a-4d40b48a7a23
+2025-04-01 16:46:30,453 - app.services.connection_manager - INFO - User 2 disconnected from server 814d3a9f-0706-4f7f-ab3a-4d40b48a7a23
+2025-04-01 16:46:30,557 - app.main - INFO - Shutting down server...
+2025-04-01 16:46:30,558 - app.main - INFO - Redis connections closed
+2025-04-01 16:46:30,558 - app.main - INFO - Server shutdown completed
+2025-04-01 16:46:33,068 - app.main - INFO - Starting up server...
+2025-04-01 16:46:33,069 - app.main - INFO - Redis initialized
+2025-04-01 16:46:33,112 - app.main - INFO - Database initialized
+2025-04-01 16:46:33,124 - app.main - INFO - Server key pair generated
+2025-04-01 16:46:33,124 - app.main - INFO - Server startup completed successfully
+2025-04-01 16:46:35,487 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 16:46:35,498 - app.services.connection_manager - INFO - User 2 connected to server 06eb4960-24dc-4cea-a86a-0ffd2c4a5147
+2025-04-01 16:46:35,498 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 16:46:35,503 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 16:46:35,668 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 16:46:35,670 - app.services.connection_manager - INFO - User 3 connected to server 06eb4960-24dc-4cea-a86a-0ffd2c4a5147
+2025-04-01 16:46:35,671 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 16:46:35,672 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 16:46:37,396 - app.api.v1.endpoints.websocket - INFO - Received chat.delete message from user 3 to 2
+2025-04-01 16:46:37,404 - app.api.v1.endpoints.websocket - INFO - Message of type chat.delete routed from 3 to 2
+2025-04-01 16:46:39,692 - app.api.v1.endpoints.websocket - INFO - Received chat.delete message from user 2 to 3
+2025-04-01 16:46:39,695 - app.api.v1.endpoints.websocket - INFO - Message of type chat.delete routed from 2 to 3
+2025-04-01 16:46:46,078 - INFO - Incoming request: {"timestamp": "2025-04-01T13:46:46.078370", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 16:46:46,078 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T13:46:46.078370", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 16:46:46,080 - app.api.v1.endpoints.auth - INFO - Initializing secure channel with ID: 96d02267-5d8d-49b5-b379-be1cb6bd274f
+2025-04-01 16:46:46,080 - app.services.secure_channel_service - INFO - Creating channel with ID: 96d02267-5d8d-49b5-b379-be1cb6bd274f
+2025-04-01 16:46:46,083 - app.services.secure_channel_service - INFO - Channel 96d02267-5d8d-49b5-b379-be1cb6bd274f saved to Redis with TTL 1800 seconds
+2025-04-01 16:46:46,083 - app.api.v1.endpoints.auth - INFO - Channel 96d02267-5d8d-49b5-b379-be1cb6bd274f initialized successfully
+2025-04-01 16:46:46,083 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 4.991}
+2025-04-01 16:46:46,083 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 4.991}
+2025-04-01 16:46:46,135 - INFO - Incoming request: {"timestamp": "2025-04-01T13:46:46.135372", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 16:46:46,135 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T13:46:46.135372", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 16:46:46,138 - app.api.v1.endpoints.users - INFO - Search request received, channel: 96d02267-5d8d-49b5-b379-be1cb6bd274f
+2025-04-01 16:46:46,138 - app.api.v1.endpoints.users - INFO - Current user from token: {'sub': '2', 'exp': 1743516679}
+2025-04-01 16:46:46,139 - app.api.v1.endpoints.users - INFO - Decrypted search data: {"query":"m","limit":10}
+2025-04-01 16:46:46,139 - app.api.v1.endpoints.users - INFO - Parsed search data: {'query': 'm', 'limit': 10}
+2025-04-01 16:46:46,140 - app.api.v1.endpoints.users - INFO - Searching users with query 'm', excluding user 2
+2025-04-01 16:46:46,141 - app.api.v1.endpoints.users - INFO - Found 1 users
+2025-04-01 16:46:46,141 - app.api.v1.endpoints.users - INFO - Encrypting search results: [{'id': '3', 'username': 'MiraiX', 'avatarUrl': None, 'isOnline': True}]
+2025-04-01 16:46:46,142 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 7.002000000000001}
+2025-04-01 16:46:46,142 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 7.002000000000001}
+2025-04-01 16:46:48,295 - app.api.v1.endpoints.websocket - INFO - Received chat.init message from user 2 to 3
+2025-04-01 16:46:48,297 - app.api.v1.endpoints.websocket - INFO - Added initiator_name 'YuDev' to chat.init message
+2025-04-01 16:46:48,303 - app.api.v1.endpoints.websocket - INFO - Message of type chat.init routed from 2 to 3
+2025-04-01 16:46:49,247 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange message from user 3 to 2
+2025-04-01 16:46:49,248 - app.api.v1.endpoints.websocket - INFO - Added responder_name 'MiraiX' to chat.key_exchange message
+2025-04-01 16:46:49,250 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange routed from 3 to 2
+2025-04-01 16:46:49,372 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange_complete message from user 2 to 3
+2025-04-01 16:46:49,372 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange message from user 3 to 2
+2025-04-01 16:46:49,373 - app.api.v1.endpoints.websocket - INFO - Added responder_name 'MiraiX' to chat.key_exchange message
+2025-04-01 16:46:49,412 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange_complete routed from 2 to 3
+2025-04-01 16:46:49,412 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange_complete message from user 2 to 3
+2025-04-01 16:46:49,414 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange_complete routed from 2 to 3
+2025-04-01 16:46:49,416 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange routed from 3 to 2
+2025-04-01 16:46:49,480 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange_complete message from user 2 to 3
+2025-04-01 16:46:49,485 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange_complete routed from 2 to 3
+2025-04-01 16:46:49,485 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange_complete message from user 2 to 3
+2025-04-01 16:46:49,489 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange_complete routed from 2 to 3
+2025-04-01 16:47:05,479 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 2: missing required fields
+2025-04-01 16:47:05,567 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 3: missing required fields
+2025-04-01 16:47:35,499 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 2: missing required fields
+2025-04-01 16:47:35,565 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 3: missing required fields
+2025-04-01 16:48:05,478 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 2: missing required fields
+2025-04-01 16:48:05,567 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 3: missing required fields
+2025-04-01 16:48:35,478 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 2: missing required fields
+2025-04-01 16:48:35,566 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 3: missing required fields
+2025-04-01 16:48:55,476 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 16:48:55,479 - app.services.connection_manager - INFO - User 3 connected to server 06eb4960-24dc-4cea-a86a-0ffd2c4a5147
+2025-04-01 16:48:55,479 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 16:48:55,480 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 16:48:58,377 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 16:48:58,379 - app.services.connection_manager - INFO - User 2 connected to server 06eb4960-24dc-4cea-a86a-0ffd2c4a5147
+2025-04-01 16:48:58,379 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 16:48:58,385 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 16:49:05,476 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 2: missing required fields
+2025-04-01 16:49:05,568 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 3: missing required fields
+2025-04-01 16:49:25,429 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 3: missing required fields
+2025-04-01 16:49:28,337 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 2: missing required fields
+2025-04-01 16:49:35,479 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 2: missing required fields
+2025-04-01 16:49:35,560 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 3: missing required fields
+2025-04-01 16:49:55,419 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 3: missing required fields
+2025-04-01 16:49:58,312 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 2: missing required fields
+2025-04-01 16:50:05,479 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 2: missing required fields
+2025-04-01 16:50:05,566 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 3: missing required fields
+2025-04-01 16:50:25,415 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 3: missing required fields
+2025-04-01 16:50:28,312 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 2: missing required fields
+2025-04-01 16:50:35,480 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 2: missing required fields
+2025-04-01 16:50:35,566 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 3: missing required fields
+2025-04-01 16:50:55,418 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 3: missing required fields
+2025-04-01 16:50:58,314 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 2: missing required fields
+2025-04-01 16:51:05,478 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 2: missing required fields
+2025-04-01 16:51:05,564 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 3: missing required fields
+2025-04-01 16:51:25,418 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 3: missing required fields
+2025-04-01 16:51:28,313 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 2: missing required fields
+2025-04-01 16:51:31,018 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 16:51:31,018 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 16:51:31,019 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 16:51:31,019 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 16:51:31,022 - app.services.connection_manager - INFO - User 2 disconnected from server 06eb4960-24dc-4cea-a86a-0ffd2c4a5147
+2025-04-01 16:51:31,022 - app.services.connection_manager - INFO - User 2 disconnected from server 06eb4960-24dc-4cea-a86a-0ffd2c4a5147
+2025-04-01 16:51:31,023 - app.services.connection_manager - INFO - User 3 disconnected from server 06eb4960-24dc-4cea-a86a-0ffd2c4a5147
+2025-04-01 16:51:31,023 - app.services.connection_manager - INFO - User 3 disconnected from server 06eb4960-24dc-4cea-a86a-0ffd2c4a5147
+2025-04-01 16:51:31,113 - app.main - INFO - Shutting down server...
+2025-04-01 16:51:31,114 - app.main - INFO - Redis connections closed
+2025-04-01 16:51:31,115 - app.main - INFO - Server shutdown completed
+2025-04-01 16:51:32,162 - app.main - INFO - Starting up server...
+2025-04-01 16:51:32,163 - app.main - INFO - Redis initialized
+2025-04-01 16:51:32,209 - app.main - INFO - Database initialized
+2025-04-01 16:51:32,242 - app.main - INFO - Server key pair generated
+2025-04-01 16:51:32,242 - app.main - INFO - Server startup completed successfully
+2025-04-01 16:51:36,041 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 16:51:36,054 - app.services.connection_manager - INFO - User 2 connected to server 95a11d8b-1d7e-4d6c-890f-44b5e7accf86
+2025-04-01 16:51:36,054 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 16:51:36,064 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 16:51:36,067 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 16:51:36,069 - app.services.connection_manager - INFO - User 2 connected to server 95a11d8b-1d7e-4d6c-890f-44b5e7accf86
+2025-04-01 16:51:36,069 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 16:51:36,070 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 16:51:36,473 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 16:51:36,475 - app.services.connection_manager - INFO - User 3 connected to server 95a11d8b-1d7e-4d6c-890f-44b5e7accf86
+2025-04-01 16:51:36,475 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 16:51:36,476 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 16:51:36,479 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 16:51:36,481 - app.services.connection_manager - INFO - User 3 connected to server 95a11d8b-1d7e-4d6c-890f-44b5e7accf86
+2025-04-01 16:51:36,481 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 16:51:36,482 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 16:51:50,662 - INFO - Incoming request: {"timestamp": "2025-04-01T13:51:50.662491", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 16:51:50,662 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T13:51:50.662491", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 16:51:50,675 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 13.003}
+2025-04-01 16:51:50,675 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 13.003}
+2025-04-01 16:51:50,727 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 16:51:50,729 - app.services.connection_manager - INFO - User 2 connected to server 95a11d8b-1d7e-4d6c-890f-44b5e7accf86
+2025-04-01 16:51:50,729 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 16:51:50,730 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 16:52:06,062 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 2: missing required fields
+2025-04-01 16:52:06,467 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 3: missing required fields
+2025-04-01 16:52:06,467 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 3: missing required fields
+2025-04-01 16:52:08,824 - INFO - Incoming request: {"timestamp": "2025-04-01T13:52:08.824300", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 16:52:08,824 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T13:52:08.824300", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 16:52:08,831 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 7.002000000000001}
+2025-04-01 16:52:08,831 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 7.002000000000001}
+2025-04-01 16:52:08,904 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 16:52:08,906 - app.services.connection_manager - INFO - User 3 connected to server 95a11d8b-1d7e-4d6c-890f-44b5e7accf86
+2025-04-01 16:52:08,906 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 16:52:08,908 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 16:52:20,719 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 2: missing required fields
+2025-04-01 16:52:36,062 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 2: missing required fields
+2025-04-01 16:52:36,470 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 3: missing required fields
+2025-04-01 16:52:38,902 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 3: missing required fields
+2025-04-01 16:52:50,719 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 2: missing required fields
+2025-04-01 16:53:06,065 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 2: missing required fields
+2025-04-01 16:53:06,468 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 3: missing required fields
+2025-04-01 16:53:08,898 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 3: missing required fields
+2025-04-01 16:53:09,823 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 16:53:09,824 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 16:53:09,824 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 16:53:09,825 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 16:53:09,825 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 16:53:09,826 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 16:53:09,830 - app.services.connection_manager - INFO - User 3 disconnected from server 95a11d8b-1d7e-4d6c-890f-44b5e7accf86
+2025-04-01 16:53:09,830 - app.services.connection_manager - INFO - User 2 disconnected from server 95a11d8b-1d7e-4d6c-890f-44b5e7accf86
+2025-04-01 16:53:09,831 - app.services.connection_manager - INFO - User 3 disconnected from server 95a11d8b-1d7e-4d6c-890f-44b5e7accf86
+2025-04-01 16:53:09,831 - app.services.connection_manager - INFO - User 2 disconnected from server 95a11d8b-1d7e-4d6c-890f-44b5e7accf86
+2025-04-01 16:53:09,831 - app.services.connection_manager - INFO - User 2 disconnected from server 95a11d8b-1d7e-4d6c-890f-44b5e7accf86
+2025-04-01 16:53:09,831 - app.services.connection_manager - INFO - User 3 disconnected from server 95a11d8b-1d7e-4d6c-890f-44b5e7accf86
+2025-04-01 16:53:09,917 - app.main - INFO - Shutting down server...
+2025-04-01 16:53:09,918 - app.main - INFO - Redis connections closed
+2025-04-01 16:53:09,918 - app.main - INFO - Server shutdown completed
+2025-04-01 16:53:12,285 - app.main - INFO - Starting up server...
+2025-04-01 16:53:12,286 - app.main - INFO - Redis initialized
+2025-04-01 16:53:12,331 - app.main - INFO - Database initialized
+2025-04-01 16:53:12,367 - app.main - INFO - Server key pair generated
+2025-04-01 16:53:12,367 - app.main - INFO - Server startup completed successfully
+2025-04-01 16:53:14,849 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 16:53:14,859 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 16:53:15,007 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 16:53:15,044 - app.services.connection_manager - INFO - User 2 connected to server eeaab03c-7e4d-4665-9d00-df591ad29581
+2025-04-01 16:53:15,044 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 16:53:15,049 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 16:53:15,050 - app.services.connection_manager - INFO - User 2 connected to server eeaab03c-7e4d-4665-9d00-df591ad29581
+2025-04-01 16:53:15,050 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 16:53:15,055 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 16:53:15,056 - app.services.connection_manager - INFO - User 3 connected to server eeaab03c-7e4d-4665-9d00-df591ad29581
+2025-04-01 16:53:15,057 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 16:53:15,061 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 16:53:15,112 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 16:53:15,114 - app.services.connection_manager - INFO - User 3 connected to server eeaab03c-7e4d-4665-9d00-df591ad29581
+2025-04-01 16:53:15,114 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 16:53:15,115 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 16:53:15,478 - INFO - Incoming request: {"timestamp": "2025-04-01T13:53:15.478105", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 16:53:15,478 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T13:53:15.478105", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 16:53:15,481 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 16:53:15,495 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 17.003999999999998}
+2025-04-01 16:53:15,495 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 17.003999999999998}
+2025-04-01 16:53:15,496 - app.services.connection_manager - INFO - User 3 disconnected from server eeaab03c-7e4d-4665-9d00-df591ad29581
+2025-04-01 16:53:15,525 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 16:53:15,527 - app.services.connection_manager - INFO - User 3 connected to server eeaab03c-7e4d-4665-9d00-df591ad29581
+2025-04-01 16:53:15,528 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 16:53:15,528 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 16:53:19,729 - INFO - Incoming request: {"timestamp": "2025-04-01T13:53:19.729752", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 16:53:19,729 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T13:53:19.729752", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 16:53:19,733 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.994}
+2025-04-01 16:53:19,733 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.994}
+2025-04-01 16:53:19,741 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 16:53:19,743 - app.services.connection_manager - INFO - User 2 disconnected from server eeaab03c-7e4d-4665-9d00-df591ad29581
+2025-04-01 16:53:19,770 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 16:53:19,772 - app.services.connection_manager - INFO - User 2 connected to server eeaab03c-7e4d-4665-9d00-df591ad29581
+2025-04-01 16:53:19,772 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 16:53:19,773 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 16:53:45,536 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 3: missing required fields
+2025-04-01 16:53:49,770 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 2: missing required fields
+2025-04-01 16:54:15,521 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 3: missing required fields
+2025-04-01 16:54:19,768 - app.api.v1.endpoints.websocket - WARNING - Received malformed message from user 2: missing required fields
+2025-04-01 16:54:34,151 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 16:54:34,152 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 16:54:34,152 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 16:54:34,153 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 16:54:34,154 - app.services.connection_manager - INFO - User 2 disconnected from server eeaab03c-7e4d-4665-9d00-df591ad29581
+2025-04-01 16:54:34,155 - app.services.connection_manager - INFO - User 2 disconnected from server eeaab03c-7e4d-4665-9d00-df591ad29581
+2025-04-01 16:54:34,155 - app.services.connection_manager - INFO - User 3 disconnected from server eeaab03c-7e4d-4665-9d00-df591ad29581
+2025-04-01 16:54:34,156 - app.services.connection_manager - INFO - User 3 disconnected from server eeaab03c-7e4d-4665-9d00-df591ad29581
+2025-04-01 16:54:34,262 - app.main - INFO - Shutting down server...
+2025-04-01 16:54:34,263 - app.main - INFO - Redis connections closed
+2025-04-01 16:54:34,263 - app.main - INFO - Server shutdown completed
+2025-04-01 16:54:36,534 - app.main - INFO - Starting up server...
+2025-04-01 16:54:36,534 - app.main - INFO - Redis initialized
+2025-04-01 16:54:36,691 - app.main - INFO - Database initialized
+2025-04-01 16:54:36,761 - app.main - INFO - Server key pair generated
+2025-04-01 16:54:36,761 - app.main - INFO - Server startup completed successfully
+2025-04-01 16:54:39,197 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 16:54:39,209 - app.services.connection_manager - INFO - User 2 connected to server 713a25d7-8fc3-4aac-85d5-3e05d1d88c43
+2025-04-01 16:54:39,210 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 16:54:39,217 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 16:54:39,358 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 16:54:39,360 - app.services.connection_manager - INFO - User 3 connected to server 713a25d7-8fc3-4aac-85d5-3e05d1d88c43
+2025-04-01 16:54:39,360 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 16:54:39,361 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 16:55:09,167 - app.api.v1.endpoints.websocket - INFO - Received ping message from user 2 to None
+2025-04-01 16:55:09,168 - app.api.v1.endpoints.websocket - ERROR - WebSocket error for user 2: 'str' object has no attribute 'last_seen'
+2025-04-01 16:55:09,169 - app.api.v1.endpoints.websocket - ERROR - Error traceback: Traceback (most recent call last):
+  File "C:\Users\yusen\PycharmProjects\YuMSGServer\app\api\v1\endpoints\websocket.py", line 111, in websocket_endpoint
+    user_id.last_seen = datetime.utcnow()
+AttributeError: 'str' object has no attribute 'last_seen'
+
+2025-04-01 16:55:09,170 - app.services.connection_manager - INFO - User 2 disconnected from server 713a25d7-8fc3-4aac-85d5-3e05d1d88c43
+2025-04-01 16:55:09,338 - app.api.v1.endpoints.websocket - INFO - Received ping message from user 3 to None
+2025-04-01 16:55:09,339 - app.api.v1.endpoints.websocket - ERROR - WebSocket error for user 3: 'str' object has no attribute 'last_seen'
+2025-04-01 16:55:09,339 - app.api.v1.endpoints.websocket - ERROR - Error traceback: Traceback (most recent call last):
+  File "C:\Users\yusen\PycharmProjects\YuMSGServer\app\api\v1\endpoints\websocket.py", line 111, in websocket_endpoint
+    user_id.last_seen = datetime.utcnow()
+AttributeError: 'str' object has no attribute 'last_seen'
+
+2025-04-01 16:55:09,340 - app.services.connection_manager - INFO - User 3 disconnected from server 713a25d7-8fc3-4aac-85d5-3e05d1d88c43
+2025-04-01 16:55:20,333 - app.main - INFO - Shutting down server...
+2025-04-01 16:55:20,334 - app.main - INFO - Redis connections closed
+2025-04-01 16:55:20,334 - app.main - INFO - Server shutdown completed
+2025-04-01 16:58:29,618 - app.main - INFO - Starting up server...
+2025-04-01 16:58:29,618 - app.main - INFO - Redis initialized
+2025-04-01 16:58:29,662 - app.main - INFO - Database initialized
+2025-04-01 16:58:29,693 - app.main - INFO - Server key pair generated
+2025-04-01 16:58:29,693 - app.main - INFO - Server startup completed successfully
+2025-04-01 16:58:30,818 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 16:58:30,830 - app.services.connection_manager - INFO - User 2 connected to server 07d7d792-015a-4d21-baa6-f6806cd65beb
+2025-04-01 16:58:30,830 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 16:58:30,840 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 16:58:37,679 - app.api.v1.endpoints.websocket - INFO - Received chat.delete message from user 2 to 3
+2025-04-01 16:58:37,684 - app.api.v1.endpoints.websocket - INFO - Message of type chat.delete routed from 2 to 3
+2025-04-01 16:58:45,380 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 16:58:45,382 - app.services.connection_manager - INFO - User 3 connected to server 07d7d792-015a-4d21-baa6-f6806cd65beb
+2025-04-01 16:58:45,382 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 16:58:45,388 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 16:58:45,389 - app.services.message_buffer - INFO - Retrieved and cleared 1 messages for user 3
+2025-04-01 16:58:45,389 - app.api.v1.endpoints.websocket - INFO - Delivering 1 buffered messages to user 3
+2025-04-01 16:58:45,497 - app.api.v1.endpoints.websocket - INFO - Received chat.delete message from user 3 to 2
+2025-04-01 16:58:45,500 - app.api.v1.endpoints.websocket - INFO - Message of type chat.delete routed from 3 to 2
+2025-04-01 16:58:52,817 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 16:58:52,818 - app.services.connection_manager - INFO - User 3 disconnected from server 07d7d792-015a-4d21-baa6-f6806cd65beb
+2025-04-01 16:59:22,889 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 16:59:22,890 - app.services.connection_manager - INFO - User 2 disconnected from server 07d7d792-015a-4d21-baa6-f6806cd65beb
+2025-04-01 16:59:27,727 - INFO - Incoming request: {"timestamp": "2025-04-01T13:59:27.727726", "method": "GET", "path": "/", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 16:59:27,727 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T13:59:27.727726", "method": "GET", "path": "/", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 16:59:27,728 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-04-01 16:59:27,728 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-04-01 16:59:28,159 - INFO - Incoming request: {"timestamp": "2025-04-01T13:59:28.159023", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 16:59:28,159 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T13:59:28.159023", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 16:59:28,170 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 11.003}
+2025-04-01 16:59:28,170 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 11.003}
+2025-04-01 16:59:28,360 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 16:59:28,362 - app.services.connection_manager - INFO - User 2 connected to server 07d7d792-015a-4d21-baa6-f6806cd65beb
+2025-04-01 16:59:28,362 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 16:59:28,364 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 16:59:28,890 - INFO - Incoming request: {"timestamp": "2025-04-01T13:59:28.890326", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 16:59:28,890 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T13:59:28.890326", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 16:59:28,892 - app.api.v1.endpoints.auth - INFO - Initializing secure channel with ID: fa1ab939-14b7-4e9f-bdc7-7316a3e8460e
+2025-04-01 16:59:28,892 - app.services.secure_channel_service - INFO - Creating channel with ID: fa1ab939-14b7-4e9f-bdc7-7316a3e8460e
+2025-04-01 16:59:28,894 - app.services.secure_channel_service - INFO - Channel fa1ab939-14b7-4e9f-bdc7-7316a3e8460e saved to Redis with TTL 1800 seconds
+2025-04-01 16:59:28,895 - app.api.v1.endpoints.auth - INFO - Channel fa1ab939-14b7-4e9f-bdc7-7316a3e8460e initialized successfully
+2025-04-01 16:59:28,896 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 5.002000000000001}
+2025-04-01 16:59:28,896 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 5.002000000000001}
+2025-04-01 16:59:29,863 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 16:59:29,865 - app.services.connection_manager - INFO - User 2 connected to server 07d7d792-015a-4d21-baa6-f6806cd65beb
+2025-04-01 16:59:29,865 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 16:59:29,867 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 16:59:50,233 - INFO - Incoming request: {"timestamp": "2025-04-01T13:59:50.233866", "method": "GET", "path": "/", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 16:59:50,233 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T13:59:50.233866", "method": "GET", "path": "/", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 16:59:50,234 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-04-01 16:59:50,234 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-04-01 16:59:50,501 - INFO - Incoming request: {"timestamp": "2025-04-01T13:59:50.500470", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 16:59:50,501 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T13:59:50.500470", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 16:59:50,508 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 8.002}
+2025-04-01 16:59:50,508 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 8.002}
+2025-04-01 16:59:50,579 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 16:59:50,581 - app.services.connection_manager - INFO - User 3 connected to server 07d7d792-015a-4d21-baa6-f6806cd65beb
+2025-04-01 16:59:50,581 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 16:59:50,582 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 16:59:51,395 - INFO - Incoming request: {"timestamp": "2025-04-01T13:59:51.395142", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 16:59:51,395 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T13:59:51.395142", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 16:59:51,396 - app.api.v1.endpoints.auth - INFO - Initializing secure channel with ID: feaaf85a-8e2e-4b10-a6b2-4020c188056a
+2025-04-01 16:59:51,396 - app.services.secure_channel_service - INFO - Creating channel with ID: feaaf85a-8e2e-4b10-a6b2-4020c188056a
+2025-04-01 16:59:51,397 - app.services.secure_channel_service - INFO - Channel feaaf85a-8e2e-4b10-a6b2-4020c188056a saved to Redis with TTL 1800 seconds
+2025-04-01 16:59:51,397 - app.api.v1.endpoints.auth - INFO - Channel feaaf85a-8e2e-4b10-a6b2-4020c188056a initialized successfully
+2025-04-01 16:59:51,397 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.0010000000000003}
+2025-04-01 16:59:51,397 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.0010000000000003}
+2025-04-01 16:59:51,645 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 16:59:51,647 - app.services.connection_manager - INFO - User 3 connected to server 07d7d792-015a-4d21-baa6-f6806cd65beb
+2025-04-01 16:59:51,647 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 16:59:51,648 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 16:59:52,834 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 16:59:52,835 - app.services.connection_manager - INFO - User 3 disconnected from server 07d7d792-015a-4d21-baa6-f6806cd65beb
+2025-04-01 16:59:52,841 - INFO - Incoming request: {"timestamp": "2025-04-01T13:59:52.841737", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 16:59:52,841 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T13:59:52.841737", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 16:59:52,844 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.839}
+2025-04-01 16:59:52,844 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.839}
+2025-04-01 16:59:52,876 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 16:59:52,878 - app.services.connection_manager - INFO - User 3 connected to server 07d7d792-015a-4d21-baa6-f6806cd65beb
+2025-04-01 16:59:52,878 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 16:59:52,879 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 17:00:09,940 - INFO - Incoming request: {"timestamp": "2025-04-01T14:00:09.940034", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 17:00:09,940 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T14:00:09.940034", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 17:00:09,944 - app.api.v1.endpoints.users - INFO - Search request received, channel: feaaf85a-8e2e-4b10-a6b2-4020c188056a
+2025-04-01 17:00:09,944 - app.api.v1.endpoints.users - INFO - Current user from token: {'sub': '3', 'exp': 1743517792}
+2025-04-01 17:00:09,945 - app.api.v1.endpoints.users - INFO - Decrypted search data: {"query":"yu","limit":10}
+2025-04-01 17:00:09,945 - app.api.v1.endpoints.users - INFO - Parsed search data: {'query': 'yu', 'limit': 10}
+2025-04-01 17:00:09,945 - app.api.v1.endpoints.users - INFO - Searching users with query 'yu', excluding user 3
+2025-04-01 17:00:09,947 - app.api.v1.endpoints.users - INFO - Found 1 users
+2025-04-01 17:00:09,948 - app.api.v1.endpoints.users - INFO - Encrypting search results: [{'id': '2', 'username': 'YuDev', 'avatarUrl': None, 'isOnline': True}]
+2025-04-01 17:00:09,949 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 9.001999999999999}
+2025-04-01 17:00:09,949 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 9.001999999999999}
+2025-04-01 17:00:11,745 - app.api.v1.endpoints.websocket - INFO - Received chat.init message from user 3 to 2
+2025-04-01 17:00:11,747 - app.api.v1.endpoints.websocket - INFO - Added initiator_name 'MiraiX' to chat.init message
+2025-04-01 17:00:11,753 - app.api.v1.endpoints.websocket - INFO - Message of type chat.init routed from 3 to 2
+2025-04-01 17:00:12,295 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange message from user 2 to 3
+2025-04-01 17:00:12,296 - app.api.v1.endpoints.websocket - INFO - Added responder_name 'YuDev' to chat.key_exchange message
+2025-04-01 17:00:12,303 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange routed from 2 to 3
+2025-04-01 17:00:12,529 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange_complete message from user 3 to 2
+2025-04-01 17:00:12,536 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange_complete routed from 3 to 2
+2025-04-01 17:00:12,536 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange_complete message from user 3 to 2
+2025-04-01 17:00:12,538 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange_complete routed from 3 to 2
+2025-04-01 17:00:13,054 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange message from user 2 to 3
+2025-04-01 17:00:13,055 - app.api.v1.endpoints.websocket - INFO - Added responder_name 'YuDev' to chat.key_exchange message
+2025-04-01 17:00:13,058 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange routed from 2 to 3
+2025-04-01 17:00:13,259 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange_complete message from user 3 to 2
+2025-04-01 17:00:13,262 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange_complete routed from 3 to 2
+2025-04-01 17:00:13,262 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange_complete message from user 3 to 2
+2025-04-01 17:00:13,264 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange_complete routed from 3 to 2
+2025-04-01 17:04:04,767 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 17:04:04,769 - app.services.connection_manager - INFO - User 3 connected to server 07d7d792-015a-4d21-baa6-f6806cd65beb
+2025-04-01 17:04:04,769 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 17:04:04,775 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 17:14:28,259 - INFO - Incoming request: {"timestamp": "2025-04-01T14:14:28.259433", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 17:14:28,259 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T14:14:28.259433", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 17:14:28,263 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 4.001}
+2025-04-01 17:14:28,263 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 4.001}
+2025-04-01 17:14:28,302 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 17:14:28,303 - app.services.connection_manager - INFO - User 2 connected to server 07d7d792-015a-4d21-baa6-f6806cd65beb
+2025-04-01 17:14:28,304 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 17:14:28,304 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 17:14:50,590 - INFO - Incoming request: {"timestamp": "2025-04-01T14:14:50.590820", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 17:14:50,590 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T14:14:50.590820", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 17:14:50,595 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 5.001}
+2025-04-01 17:14:50,595 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 5.001}
+2025-04-01 17:14:50,653 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 17:14:50,655 - app.services.connection_manager - INFO - User 3 connected to server 07d7d792-015a-4d21-baa6-f6806cd65beb
+2025-04-01 17:14:50,655 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 17:14:50,656 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 17:29:28,259 - INFO - Incoming request: {"timestamp": "2025-04-01T14:29:28.259883", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 17:29:28,259 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T14:29:28.259883", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 17:29:28,267 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 8.002}
+2025-04-01 17:29:28,267 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 8.002}
+2025-04-01 17:29:28,324 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 17:29:28,326 - app.services.connection_manager - INFO - User 2 connected to server 07d7d792-015a-4d21-baa6-f6806cd65beb
+2025-04-01 17:29:28,326 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 17:29:28,327 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 17:29:50,588 - INFO - Incoming request: {"timestamp": "2025-04-01T14:29:50.588159", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 17:29:50,588 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T14:29:50.588159", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 17:29:50,596 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 8.001}
+2025-04-01 17:29:50,596 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 8.001}
+2025-04-01 17:29:50,674 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 17:29:50,676 - app.services.connection_manager - INFO - User 3 connected to server 07d7d792-015a-4d21-baa6-f6806cd65beb
+2025-04-01 17:29:50,676 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 17:29:50,677 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 17:34:26,064 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 17:34:26,066 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 17:34:26,066 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 17:34:26,069 - app.services.connection_manager - INFO - User 2 disconnected from server 07d7d792-015a-4d21-baa6-f6806cd65beb
+2025-04-01 17:34:26,070 - app.services.connection_manager - INFO - User 2 disconnected from server 07d7d792-015a-4d21-baa6-f6806cd65beb
+2025-04-01 17:34:26,071 - app.services.connection_manager - INFO - User 2 disconnected from server 07d7d792-015a-4d21-baa6-f6806cd65beb
+2025-04-01 17:34:26,079 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 17:34:26,080 - app.services.connection_manager - INFO - User 2 disconnected from server 07d7d792-015a-4d21-baa6-f6806cd65beb
+2025-04-01 17:34:26,831 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 17:34:26,832 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 17:34:26,832 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 17:34:26,833 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 17:34:26,833 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 17:34:26,835 - app.services.connection_manager - INFO - User 3 disconnected from server 07d7d792-015a-4d21-baa6-f6806cd65beb
+2025-04-01 17:34:26,836 - app.services.connection_manager - INFO - User 3 disconnected from server 07d7d792-015a-4d21-baa6-f6806cd65beb
+2025-04-01 17:34:26,836 - app.services.connection_manager - INFO - User 3 disconnected from server 07d7d792-015a-4d21-baa6-f6806cd65beb
+2025-04-01 17:34:26,838 - app.services.connection_manager - INFO - User 3 disconnected from server 07d7d792-015a-4d21-baa6-f6806cd65beb
+2025-04-01 17:34:26,838 - app.services.connection_manager - INFO - User 3 disconnected from server 07d7d792-015a-4d21-baa6-f6806cd65beb
+2025-04-01 18:58:42,573 - app.main - INFO - Shutting down server...
+2025-04-01 18:58:42,575 - app.main - INFO - Redis connections closed
+2025-04-01 18:58:42,575 - app.main - INFO - Server shutdown completed
+2025-04-01 19:09:33,132 - app.main - INFO - Starting up server...
+2025-04-01 19:09:33,133 - app.main - INFO - Redis initialized
+2025-04-01 19:09:33,183 - app.main - INFO - Database initialized
+2025-04-01 19:09:33,201 - app.main - INFO - Server key pair generated
+2025-04-01 19:09:33,201 - app.main - INFO - Server startup completed successfully
+2025-04-01 19:09:33,723 - INFO - Incoming request: {"timestamp": "2025-04-01T16:09:33.723728", "method": "GET", "path": "/", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 19:09:33,723 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T16:09:33.723728", "method": "GET", "path": "/", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 19:09:33,724 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-04-01 19:09:33,724 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-04-01 19:09:34,060 - INFO - Incoming request: {"timestamp": "2025-04-01T16:09:34.060803", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 19:09:34,060 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T16:09:34.060803", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 19:09:34,081 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 21.144}
+2025-04-01 19:09:34,081 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 21.144}
+2025-04-01 19:09:35,369 - INFO - Incoming request: {"timestamp": "2025-04-01T16:09:35.369459", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 19:09:35,369 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T16:09:35.369459", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 19:09:35,371 - app.api.v1.endpoints.auth - INFO - Initializing secure channel with ID: 05941c02-4fe6-48d3-b03f-b6eaf85c0a6b
+2025-04-01 19:09:35,371 - app.services.secure_channel_service - INFO - Creating channel with ID: 05941c02-4fe6-48d3-b03f-b6eaf85c0a6b
+2025-04-01 19:09:35,376 - app.services.secure_channel_service - INFO - Channel 05941c02-4fe6-48d3-b03f-b6eaf85c0a6b saved to Redis with TTL 1800 seconds
+2025-04-01 19:09:35,377 - app.api.v1.endpoints.auth - INFO - Channel 05941c02-4fe6-48d3-b03f-b6eaf85c0a6b initialized successfully
+2025-04-01 19:09:35,377 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 8.002}
+2025-04-01 19:09:35,377 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 8.002}
+2025-04-01 19:09:35,443 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 19:09:35,450 - app.services.connection_manager - INFO - User 3 connected to server 9e2ab389-de10-4abe-b028-a7075d299563
+2025-04-01 19:09:35,451 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 19:09:35,457 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 19:09:36,893 - INFO - Incoming request: {"timestamp": "2025-04-01T16:09:36.893924", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 19:09:36,893 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T16:09:36.893924", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 19:09:36,897 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 4.001}
+2025-04-01 19:09:36,897 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 4.001}
+2025-04-01 19:09:36,951 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 19:09:36,951 - app.services.connection_manager - INFO - User 3 disconnected from server 9e2ab389-de10-4abe-b028-a7075d299563
+2025-04-01 19:09:36,967 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-01 19:09:36,969 - app.services.connection_manager - INFO - User 3 connected to server 9e2ab389-de10-4abe-b028-a7075d299563
+2025-04-01 19:09:36,969 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-01 19:09:36,970 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-01 19:09:39,794 - app.api.v1.endpoints.websocket - INFO - Received chat.delete message from user 3 to 2
+2025-04-01 19:09:39,799 - app.api.v1.endpoints.websocket - INFO - Message of type chat.delete routed from 3 to 2
+2025-04-01 19:10:08,787 - INFO - Incoming request: {"timestamp": "2025-04-01T16:10:08.787859", "method": "GET", "path": "/", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 19:10:08,787 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T16:10:08.787859", "method": "GET", "path": "/", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 19:10:08,788 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-04-01 19:10:08,788 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.0}
+2025-04-01 19:10:16,248 - INFO - Incoming request: {"timestamp": "2025-04-01T16:10:16.248599", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 19:10:16,248 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T16:10:16.248599", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 19:10:16,249 - app.api.v1.endpoints.auth - INFO - Initializing secure channel with ID: 8735758d-c41b-41ac-af01-966d8d236765
+2025-04-01 19:10:16,249 - app.services.secure_channel_service - INFO - Creating channel with ID: 8735758d-c41b-41ac-af01-966d8d236765
+2025-04-01 19:10:16,250 - app.services.secure_channel_service - INFO - Channel 8735758d-c41b-41ac-af01-966d8d236765 saved to Redis with TTL 1800 seconds
+2025-04-01 19:10:16,250 - app.api.v1.endpoints.auth - INFO - Channel 8735758d-c41b-41ac-af01-966d8d236765 initialized successfully
+2025-04-01 19:10:16,250 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.0010000000000003}
+2025-04-01 19:10:16,250 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.0010000000000003}
+2025-04-01 19:10:16,429 - INFO - Incoming request: {"timestamp": "2025-04-01T16:10:16.429814", "method": "POST", "path": "/auth/login", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 19:10:16,429 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T16:10:16.429814", "method": "POST", "path": "/auth/login", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 19:10:16,431 - app.api.v1.endpoints.auth - INFO - Login request using channel: 8735758d-c41b-41ac-af01-966d8d236765
+2025-04-01 19:10:16,433 - app.api.v1.endpoints.auth - INFO - Decrypted login data: {"email":"yu@gmail.com","password":"123456","deviceId":"fec25222-497a-4568-85a3-2e1c2c24eed1"}
+2025-04-01 19:10:16,433 - app.api.v1.endpoints.auth - INFO - Parsed login data: {'email': 'yu@gmail.com', 'password': '123456', 'deviceId': 'fec25222-497a-4568-85a3-2e1c2c24eed1'}
+2025-04-01 19:10:16,660 - app.api.v1.endpoints.auth - INFO - Generating tokens for user ID: 2
+2025-04-01 19:10:16,666 - app.api.v1.endpoints.auth - INFO - Login database commit successful
+2025-04-01 19:10:16,666 - app.api.v1.endpoints.auth - INFO - Encrypting login response
+2025-04-01 19:10:16,667 - app.api.v1.endpoints.auth - INFO - Login response encrypted successfully
+2025-04-01 19:10:16,667 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 238.053}
+2025-04-01 19:10:16,667 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 238.053}
+2025-04-01 19:10:18,278 - INFO - Incoming request: {"timestamp": "2025-04-01T16:10:18.278633", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 19:10:18,278 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T16:10:18.278633", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 19:10:18,280 - app.api.v1.endpoints.auth - INFO - Initializing secure channel with ID: e45bacc1-1966-4ae2-8749-7713cee3803f
+2025-04-01 19:10:18,280 - app.services.secure_channel_service - INFO - Creating channel with ID: e45bacc1-1966-4ae2-8749-7713cee3803f
+2025-04-01 19:10:18,280 - app.services.secure_channel_service - INFO - Channel e45bacc1-1966-4ae2-8749-7713cee3803f saved to Redis with TTL 1800 seconds
+2025-04-01 19:10:18,281 - app.api.v1.endpoints.auth - INFO - Channel e45bacc1-1966-4ae2-8749-7713cee3803f initialized successfully
+2025-04-01 19:10:18,281 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.0}
+2025-04-01 19:10:18,281 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.0}
+2025-04-01 19:10:19,571 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 19:10:19,573 - app.services.connection_manager - INFO - User 2 connected to server 9e2ab389-de10-4abe-b028-a7075d299563
+2025-04-01 19:10:19,574 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 19:10:19,580 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 19:10:19,581 - app.services.message_buffer - INFO - Retrieved and cleared 1 messages for user 2
+2025-04-01 19:10:19,581 - app.api.v1.endpoints.websocket - INFO - Delivering 1 buffered messages to user 2
+2025-04-01 19:10:29,904 - INFO - Incoming request: {"timestamp": "2025-04-01T16:10:29.904548", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 19:10:29,904 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T16:10:29.904548", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 19:10:29,909 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 5.001}
+2025-04-01 19:10:29,909 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 5.001}
+2025-04-01 19:10:29,956 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 19:10:29,958 - app.services.connection_manager - INFO - User 2 connected to server 9e2ab389-de10-4abe-b028-a7075d299563
+2025-04-01 19:10:29,958 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 19:10:29,959 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 19:10:29,961 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 19:10:29,962 - app.services.connection_manager - INFO - User 2 disconnected from server 9e2ab389-de10-4abe-b028-a7075d299563
+2025-04-01 19:10:29,962 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 19:10:29,963 - app.services.connection_manager - INFO - User 2 disconnected from server 9e2ab389-de10-4abe-b028-a7075d299563
+2025-04-01 19:10:29,968 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 19:10:29,970 - app.services.connection_manager - INFO - User 2 connected to server 9e2ab389-de10-4abe-b028-a7075d299563
+2025-04-01 19:10:29,970 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 19:10:29,971 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 19:10:42,474 - INFO - Incoming request: {"timestamp": "2025-04-01T16:10:42.473136", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 19:10:42,474 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T16:10:42.473136", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 19:10:42,476 - app.api.v1.endpoints.users - INFO - Search request received, channel: e45bacc1-1966-4ae2-8749-7713cee3803f
+2025-04-01 19:10:42,476 - app.api.v1.endpoints.users - INFO - Current user from token: {'sub': '2', 'exp': 1743525629}
+2025-04-01 19:10:42,477 - app.api.v1.endpoints.users - INFO - Decrypted search data: {"query":"m","limit":10}
+2025-04-01 19:10:42,477 - app.api.v1.endpoints.users - INFO - Parsed search data: {'query': 'm', 'limit': 10}
+2025-04-01 19:10:42,477 - app.api.v1.endpoints.users - INFO - Searching users with query 'm', excluding user 2
+2025-04-01 19:10:42,479 - app.api.v1.endpoints.users - INFO - Found 1 users
+2025-04-01 19:10:42,479 - app.api.v1.endpoints.users - INFO - Encrypting search results: [{'id': '3', 'username': 'MiraiX', 'avatarUrl': None, 'isOnline': True}]
+2025-04-01 19:10:42,480 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 7.001}
+2025-04-01 19:10:42,480 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 7.001}
+2025-04-01 19:10:43,751 - INFO - Incoming request: {"timestamp": "2025-04-01T16:10:43.751199", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 19:10:43,751 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T16:10:43.751199", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 19:10:43,753 - app.api.v1.endpoints.users - INFO - Search request received, channel: e45bacc1-1966-4ae2-8749-7713cee3803f
+2025-04-01 19:10:43,753 - app.api.v1.endpoints.users - INFO - Current user from token: {'sub': '2', 'exp': 1743525629}
+2025-04-01 19:10:43,755 - app.api.v1.endpoints.users - INFO - Decrypted search data: {"query":"ml","limit":10}
+2025-04-01 19:10:43,755 - app.api.v1.endpoints.users - INFO - Parsed search data: {'query': 'ml', 'limit': 10}
+2025-04-01 19:10:43,755 - app.api.v1.endpoints.users - INFO - Searching users with query 'ml', excluding user 2
+2025-04-01 19:10:43,755 - app.api.v1.endpoints.users - INFO - Found 0 users
+2025-04-01 19:10:43,756 - app.api.v1.endpoints.users - INFO - Encrypting search results: []
+2025-04-01 19:10:43,756 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 5.001}
+2025-04-01 19:10:43,756 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 5.001}
+2025-04-01 19:10:44,757 - INFO - Incoming request: {"timestamp": "2025-04-01T16:10:44.757201", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 19:10:44,757 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T16:10:44.757201", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 19:10:44,760 - app.api.v1.endpoints.users - INFO - Search request received, channel: e45bacc1-1966-4ae2-8749-7713cee3803f
+2025-04-01 19:10:44,760 - app.api.v1.endpoints.users - INFO - Current user from token: {'sub': '2', 'exp': 1743525629}
+2025-04-01 19:10:44,761 - app.api.v1.endpoints.users - INFO - Decrypted search data: {"query":"m","limit":10}
+2025-04-01 19:10:44,761 - app.api.v1.endpoints.users - INFO - Parsed search data: {'query': 'm', 'limit': 10}
+2025-04-01 19:10:44,761 - app.api.v1.endpoints.users - INFO - Searching users with query 'm', excluding user 2
+2025-04-01 19:10:44,762 - app.api.v1.endpoints.users - INFO - Found 1 users
+2025-04-01 19:10:44,762 - app.api.v1.endpoints.users - INFO - Encrypting search results: [{'id': '3', 'username': 'MiraiX', 'avatarUrl': None, 'isOnline': True}]
+2025-04-01 19:10:44,763 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 6.001}
+2025-04-01 19:10:44,763 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 6.001}
+2025-04-01 19:10:47,851 - INFO - Incoming request: {"timestamp": "2025-04-01T16:10:47.851022", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 19:10:47,851 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T16:10:47.851022", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.45.186"}
+2025-04-01 19:10:47,854 - app.api.v1.endpoints.users - INFO - Search request received, channel: 05941c02-4fe6-48d3-b03f-b6eaf85c0a6b
+2025-04-01 19:10:47,854 - app.api.v1.endpoints.users - INFO - Current user from token: {'sub': '3', 'exp': 1743525576}
+2025-04-01 19:10:47,855 - app.api.v1.endpoints.users - INFO - Decrypted search data: {"query":"yu","limit":10}
+2025-04-01 19:10:47,855 - app.api.v1.endpoints.users - INFO - Parsed search data: {'query': 'yu', 'limit': 10}
+2025-04-01 19:10:47,855 - app.api.v1.endpoints.users - INFO - Searching users with query 'yu', excluding user 3
+2025-04-01 19:10:47,856 - app.api.v1.endpoints.users - INFO - Found 1 users
+2025-04-01 19:10:47,857 - app.api.v1.endpoints.users - INFO - Encrypting search results: [{'id': '2', 'username': 'YuDev', 'avatarUrl': None, 'isOnline': True}]
+2025-04-01 19:10:47,858 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 7.002000000000001}
+2025-04-01 19:10:47,858 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 7.002000000000001}
+2025-04-01 19:10:52,565 - app.api.v1.endpoints.websocket - INFO - Received chat.init message from user 3 to 2
+2025-04-01 19:10:52,566 - app.api.v1.endpoints.websocket - INFO - Added initiator_name 'MiraiX' to chat.init message
+2025-04-01 19:10:52,568 - app.api.v1.endpoints.websocket - INFO - Message of type chat.init routed from 3 to 2
+2025-04-01 19:10:54,259 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange message from user 2 to 3
+2025-04-01 19:10:54,260 - app.api.v1.endpoints.websocket - INFO - Added responder_name 'YuDev' to chat.key_exchange message
+2025-04-01 19:10:54,267 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange routed from 2 to 3
+2025-04-01 19:10:54,283 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange message from user 2 to 3
+2025-04-01 19:10:54,284 - app.api.v1.endpoints.websocket - INFO - Added responder_name 'YuDev' to chat.key_exchange message
+2025-04-01 19:10:54,286 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange routed from 2 to 3
+2025-04-01 19:10:54,658 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange_complete message from user 3 to 2
+2025-04-01 19:10:54,665 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange_complete routed from 3 to 2
+2025-04-01 19:10:54,665 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange_complete message from user 3 to 2
+2025-04-01 19:10:54,667 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange_complete routed from 3 to 2
+2025-04-01 19:10:54,668 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange_complete message from user 3 to 2
+2025-04-01 19:10:54,669 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange_complete routed from 3 to 2
+2025-04-01 19:10:54,670 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange_complete message from user 3 to 2
+2025-04-01 19:10:54,671 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange_complete routed from 3 to 2
+2025-04-01 19:11:18,812 - app.api.v1.endpoints.websocket - INFO - Received chat.message message from user 2 to 3
+2025-04-01 19:11:18,815 - app.api.v1.endpoints.websocket - INFO - Message of type chat.message routed from 2 to 3
+2025-04-01 19:11:19,030 - app.api.v1.endpoints.websocket - INFO - Received chat.status message from user 3 to 2
+2025-04-01 19:11:19,039 - app.api.v1.endpoints.websocket - INFO - Message of type chat.status routed from 3 to 2
+2025-04-01 19:11:19,039 - app.api.v1.endpoints.websocket - INFO - Received chat.status message from user 3 to 2
+2025-04-01 19:11:19,041 - app.api.v1.endpoints.websocket - INFO - Message of type chat.status routed from 3 to 2
+2025-04-01 19:11:19,041 - app.api.v1.endpoints.websocket - INFO - Received chat.status message from user 3 to 2
+2025-04-01 19:11:19,043 - app.api.v1.endpoints.websocket - INFO - Message of type chat.status routed from 3 to 2
+2025-04-01 19:11:36,328 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 19:11:36,330 - app.services.connection_manager - INFO - User 2 connected to server 9e2ab389-de10-4abe-b028-a7075d299563
+2025-04-01 19:11:36,330 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 19:11:36,332 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 19:11:37,042 - INFO - Incoming request: {"timestamp": "2025-04-01T16:11:37.042360", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 19:11:37,042 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T16:11:37.042360", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 19:11:37,047 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 5.002000000000001}
+2025-04-01 19:11:37,047 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 5.002000000000001}
+2025-04-01 19:11:37,075 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 19:11:37,077 - app.services.connection_manager - INFO - User 2 connected to server 9e2ab389-de10-4abe-b028-a7075d299563
+2025-04-01 19:11:37,077 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 19:11:37,078 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 19:11:37,136 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 19:11:37,138 - app.services.connection_manager - INFO - User 2 connected to server 9e2ab389-de10-4abe-b028-a7075d299563
+2025-04-01 19:11:37,138 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 19:11:37,139 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 19:11:37,141 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 19:11:37,142 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 19:11:37,143 - app.services.connection_manager - INFO - User 2 disconnected from server 9e2ab389-de10-4abe-b028-a7075d299563
+2025-04-01 19:11:37,144 - app.services.connection_manager - INFO - User 2 disconnected from server 9e2ab389-de10-4abe-b028-a7075d299563
+2025-04-01 19:11:40,701 - INFO - Incoming request: {"timestamp": "2025-04-01T16:11:40.701704", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 19:11:40,701 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T16:11:40.701704", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 19:11:40,705 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 4.001}
+2025-04-01 19:11:40,705 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 4.001}
+2025-04-01 19:11:40,731 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 19:11:40,733 - app.services.connection_manager - INFO - User 2 connected to server 9e2ab389-de10-4abe-b028-a7075d299563
+2025-04-01 19:11:40,733 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 19:11:40,734 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 19:11:42,963 - app.api.v1.endpoints.websocket - INFO - Received chat.delete message from user 2 to 3
+2025-04-01 19:11:42,971 - app.api.v1.endpoints.websocket - INFO - Message of type chat.delete routed from 2 to 3
+2025-04-01 19:11:44,680 - app.api.v1.endpoints.websocket - INFO - Received chat.delete message from user 3 to 2
+2025-04-01 19:11:44,683 - app.api.v1.endpoints.websocket - INFO - Message of type chat.delete routed from 3 to 2
+2025-04-01 19:11:54,537 - INFO - Incoming request: {"timestamp": "2025-04-01T16:11:54.537660", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 19:11:54,537 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-01T16:11:54.537660", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.45.93"}
+2025-04-01 19:11:54,540 - app.api.v1.endpoints.users - INFO - Search request received, channel: e45bacc1-1966-4ae2-8749-7713cee3803f
+2025-04-01 19:11:54,540 - app.api.v1.endpoints.users - INFO - Current user from token: {'sub': '2', 'exp': 1743525700}
+2025-04-01 19:11:54,542 - app.api.v1.endpoints.users - INFO - Decrypted search data: {"query":"mi","limit":10}
+2025-04-01 19:11:54,542 - app.api.v1.endpoints.users - INFO - Parsed search data: {'query': 'mi', 'limit': 10}
+2025-04-01 19:11:54,542 - app.api.v1.endpoints.users - INFO - Searching users with query 'mi', excluding user 2
+2025-04-01 19:11:54,543 - app.api.v1.endpoints.users - INFO - Found 1 users
+2025-04-01 19:11:54,543 - app.api.v1.endpoints.users - INFO - Encrypting search results: [{'id': '3', 'username': 'MiraiX', 'avatarUrl': None, 'isOnline': True}]
+2025-04-01 19:11:54,544 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 7.001}
+2025-04-01 19:11:54,544 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 7.001}
+2025-04-01 19:11:56,491 - app.api.v1.endpoints.websocket - INFO - Received chat.init message from user 2 to 3
+2025-04-01 19:11:56,492 - app.api.v1.endpoints.websocket - INFO - Added initiator_name 'YuDev' to chat.init message
+2025-04-01 19:11:56,494 - app.api.v1.endpoints.websocket - INFO - Message of type chat.init routed from 2 to 3
+2025-04-01 19:11:58,117 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange message from user 3 to 2
+2025-04-01 19:11:58,118 - app.api.v1.endpoints.websocket - INFO - Added responder_name 'MiraiX' to chat.key_exchange message
+2025-04-01 19:11:58,124 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange routed from 3 to 2
+2025-04-01 19:11:58,124 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange message from user 3 to 2
+2025-04-01 19:11:58,125 - app.api.v1.endpoints.websocket - INFO - Added responder_name 'MiraiX' to chat.key_exchange message
+2025-04-01 19:11:58,126 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange routed from 3 to 2
+2025-04-01 19:11:58,163 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange_complete message from user 2 to 3
+2025-04-01 19:11:58,166 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange_complete routed from 2 to 3
+2025-04-01 19:11:58,166 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange_complete message from user 2 to 3
+2025-04-01 19:11:58,168 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange_complete routed from 2 to 3
+2025-04-01 19:11:58,196 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange_complete message from user 2 to 3
+2025-04-01 19:11:58,199 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange_complete routed from 2 to 3
+2025-04-01 19:11:58,199 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange_complete message from user 2 to 3
+2025-04-01 19:11:58,202 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange_complete routed from 2 to 3
+2025-04-01 19:13:32,399 - app.api.v1.endpoints.websocket - INFO - Received chat.delete message from user 2 to 3
+2025-04-01 19:13:32,402 - app.api.v1.endpoints.websocket - INFO - Message of type chat.delete routed from 2 to 3
+2025-04-01 19:13:35,339 - app.api.v1.endpoints.websocket - INFO - Received chat.delete message from user 3 to 2
+2025-04-01 19:13:35,348 - app.api.v1.endpoints.websocket - INFO - Message of type chat.delete routed from 3 to 2
+2025-04-01 19:14:30,353 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-01 19:14:30,355 - app.services.connection_manager - INFO - User 2 connected to server 9e2ab389-de10-4abe-b028-a7075d299563
+2025-04-01 19:14:30,355 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-01 19:14:30,362 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-01 19:14:31,037 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-01 19:14:31,038 - app.services.connection_manager - INFO - User 3 disconnected from server 9e2ab389-de10-4abe-b028-a7075d299563
+2025-04-01 19:14:34,125 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 19:14:34,126 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 19:14:34,126 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 19:14:34,127 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-01 19:14:34,129 - app.services.connection_manager - INFO - User 2 disconnected from server 9e2ab389-de10-4abe-b028-a7075d299563
+2025-04-01 19:14:34,130 - app.services.connection_manager - INFO - User 2 disconnected from server 9e2ab389-de10-4abe-b028-a7075d299563
+2025-04-01 19:14:34,130 - app.services.connection_manager - INFO - User 2 disconnected from server 9e2ab389-de10-4abe-b028-a7075d299563
+2025-04-01 19:14:34,131 - app.services.connection_manager - INFO - User 2 disconnected from server 9e2ab389-de10-4abe-b028-a7075d299563
+2025-04-01 19:15:35,629 - app.main - INFO - Shutting down server...
+2025-04-01 19:15:35,630 - app.main - INFO - Redis connections closed
+2025-04-01 19:15:35,630 - app.main - INFO - Server shutdown completed
+2025-04-02 13:00:16,805 - app.main - INFO - Starting up server...
+2025-04-02 13:00:16,806 - app.main - INFO - Redis initialized
+2025-04-02 13:00:16,900 - app.main - INFO - Database initialized
+2025-04-02 13:00:17,007 - app.main - INFO - Server key pair generated
+2025-04-02 13:00:17,007 - app.main - INFO - Server startup completed successfully
+2025-04-02 13:00:28,922 - INFO - Incoming request: {"timestamp": "2025-04-02T10:00:28.922064", "method": "GET", "path": "/", "query_params": "", "client": "192.168.8.81"}
+2025-04-02 13:00:28,922 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-02T10:00:28.922064", "method": "GET", "path": "/", "query_params": "", "client": "192.168.8.81"}
+2025-04-02 13:00:28,924 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.0010000000000003}
+2025-04-02 13:00:28,924 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.0010000000000003}
+2025-04-02 13:00:34,591 - INFO - Incoming request: {"timestamp": "2025-04-02T10:00:34.591347", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.8.81"}
+2025-04-02 13:00:34,591 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-02T10:00:34.591347", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.8.81"}
+2025-04-02 13:00:34,595 - app.api.v1.endpoints.auth - INFO - Initializing secure channel with ID: 2a2195a1-6db1-4962-a512-1287f1cc34f6
+2025-04-02 13:00:34,595 - app.services.secure_channel_service - INFO - Creating channel with ID: 2a2195a1-6db1-4962-a512-1287f1cc34f6
+2025-04-02 13:00:34,599 - app.services.secure_channel_service - INFO - Channel 2a2195a1-6db1-4962-a512-1287f1cc34f6 saved to Redis with TTL 1800 seconds
+2025-04-02 13:00:34,601 - app.api.v1.endpoints.auth - INFO - Channel 2a2195a1-6db1-4962-a512-1287f1cc34f6 initialized successfully
+2025-04-02 13:00:34,601 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 10.002}
+2025-04-02 13:00:34,601 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 10.002}
+2025-04-02 13:00:34,824 - INFO - Incoming request: {"timestamp": "2025-04-02T10:00:34.824400", "method": "POST", "path": "/auth/login", "query_params": "", "client": "192.168.8.81"}
+2025-04-02 13:00:34,824 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-02T10:00:34.824400", "method": "POST", "path": "/auth/login", "query_params": "", "client": "192.168.8.81"}
+2025-04-02 13:00:34,827 - app.api.v1.endpoints.auth - INFO - Login request using channel: 2a2195a1-6db1-4962-a512-1287f1cc34f6
+2025-04-02 13:00:34,830 - app.api.v1.endpoints.auth - INFO - Decrypted login data: {"email":"yu@gmail.com","password":"123456","deviceId":"064138cc-f194-4b8d-afb1-f2950b35c0d2"}
+2025-04-02 13:00:34,830 - app.api.v1.endpoints.auth - INFO - Parsed login data: {'email': 'yu@gmail.com', 'password': '123456', 'deviceId': '064138cc-f194-4b8d-afb1-f2950b35c0d2'}
+2025-04-02 13:00:35,089 - app.api.v1.endpoints.auth - INFO - Generating tokens for user ID: 2
+2025-04-02 13:00:35,094 - app.api.v1.endpoints.auth - INFO - Login database commit successful
+2025-04-02 13:00:35,094 - app.api.v1.endpoints.auth - INFO - Encrypting login response
+2025-04-02 13:00:35,095 - app.api.v1.endpoints.auth - INFO - Login response encrypted successfully
+2025-04-02 13:00:35,096 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 272.062}
+2025-04-02 13:00:35,096 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 272.062}
+2025-04-02 13:00:36,180 - INFO - Incoming request: {"timestamp": "2025-04-02T10:00:36.180196", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.8.81"}
+2025-04-02 13:00:36,180 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-02T10:00:36.180196", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.8.81"}
+2025-04-02 13:00:36,182 - app.api.v1.endpoints.auth - INFO - Initializing secure channel with ID: 30322ed9-da57-486d-b55a-1ed611efcf94
+2025-04-02 13:00:36,182 - app.services.secure_channel_service - INFO - Creating channel with ID: 30322ed9-da57-486d-b55a-1ed611efcf94
+2025-04-02 13:00:36,182 - app.services.secure_channel_service - INFO - Channel 30322ed9-da57-486d-b55a-1ed611efcf94 saved to Redis with TTL 1800 seconds
+2025-04-02 13:00:36,183 - app.api.v1.endpoints.auth - INFO - Channel 30322ed9-da57-486d-b55a-1ed611efcf94 initialized successfully
+2025-04-02 13:00:36,183 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.0010000000000003}
+2025-04-02 13:00:36,183 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.0010000000000003}
+2025-04-02 13:00:37,834 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-02 13:00:37,846 - app.services.connection_manager - INFO - User 2 connected to server 971508ae-672e-41e8-bbc4-6c4f0744f71e
+2025-04-02 13:00:37,846 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-02 13:00:37,850 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-02 13:00:45,201 - INFO - Incoming request: {"timestamp": "2025-04-02T10:00:45.200080", "method": "GET", "path": "/", "query_params": "", "client": "192.168.8.186"}
+2025-04-02 13:00:45,201 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-02T10:00:45.200080", "method": "GET", "path": "/", "query_params": "", "client": "192.168.8.186"}
+2025-04-02 13:00:45,201 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.001}
+2025-04-02 13:00:45,201 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 1.001}
+2025-04-02 13:00:52,309 - INFO - Incoming request: {"timestamp": "2025-04-02T10:00:52.309905", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.8.81"}
+2025-04-02 13:00:52,309 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-02T10:00:52.309905", "method": "POST", "path": "/auth/refresh", "query_params": "", "client": "192.168.8.81"}
+2025-04-02 13:00:52,315 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 6.0}
+2025-04-02 13:00:52,315 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 6.0}
+2025-04-02 13:00:52,427 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-02 13:00:52,429 - app.services.connection_manager - INFO - User 2 connected to server 971508ae-672e-41e8-bbc4-6c4f0744f71e
+2025-04-02 13:00:52,429 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-02 13:00:52,431 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-02 13:00:52,439 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 2
+2025-04-02 13:00:52,441 - app.services.connection_manager - INFO - User 2 connected to server 971508ae-672e-41e8-bbc4-6c4f0744f71e
+2025-04-02 13:00:52,441 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 2
+2025-04-02 13:00:52,442 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 2
+2025-04-02 13:00:52,451 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-02 13:00:52,452 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-02 13:00:52,453 - app.services.connection_manager - INFO - User 2 disconnected from server 971508ae-672e-41e8-bbc4-6c4f0744f71e
+2025-04-02 13:00:52,455 - app.services.connection_manager - INFO - User 2 disconnected from server 971508ae-672e-41e8-bbc4-6c4f0744f71e
+2025-04-02 13:01:25,927 - INFO - Incoming request: {"timestamp": "2025-04-02T10:01:25.927198", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.8.186"}
+2025-04-02 13:01:25,927 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-02T10:01:25.927198", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.8.186"}
+2025-04-02 13:01:25,928 - app.api.v1.endpoints.auth - INFO - Initializing secure channel with ID: 7a78de9d-479b-4631-b8f7-7141b40b1dcc
+2025-04-02 13:01:25,928 - app.services.secure_channel_service - INFO - Creating channel with ID: 7a78de9d-479b-4631-b8f7-7141b40b1dcc
+2025-04-02 13:01:25,929 - app.services.secure_channel_service - INFO - Channel 7a78de9d-479b-4631-b8f7-7141b40b1dcc saved to Redis with TTL 1800 seconds
+2025-04-02 13:01:25,929 - app.api.v1.endpoints.auth - INFO - Channel 7a78de9d-479b-4631-b8f7-7141b40b1dcc initialized successfully
+2025-04-02 13:01:25,929 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.0010000000000003}
+2025-04-02 13:01:25,929 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 2.0010000000000003}
+2025-04-02 13:01:26,127 - INFO - Incoming request: {"timestamp": "2025-04-02T10:01:26.127243", "method": "POST", "path": "/auth/login", "query_params": "", "client": "192.168.8.186"}
+2025-04-02 13:01:26,127 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-02T10:01:26.127243", "method": "POST", "path": "/auth/login", "query_params": "", "client": "192.168.8.186"}
+2025-04-02 13:01:26,129 - app.api.v1.endpoints.auth - INFO - Login request using channel: 7a78de9d-479b-4631-b8f7-7141b40b1dcc
+2025-04-02 13:01:26,130 - app.api.v1.endpoints.auth - INFO - Decrypted login data: {"email":"mirai@gmail.com","password":"123456","deviceId":"3bc1078f-1b84-4c9e-ad21-cd1f03320eea"}
+2025-04-02 13:01:26,130 - app.api.v1.endpoints.auth - INFO - Parsed login data: {'email': 'mirai@gmail.com', 'password': '123456', 'deviceId': '3bc1078f-1b84-4c9e-ad21-cd1f03320eea'}
+2025-04-02 13:01:26,340 - app.api.v1.endpoints.auth - INFO - Generating tokens for user ID: 3
+2025-04-02 13:01:26,341 - app.api.v1.endpoints.auth - INFO - Login database commit successful
+2025-04-02 13:01:26,341 - app.api.v1.endpoints.auth - INFO - Encrypting login response
+2025-04-02 13:01:26,342 - app.api.v1.endpoints.auth - INFO - Login response encrypted successfully
+2025-04-02 13:01:26,342 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 215.07000000000002}
+2025-04-02 13:01:26,342 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 215.07000000000002}
+2025-04-02 13:01:28,283 - INFO - Incoming request: {"timestamp": "2025-04-02T10:01:28.283774", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.8.186"}
+2025-04-02 13:01:28,283 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-02T10:01:28.283774", "method": "POST", "path": "/auth/secure-init", "query_params": "", "client": "192.168.8.186"}
+2025-04-02 13:01:28,285 - app.api.v1.endpoints.auth - INFO - Initializing secure channel with ID: 9f56da51-1367-480b-89ae-f0e8e0a86e6c
+2025-04-02 13:01:28,285 - app.services.secure_channel_service - INFO - Creating channel with ID: 9f56da51-1367-480b-89ae-f0e8e0a86e6c
+2025-04-02 13:01:28,285 - app.services.secure_channel_service - INFO - Channel 9f56da51-1367-480b-89ae-f0e8e0a86e6c saved to Redis with TTL 1800 seconds
+2025-04-02 13:01:28,285 - app.api.v1.endpoints.auth - INFO - Channel 9f56da51-1367-480b-89ae-f0e8e0a86e6c initialized successfully
+2025-04-02 13:01:28,286 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.0010000000000003}
+2025-04-02 13:01:28,286 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 3.0010000000000003}
+2025-04-02 13:01:29,667 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-02 13:01:29,669 - app.services.connection_manager - INFO - User 3 connected to server 971508ae-672e-41e8-bbc4-6c4f0744f71e
+2025-04-02 13:01:29,669 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-02 13:01:29,675 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-02 13:02:04,254 - INFO - Incoming request: {"timestamp": "2025-04-02T10:02:04.254891", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.8.186"}
+2025-04-02 13:02:04,254 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-02T10:02:04.254891", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.8.186"}
+2025-04-02 13:02:04,257 - app.api.v1.endpoints.users - INFO - Search request received, channel: 9f56da51-1367-480b-89ae-f0e8e0a86e6c
+2025-04-02 13:02:04,257 - app.api.v1.endpoints.users - INFO - Current user from token: {'user_id': '3', 'username': 'MiraiX', 'sub': '3', 'exp': 1743589886}
+2025-04-02 13:02:04,258 - app.api.v1.endpoints.users - INFO - Decrypted search data: {"query":"yu","limit":10}
+2025-04-02 13:02:04,258 - app.api.v1.endpoints.users - INFO - Parsed search data: {'query': 'yu', 'limit': 10}
+2025-04-02 13:02:04,258 - app.api.v1.endpoints.users - INFO - Searching users with query 'yu', excluding user 3
+2025-04-02 13:02:04,269 - app.api.v1.endpoints.users - INFO - Found 1 users
+2025-04-02 13:02:04,270 - app.api.v1.endpoints.users - INFO - Encrypting search results: [{'id': '2', 'username': 'YuDev', 'avatarUrl': None, 'isOnline': True}]
+2025-04-02 13:02:04,271 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 17.006}
+2025-04-02 13:02:04,271 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 17.006}
+2025-04-02 13:03:43,696 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-02 13:03:43,698 - app.services.connection_manager - INFO - User 3 disconnected from server 971508ae-672e-41e8-bbc4-6c4f0744f71e
+2025-04-02 13:03:43,713 - app.api.v1.endpoints.websocket - INFO - WebSocket token verified for user 3
+2025-04-02 13:03:43,715 - app.services.connection_manager - INFO - User 3 connected to server 971508ae-672e-41e8-bbc4-6c4f0744f71e
+2025-04-02 13:03:43,715 - app.api.v1.endpoints.websocket - INFO - WebSocket connection established for user 3
+2025-04-02 13:03:43,721 - app.api.v1.endpoints.websocket - INFO - Retrieving buffered messages for user 3
+2025-04-02 13:03:59,484 - INFO - Incoming request: {"timestamp": "2025-04-02T10:03:59.484500", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.8.186"}
+2025-04-02 13:03:59,484 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-02T10:03:59.484500", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.8.186"}
+2025-04-02 13:03:59,487 - app.api.v1.endpoints.users - INFO - Search request received, channel: 9f56da51-1367-480b-89ae-f0e8e0a86e6c
+2025-04-02 13:03:59,487 - app.api.v1.endpoints.users - INFO - Current user from token: {'user_id': '3', 'username': 'MiraiX', 'sub': '3', 'exp': 1743589886}
+2025-04-02 13:03:59,488 - app.api.v1.endpoints.users - INFO - Decrypted search data: {"query":"yu","limit":10}
+2025-04-02 13:03:59,488 - app.api.v1.endpoints.users - INFO - Parsed search data: {'query': 'yu', 'limit': 10}
+2025-04-02 13:03:59,489 - app.api.v1.endpoints.users - INFO - Searching users with query 'yu', excluding user 3
+2025-04-02 13:03:59,489 - app.api.v1.endpoints.users - INFO - Found 1 users
+2025-04-02 13:03:59,490 - app.api.v1.endpoints.users - INFO - Encrypting search results: [{'id': '2', 'username': 'YuDev', 'avatarUrl': None, 'isOnline': True}]
+2025-04-02 13:03:59,491 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 7.002000000000001}
+2025-04-02 13:03:59,491 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 7.002000000000001}
+2025-04-02 13:04:16,150 - app.api.v1.endpoints.websocket - INFO - Received chat.delete message from user 3 to 2
+2025-04-02 13:04:16,154 - app.api.v1.endpoints.websocket - INFO - Message of type chat.delete routed from 3 to 2
+2025-04-02 13:04:19,204 - INFO - Incoming request: {"timestamp": "2025-04-02T10:04:19.204772", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.8.81"}
+2025-04-02 13:04:19,204 - chat_server - INFO - Incoming request: {"timestamp": "2025-04-02T10:04:19.204772", "method": "POST", "path": "/users/search", "query_params": "", "client": "192.168.8.81"}
+2025-04-02 13:04:19,207 - app.api.v1.endpoints.users - INFO - Search request received, channel: 30322ed9-da57-486d-b55a-1ed611efcf94
+2025-04-02 13:04:19,207 - app.api.v1.endpoints.users - INFO - Current user from token: {'sub': '2', 'exp': 1743589852}
+2025-04-02 13:04:19,208 - app.api.v1.endpoints.users - INFO - Decrypted search data: {"query":"mi","limit":10}
+2025-04-02 13:04:19,208 - app.api.v1.endpoints.users - INFO - Parsed search data: {'query': 'mi', 'limit': 10}
+2025-04-02 13:04:19,209 - app.api.v1.endpoints.users - INFO - Searching users with query 'mi', excluding user 2
+2025-04-02 13:04:19,209 - app.api.v1.endpoints.users - INFO - Found 1 users
+2025-04-02 13:04:19,210 - app.api.v1.endpoints.users - INFO - Encrypting search results: [{'id': '3', 'username': 'MiraiX', 'avatarUrl': None, 'isOnline': True}]
+2025-04-02 13:04:19,211 - INFO - Response sent: {"status_code": 200, "processing_time_ms": 7.002000000000001}
+2025-04-02 13:04:19,211 - chat_server - INFO - Response sent: {"status_code": 200, "processing_time_ms": 7.002000000000001}
+2025-04-02 13:04:20,644 - app.api.v1.endpoints.websocket - INFO - Received chat.init message from user 2 to 3
+2025-04-02 13:04:20,645 - app.api.v1.endpoints.websocket - INFO - Added initiator_name 'YuDev' to chat.init message
+2025-04-02 13:04:20,652 - app.api.v1.endpoints.websocket - INFO - Message of type chat.init routed from 2 to 3
+2025-04-02 13:04:21,667 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange message from user 3 to 2
+2025-04-02 13:04:21,668 - app.api.v1.endpoints.websocket - INFO - Added responder_name 'MiraiX' to chat.key_exchange message
+2025-04-02 13:04:21,670 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange routed from 3 to 2
+2025-04-02 13:04:21,671 - app.api.v1.endpoints.websocket - INFO - Received chat.key_exchange message from user 3 to 2
+2025-04-02 13:04:21,671 - app.api.v1.endpoints.websocket - INFO - Added responder_name 'MiraiX' to chat.key_exchange message
+2025-04-02 13:04:21,673 - app.api.v1.endpoints.websocket - INFO - Message of type chat.key_exchange routed from 3 to 2
+2025-04-02 13:04:57,840 - app.api.v1.endpoints.websocket - INFO - Received chat.delete message from user 3 to 2
+2025-04-02 13:04:57,844 - app.api.v1.endpoints.websocket - INFO - Message of type chat.delete routed from 3 to 2
+2025-04-02 13:05:01,013 - app.api.v1.endpoints.websocket - INFO - Received chat.delete message from user 2 to 3
+2025-04-02 13:05:01,015 - app.api.v1.endpoints.websocket - INFO - Message of type chat.delete routed from 2 to 3
+2025-04-02 13:05:06,474 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 2
+2025-04-02 13:05:06,476 - app.services.connection_manager - INFO - User 2 disconnected from server 971508ae-672e-41e8-bbc4-6c4f0744f71e
+2025-04-02 13:05:07,294 - app.api.v1.endpoints.websocket - INFO - WebSocket disconnected for user 3
+2025-04-02 13:05:07,295 - app.services.connection_manager - INFO - User 3 disconnected from server 971508ae-672e-41e8-bbc4-6c4f0744f71e
+2025-04-02 13:08:42,821 - app.main - INFO - Shutting down server...
+2025-04-02 13:08:42,822 - app.main - INFO - Redis connections closed
+2025-04-02 13:08:42,822 - app.main - INFO - Server shutdown completed
